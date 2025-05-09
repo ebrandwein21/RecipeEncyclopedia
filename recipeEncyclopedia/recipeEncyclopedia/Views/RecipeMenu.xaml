@@ -1,0 +1,54 @@
+﻿<Window x:Class="recipeEncyclopedia.Views.RecipeMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:recipeEncyclopedia.Views"
+        mc:Ignorable="d"
+        Title="RecipeMenu" Height="450" Width="800">
+    <Grid>
+
+        <Border Background="Beige"
+         BorderBrush="DarkOliveGreen"
+         BorderThickness="5" Grid.RowSpan="2"  Grid.ColumnSpan="3"
+         />
+        <Label Content="Welcome To The Recipe Hub"  Background="Beige" BorderBrush="Transparent" FontSize="32" Grid.ColumnSpan="3" Margin="163,26,24,355" Grid.RowSpan="2">
+        </Label>
+        <Button Content="Dinner Recipes"  VerticalAlignment="Top" Height="165" Margin="188,259,487,0">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"></Setter>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="Vegan Recipes" Height="165" Margin="343,259,343,10" Click="Button_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button  Content="Breakfast Recipes" Height="165" Margin="36,259,646,10">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="Breakfast Recipes" Height="165" Margin="507,259,177,10">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Content="Baking Recipes" Height="165" Margin="657,259,24,10">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>
