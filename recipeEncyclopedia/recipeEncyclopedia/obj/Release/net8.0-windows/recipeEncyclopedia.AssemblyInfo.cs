@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("recipeEncyclopedia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9bba10bef0887be5f9c61c5c7774651eef2f9da5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+641aa2d3238235ecd713f0614951e6c7739b9ec8")]
 [assembly: System.Reflection.AssemblyProductAttribute("recipeEncyclopedia")]
 [assembly: System.Reflection.AssemblyTitleAttribute("recipeEncyclopedia")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

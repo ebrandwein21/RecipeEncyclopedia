@@ -24,14 +24,34 @@ namespace recipeEncyclopedia.Views
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void BreakfastRecipe_Click(object sender, RoutedEventArgs e)
         {
 
+            BreakfastRecipes breakfast = new BreakfastRecipes();
+            breakfast.Show();
+            this.Close();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void DinnerRecipe_Click(object sender, RoutedEventArgs e)
         {
+            DinnerRecipes dinner = new DinnerRecipes();
+            dinner.Show();
+            this.Close();
+        }
 
+
+        private void LunchRecipe_Click(object sender, RoutedEventArgs e)
+        {
+            LunchRecipes lunch = new LunchRecipes();
+            lunch.Show();
+            this.Close();
+        }
+
+        private void BakingRecipe_Click(object sender, RoutedEventArgs e)
+        {
+            BakingRecipes bakedGoods = new BakingRecipes();
+            bakedGoods.Show();
+            this.Close();
         }
     }
 }

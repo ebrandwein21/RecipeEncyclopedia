@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="ShoppingList" Height="450" Width="800">
     <Grid>
-        
+        <Border Background="Beige"
+BorderBrush="DarkOliveGreen"
+BorderThickness="5" Grid.RowSpan="2"
+/>
     </Grid>
 </Window>

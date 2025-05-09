@@ -13,28 +13,21 @@
          BorderThickness="5" Grid.RowSpan="2"  Grid.ColumnSpan="3"
          />
         <Label Content="Welcome To The Recipe Hub"  Background="Beige" BorderBrush="Transparent" FontSize="32" Margin="187,52,0,329"/>
-        <Button Content="Dinner Recipes"  VerticalAlignment="Top" Height="165" Width="95" Margin="202,254,473,0">
+        <Button Content="Dinner Recipes"  VerticalAlignment="Top" Height="165" Width="95" Margin="202,254,473,0" Click="DinnerRecipe_Click">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"></Setter>
                 </Style>
             </Button.Resources>
         </Button>
-        <Button Content="Vegan Recipes" Height="165" Width="95" Margin="370,254,316,15" Click="Button_Click">
+        <Button  Content="Breakfast Recipes" Height="165" Width="95" Margin="39,254,643,15" Click="BreakfastRecipe_Click">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
                 </Style>
             </Button.Resources>
         </Button>
-        <Button  Content="Breakfast Recipes" Height="165" Width="95" Margin="39,254,643,15">
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="10"/>
-                </Style>
-            </Button.Resources>
-        </Button>
-        <Button Content="Breakfast Recipes" Height="165" Width="95" Margin="511,259,173,10">
+        <Button Content="Lunch Recipes" Height="165" Width="95" Margin="511,259,173,10" Click="LunchRecipe_Click"> 
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -42,7 +35,7 @@
             </Button.Resources>
         </Button>
 
-        <Button Content="Baking Recipes" Height="165" Width="95" Margin="657,259,24,10">
+        <Button Content="Baking Recipes" Height="165" Width="95" Margin="657,259,24,10" Click="BakingRecipe_Click">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -58,7 +51,7 @@
             </Button.Resources>
         </Button>
 
-        <Button Content="Login" Margin="669,14,26,329" Height="75" Width="95" Click="Button_Click_1">
+        <Button Content="Login" Margin="683,19,22,340" Height="75" Width="95">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>

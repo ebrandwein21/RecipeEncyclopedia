@@ -1,4 +1,5 @@
-﻿using recipeEncyclopedia.Views;
+﻿using recipeEncyclopedia.Models.cs;
+using recipeEncyclopedia.Views;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -22,14 +23,18 @@ namespace recipeEncyclopedia
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void ShoppingList_Click(object sender, RoutedEventArgs e)
         {
-
+            ShoppingList shoppingList = new ShoppingList();
+            shoppingList.Show();
+            this.Close();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Ingredients_Click(object sender, RoutedEventArgs e)
         {
-
+            IngredientWindow ingredient = new IngredientWindow();
+            ingredient.Show();
+            this.Close();
         }
 
         private void Recipe_Click(object sender, RoutedEventArgs e)
