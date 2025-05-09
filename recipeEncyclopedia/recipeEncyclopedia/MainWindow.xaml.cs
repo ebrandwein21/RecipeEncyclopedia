@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using recipeEncyclopedia.Views;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -20,5 +21,25 @@ namespace recipeEncyclopedia
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Recipe_Click(object sender, RoutedEventArgs e)
+        {
+            RecipeMenu recipe = new RecipeMenu();
+            recipe.Show();
+            this.Close();
+        }
+
+
+
     }
 }

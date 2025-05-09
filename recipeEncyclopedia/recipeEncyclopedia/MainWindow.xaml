@@ -7,6 +7,46 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Border Background="Beige"
+  BorderBrush="DarkOliveGreen"
+  BorderThickness="5" Grid.RowSpan="2"  Grid.ColumnSpan="3"
+  />
+        <Label Content="Welcome To The Recipe Encyclopedia"  Background="Beige" BorderBrush="Transparent" FontSize="32" Margin="106,26,81,355" />
+        <Button Content="Recipe Hub"  VerticalAlignment="Top" Height="165" Margin="22,259,653,0"  Click="Recipe_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"></Setter>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="Featured Recipe Of The Day" Height="165" Width="95" Margin="254,259,388,10" Click="Button_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button  Content="Login;" Margin="680,10,10,366" Height="165" Width="95" Click="Button_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="Ingredients List" Height="165" Width="95" Margin="507,259,177,10" Click="Button_Click_1">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
 
+        <Button Content="Shopping List" Height="165" Width="95" Margin="657,259,24,10">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
     </Grid>
 </Window>

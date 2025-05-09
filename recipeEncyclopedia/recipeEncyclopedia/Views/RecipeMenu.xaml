@@ -12,30 +12,29 @@
          BorderBrush="DarkOliveGreen"
          BorderThickness="5" Grid.RowSpan="2"  Grid.ColumnSpan="3"
          />
-        <Label Content="Welcome To The Recipe Hub"  Background="Beige" BorderBrush="Transparent" FontSize="32" Grid.ColumnSpan="3" Margin="163,26,24,355" Grid.RowSpan="2">
-        </Label>
-        <Button Content="Dinner Recipes"  VerticalAlignment="Top" Height="165" Margin="188,259,487,0">
+        <Label Content="Welcome To The Recipe Hub"  Background="Beige" BorderBrush="Transparent" FontSize="32" Margin="187,52,0,329"/>
+        <Button Content="Dinner Recipes"  VerticalAlignment="Top" Height="165" Width="95" Margin="202,254,473,0">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"></Setter>
                 </Style>
             </Button.Resources>
         </Button>
-        <Button Content="Vegan Recipes" Height="165" Margin="343,259,343,10" Click="Button_Click">
+        <Button Content="Vegan Recipes" Height="165" Width="95" Margin="370,254,316,15" Click="Button_Click">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
                 </Style>
             </Button.Resources>
         </Button>
-        <Button  Content="Breakfast Recipes" Height="165" Margin="36,259,646,10">
+        <Button  Content="Breakfast Recipes" Height="165" Width="95" Margin="39,254,643,15">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
                 </Style>
             </Button.Resources>
         </Button>
-        <Button Content="Breakfast Recipes" Height="165" Margin="507,259,177,10">
+        <Button Content="Breakfast Recipes" Height="165" Width="95" Margin="511,259,173,10">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -43,7 +42,23 @@
             </Button.Resources>
         </Button>
 
-        <Button Content="Baking Recipes" Height="165" Margin="657,259,24,10">
+        <Button Content="Baking Recipes" Height="165" Width="95" Margin="657,259,24,10">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Content="My Recipes" Width="95" Height="70"  Margin="18,10,687,337">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Content="Login" Margin="669,14,26,329" Height="75" Width="95" Click="Button_Click_1">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
