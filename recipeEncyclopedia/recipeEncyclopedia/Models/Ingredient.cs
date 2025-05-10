@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace recipeEncyclopedia.Models.cs
+namespace recipeEncyclopedia.Models
 {
-    class Recipe
+    class Ingredient
     {
     }
 }

@@ -1,5 +1,6 @@
-﻿using recipeEncyclopedia.Models.cs;
+﻿using recipeEncyclopedia.Models;
 using recipeEncyclopedia.Views;
+using recipeEncyclopedia.Data;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -10,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MongoDB.Driver;
 
 namespace recipeEncyclopedia
 {
@@ -18,9 +20,11 @@ namespace recipeEncyclopedia
     /// </summary>
     public partial class MainWindow : Window
     {
+        private MongoContext _context = new MongoContext();
         public MainWindow()
         {
             InitializeComponent();
+            //LoadUsers();
         }
 
         private void ShoppingList_Click(object sender, RoutedEventArgs e)
@@ -55,6 +59,5 @@ namespace recipeEncyclopedia
             featuredRecipe.Show();
             this.Close();
         }
-
     }
 }
