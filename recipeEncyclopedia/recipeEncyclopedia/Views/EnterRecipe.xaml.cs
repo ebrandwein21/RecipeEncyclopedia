@@ -35,5 +35,19 @@ namespace recipeEncyclopedia.Views
             home.Show();
             this.Close();
         }
+
+        private void SubmitRecipeButton_Click(object sender, RoutedEventArgs e)
+        {
+
+            MessageBox.Show("Button clicked!");
+
+            string Ingredient = IngredientBox.Text;
+            string Name = EnterRecipeName.Text;
+            int Serving = int.Parse(ServingTextBox.Text);
+        }
+
+        public void ListBoxTwo_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+        }
     }
 }

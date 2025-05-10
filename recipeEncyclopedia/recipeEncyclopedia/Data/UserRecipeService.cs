@@ -36,4 +36,7 @@ namespace recipeEncyclopedia.Data
             _collection.DeleteOne(ur => ur.Id == id);
     }
 }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+<<<<<<< Updated upstream
 using MongoDB.Driver;
 using recipeEncyclopedia.Models;
 
@@ -24,5 +25,16 @@ namespace recipeEncyclopedia.Data
         public IMongoCollection<ShoppingListModel> ShoppingLists => _database.GetCollection<ShoppingListModel>("ShoppingLists");
         public IMongoCollection<UserRecipe> UserRecipes => _database.GetCollection<UserRecipe>("UserRecipes");
 
+=======
+
+<<<<<<<< Updated upstream:recipeEncyclopedia/recipeEncyclopedia/Models/Ingredient.cs
+namespace recipeEncyclopedia.Models
+========
+namespace recipeEncyclopedia.Data
+>>>>>>>> Stashed changes:recipeEncyclopedia/recipeEncyclopedia/Data/MongoContext.cs
+{
+    internal class MongoContext
+    {
+>>>>>>> Stashed changes
     }
 }
