@@ -53,7 +53,7 @@ namespace recipeEncyclopedia.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/recipeEncyclopedia;V1.0.0.0;component/views/breakfastrecipes.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/recipeEncyclopedia;component/views/breakfastrecipes.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\BreakfastRecipes.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

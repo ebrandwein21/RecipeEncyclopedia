@@ -16,6 +16,9 @@ namespace recipeEncyclopedia.Models
         public string Id { get; set; }
         public string Name { get; set; }
         public List<string> Ingredients { get; set; }
+        public int Allergen { get; set; }
+        public int Measurement { get; set; }
+        public int Serving { get; set; }
         public string Instructions { get; set; }
         public List<string> Tags { get; set; }
         public string Category { get; set; }
