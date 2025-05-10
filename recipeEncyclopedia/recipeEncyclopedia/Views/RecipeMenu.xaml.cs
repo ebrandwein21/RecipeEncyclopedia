@@ -32,7 +32,7 @@ namespace recipeEncyclopedia.Views
             this.Close();
         }
 
-        private void DinnerRecipe_Click(object sender, RoutedEventArgs e)
+        private void DinnerRecipes_Click(object sender, RoutedEventArgs e)
         {
             DinnerRecipes dinner = new DinnerRecipes();
             dinner.Show();
@@ -40,7 +40,7 @@ namespace recipeEncyclopedia.Views
         }
 
 
-        private void LunchRecipe_Click(object sender, RoutedEventArgs e)
+        private void LunchRecipes_Click(object sender, RoutedEventArgs e)
         {
             LunchRecipes lunch = new LunchRecipes();
             lunch.Show();
@@ -58,5 +58,26 @@ namespace recipeEncyclopedia.Views
         {
             this.Close();
         }
+
+        private void InternationalRecipe_Click(object sender, RoutedEventArgs e)
+        {
+            InternationalView internationalView = new InternationalView();
+            this.Close();
+        }
+
+        private void Vegan_Click(object sender, RoutedEventArgs e)
+        {
+            VeganView vegan = new VeganView();
+            this.Close();
+        }
+
+        private void Home_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow home = new MainWindow();
+            home.Show();
+            this.Close();
+        }
+
+
     }
 }
