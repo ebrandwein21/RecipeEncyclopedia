@@ -1,0 +1,45 @@
+﻿<Window x:Class="recipeEncyclopedia.Views.EnterRecipe"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:recipeEncyclopedia.Views"
+        mc:Ignorable="d"
+        Title="EnterRecipe" Height="450" Width="800">
+
+    <Grid>
+
+        <Border 
+            Background="Beige" BorderBrush="DarkOliveGreen" BorderThickness="10" Grid.RowSpan="4" Grid.ColumnSpan="13" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        </Border>
+
+        <Label
+            Content="Welcome To The Recipe Hub" Background="Beige" BorderBrush="Transparent" FontSize="32" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="182,36,0,0"/>
+
+        <TextBox Name="IngredientBox"  HorizontalAlignment="Left" Height="23" Margin="310,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Enter Ingredient" HorizontalAlignment="Left" Margin="210,173,0,0" VerticalAlignment="Top"/>
+
+        <TextBox x:Name="EnterRecipeName"  HorizontalAlignment="Left" Height="23" Margin="308,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Recipe Name" HorizontalAlignment="Left" Margin="215,147,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.588,1.21"/>
+        <Label Content="Enter Measurement" HorizontalAlignment="Left" Margin="210,209,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="308,209,0,0" VerticalAlignment="Top" Width="120" Name ="MorF">
+            <ComboBoxItem IsSelected="True">Cups</ComboBoxItem>
+            <ComboBoxItem>Grams</ComboBoxItem>
+            <ComboBoxItem>Tablespoons</ComboBoxItem>
+        </ComboBox>
+        <TextBox x:Name="ServingTextBox"  HorizontalAlignment="Left" Height="23" Margin="308,251,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Enter Serving" HorizontalAlignment="Left" Margin="210,250,0,0" VerticalAlignment="Top"/>
+        <Label Content="Enter Allergen" HorizontalAlignment="Left" Margin="210,295,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="308,295,0,0" VerticalAlignment="Top" Width="120" Name = "GradLevel">
+            <ComboBoxItem IsSelected="True" Content="Peanuts"/>
+            <ComboBoxItem Content="Dairy"/>
+            <ComboBoxItem Content="Gluten"/>
+            <ComboBoxItem Content="Pork"/>
+        </ComboBox>
+        <Button Name="SubmitRecipeButton" Content="Submit Recipe" HorizontalAlignment="Left" Margin="210,347,0,0" VerticalAlignment="Top" Width="218" Height="35" Click="SubmitRecipeButton_Click"/>
+        <Label Content="Courses List" HorizontalAlignment="Left" Margin="687,288,0,0" VerticalAlignment="Top" Height="7" Width="44"/>
+        <ListBox x:Name="RecipeTextBox" HorizontalAlignment="Left" Height="273" Margin="34,126,0,0" VerticalAlignment="Top" Width="171"  IsSynchronizedWithCurrentItem="True"  ItemsSource="{Binding info}" DisplayMemberPath="CourseInfo"  SelectionChanged="ListBoxTwo_SelectionChanged"/>
+        <!--https://www.youtube.com/watch?v=A7Opv4IIybo and https://stackoverflow.com/questions/12994953/displaymemberpath-is-not-working-in-wpf-->
+
+    </Grid>
+</Window>

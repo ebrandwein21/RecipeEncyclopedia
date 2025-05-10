@@ -17,9 +17,9 @@ namespace recipeEncyclopedia.Views
     /// <summary>
     /// Interaction logic for FeaturedRecipe.xaml
     /// </summary>
-    public partial class FeaturedRecipe : Window
+    public partial class EnterRecipe : Window
     {
-        public FeaturedRecipe()
+        public EnterRecipe()
         {
             InitializeComponent();
         }

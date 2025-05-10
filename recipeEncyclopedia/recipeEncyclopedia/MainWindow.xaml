@@ -39,7 +39,7 @@
         </Button>
 
         <Button
-          Content="Featured Recipe Of The Day"  Grid.Row="2" Grid.Column="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="FeaturedButton_Click">
+          Content="Enter Recipe"  Grid.Row="2" Grid.Column="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="EnterRecipe_Click">
         </Button>
 
         <Button

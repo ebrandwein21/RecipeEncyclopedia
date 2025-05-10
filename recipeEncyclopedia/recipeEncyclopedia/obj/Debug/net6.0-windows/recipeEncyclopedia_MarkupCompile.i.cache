@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\ebb4vh\OneDrive - University of Missouri\Documents\GitHub\Recipe\RecipeEncyclopedia\recipeEncyclopedia\recipeEncyclopedia\App.xaml
-1140120456
+11-1673921952
 
-23-2108955985
+23-1991263416
 1951506628452
-MainWindow.xaml;Views\BakingRecipes.xaml;Views\BreakfastRecipes.xaml;Views\DinnerRecipes.xaml;Views\FeaturedRecipe.xaml;Views\IngredientWindow.xaml;Views\InternationalView.xaml;Views\LunchRecipes.xaml;Views\RecipeMenu.xaml;Views\ShoppingList.xaml;Views\VeganView.xaml;
+MainWindow.xaml;Views\BakingRecipes.xaml;Views\BreakfastRecipes.xaml;Views\DinnerRecipes.xaml;Views\EnterRecipe.xaml;Views\IngredientWindow.xaml;Views\InternationalView.xaml;Views\LunchRecipes.xaml;Views\RecipeMenu.xaml;Views\ShoppingList.xaml;Views\VeganView.xaml;
 
-True
+False
 

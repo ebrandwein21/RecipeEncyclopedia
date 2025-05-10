@@ -49,9 +49,9 @@ namespace recipeEncyclopedia
             this.Close();
         }
 
-        private void FeaturedButton_Click(object sender, RoutedEventArgs e)
+        private void EnterRecipe_Click(object sender, RoutedEventArgs e)
         {
-            FeaturedRecipe featuredRecipe = new FeaturedRecipe();
+            EnterRecipe featuredRecipe = new EnterRecipe();
             featuredRecipe.Show();
             this.Close();
         }
