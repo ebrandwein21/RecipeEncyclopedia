@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-<<<<<<< Updated upstream
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
-using System.Collections.Generic;
+
 
 namespace recipeEncyclopedia.Models
 {
@@ -21,12 +20,5 @@ namespace recipeEncyclopedia.Models
         public List<string> Tags { get; set; }
         public string Category { get; set; }
         public int TotalTime { get; set; }
-=======
-
-namespace recipeEncyclopedia.Models.cs
-{
-    class Recipe
-    {
->>>>>>> Stashed changes
     }
 }

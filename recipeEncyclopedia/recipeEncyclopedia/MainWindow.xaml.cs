@@ -1,11 +1,5 @@
-<<<<<<< Updated upstream
 ﻿using recipeEncyclopedia.Models;
-=======
 ﻿using recipeEncyclopedia.Data;
-using recipeEncyclopedia.Models.cs;
->>>>>>> Stashed changes
-using recipeEncyclopedia.Views;
-using recipeEncyclopedia.Data;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;

@@ -55,9 +55,5 @@ namespace recipeEncyclopedia.Data
 
 
     }
-<<<<<<< Updated upstream
 }
 
-=======
-}
->>>>>>> Stashed changes

@@ -9,11 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-<<<<<<< Updated upstream
+
     <PackageReference Include="MongoDB.Driver" Version="3.4.0" />
-=======
-	  <PackageReference Include="MongoDB.Driver" Version="3.4.0" />
->>>>>>> Stashed changes
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
