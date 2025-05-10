@@ -28,5 +28,12 @@ namespace recipeEncyclopedia.Views
         {
             this.Close();
         }
+
+        private void Home_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow home = new MainWindow();
+            home.Show();
+            this.Close();
+        }
     }
 }

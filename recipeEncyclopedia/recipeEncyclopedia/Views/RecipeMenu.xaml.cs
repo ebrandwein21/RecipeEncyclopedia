@@ -62,12 +62,14 @@ namespace recipeEncyclopedia.Views
         private void InternationalRecipe_Click(object sender, RoutedEventArgs e)
         {
             InternationalView internationalView = new InternationalView();
+            internationalView.Show();
             this.Close();
         }
 
         private void Vegan_Click(object sender, RoutedEventArgs e)
         {
             VeganView vegan = new VeganView();
+            vegan.Show();
             this.Close();
         }
 

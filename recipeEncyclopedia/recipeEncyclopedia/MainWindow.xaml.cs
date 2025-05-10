@@ -30,7 +30,7 @@ namespace recipeEncyclopedia
             this.Close();
         }
 
-        private void Ingredients_Click(object sender, RoutedEventArgs e)
+        private void IngredientsList_Click(object sender, RoutedEventArgs e)
         {
             IngredientWindow ingredient = new IngredientWindow();
             ingredient.Show();
@@ -49,9 +49,12 @@ namespace recipeEncyclopedia
             this.Close();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void FeaturedButton_Click(object sender, RoutedEventArgs e)
         {
-
+            FeaturedRecipe featuredRecipe = new FeaturedRecipe();
+            featuredRecipe.Show();
+            this.Close();
         }
+
     }
 }

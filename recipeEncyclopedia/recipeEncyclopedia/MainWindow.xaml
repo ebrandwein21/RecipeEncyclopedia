@@ -39,14 +39,14 @@
         </Button>
 
         <Button
-          Content="Featured Recipe Of The Day"  Grid.Row="2" Grid.Column="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="Button_Click">
+          Content="Featured Recipe Of The Day"  Grid.Row="2" Grid.Column="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="FeaturedButton_Click">
         </Button>
 
         <Button
           Content="X" Grid.Column="8" Background="red" HorizontalAlignment="Center" VerticalAlignment="Top" Click="ExitButton_Click" Width="47" Margin="0,10,0,0" />
 
         <Button
-          Content="Ingredients List"  Grid.Row="2" Grid.Column="7"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="Ingredients_Click">
+          Content="Ingredients List"  Grid.Row="2" Grid.Column="7"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="IngredientsList_Click">
         </Button>
 
         <Button

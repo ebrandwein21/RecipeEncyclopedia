@@ -69,6 +69,8 @@
           Content="Home"  Grid.Row="0" Grid.Column="1"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="Home_Click">
         </Button>
 
+        <Button
+          Content="Baking &#xD;&#xA;Recipes"  Grid.Row="2" Grid.Column="7"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="BakingRecipe_Click" />
 
     </Grid>
 </Window>

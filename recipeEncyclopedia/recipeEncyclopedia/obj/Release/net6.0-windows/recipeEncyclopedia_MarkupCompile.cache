@@ -1,0 +1,20 @@
+﻿recipeEncyclopedia
+
+
+winexe
+C#
+.cs
+C:\Users\ebb4vh\OneDrive - University of Missouri\Documents\GitHub\Recipe\RecipeEncyclopedia\recipeEncyclopedia\recipeEncyclopedia\obj\Release\net6.0-windows\
+recipeEncyclopedia
+none
+false
+TRACE;RELEASE;NET;NET6_0;NETCOREAPP
+C:\Users\ebb4vh\OneDrive - University of Missouri\Documents\GitHub\Recipe\RecipeEncyclopedia\recipeEncyclopedia\recipeEncyclopedia\App.xaml
+1140120456
+
+211473959701
+1951506628452
+MainWindow.xaml;Views\BakingRecipes.xaml;Views\BreakfastRecipes.xaml;Views\DinnerRecipes.xaml;Views\FeaturedRecipe.xaml;Views\IngredientWindow.xaml;Views\InternationalView.xaml;Views\LunchRecipes.xaml;Views\RecipeMenu.xaml;Views\ShoppingList.xaml;Views\VeganView.xaml;
+
+True
+
