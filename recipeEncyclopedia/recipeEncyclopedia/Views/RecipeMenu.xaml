@@ -13,14 +13,14 @@
          BorderThickness="5" Grid.RowSpan="2"  Grid.ColumnSpan="3"
          />
         <Label Content="Welcome To The Recipe Hub"  Background="Beige" BorderBrush="Transparent" FontSize="32" Margin="187,52,0,329"/>
-        <Button Content="Dinner Recipes"  VerticalAlignment="Top" Height="165" Width="95" Margin="202,254,473,0" Click="DinnerRecipe_Click">
+        <Button  Content="International Recipes"  VerticalAlignment="Top" Height="165" Width="95" Margin="278,254,427,0" Click="DinnerRecipe_Click">
             <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="10"></Setter>
+                <Style x:Key="WrappingButton" TargetType="{x:Type Button}">
+                    <Setter Property="FontSize" Value="10"></Setter>
                 </Style>
             </Button.Resources>
         </Button>
-        <Button  Content="Breakfast Recipes" Height="165" Width="95" Margin="39,254,643,15" Click="BreakfastRecipe_Click">
+        <Button  Content="Breakfast Recipes" Height="165" Width="95" Margin="28,254,677,15" Click="BreakfastRecipe_Click">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -54,6 +54,20 @@
         <Button Content="Login" Margin="683,19,22,340" Height="75" Width="95">
             <Button.Resources>
                 <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="Dinner Recipes"  VerticalAlignment="Top" Height="165" Width="95" Margin="147,254,558,0" Click="DinnerRecipe_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="Vegan Recipes&#xD;&#xA;&#xD;&#xA;"  VerticalAlignment="Top" Height="165" Width="95" Margin="398,259,306,0" Click="DinnerRecipe_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="10"/>
                 </Style>
             </Button.Resources>
