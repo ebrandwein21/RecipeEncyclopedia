@@ -15,12 +15,19 @@ namespace recipeEncyclopedia.Models
         [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; }
         public string Name { get; set; }
+
         public List<string> Ingredients { get; set; }
+
+        public string Ingredient { get; set; }
         public int Allergen { get; set; }
         public int Measurement { get; set; }
         public int Serving { get; set; }
+
+        public int MeasurementAmount { get; set; }
         public string Instructions { get; set; }
         public List<string> Tags { get; set; }
+
+        public string Tag { get; set; }
         public string Category { get; set; }
         public int TotalTime { get; set; }
     }

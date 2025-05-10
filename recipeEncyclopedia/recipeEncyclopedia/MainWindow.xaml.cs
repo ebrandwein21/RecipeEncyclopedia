@@ -1,5 +1,6 @@
-﻿using recipeEncyclopedia.Models;
-﻿using recipeEncyclopedia.Data;
+using recipeEncyclopedia.Models;
+using recipeEncyclopedia.Data;
+using recipeEncyclopedia.Views;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
