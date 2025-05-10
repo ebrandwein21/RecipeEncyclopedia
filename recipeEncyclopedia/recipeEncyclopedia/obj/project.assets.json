@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ebb4vh\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia.csproj",
+      "projectUniqueName": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\Recipe\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia.csproj",
       "projectName": "recipeEncyclopedia",
-      "projectPath": "C:\\Users\\ebb4vh\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia.csproj",
+      "projectPath": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\Recipe\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia.csproj",
       "packagesPath": "C:\\Users\\ebb4vh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ebb4vh\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\obj\\",
+      "outputPath": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\Recipe\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ebb4vh\\AppData\\Roaming\\NuGet\\NuGet.Config",

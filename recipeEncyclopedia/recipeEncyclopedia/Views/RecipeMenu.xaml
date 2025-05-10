@@ -51,7 +51,7 @@
             </Button.Resources>
         </Button>
 
-        <Button Content="Login" Margin="683,19,22,340" Height="75" Width="95">
+        <Button Content="Login" Margin="687,63,18,296" Height="75" Width="95">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -70,6 +70,12 @@
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="10"/>
                 </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button  Content="X" Margin="765,10,10,399" Background="red" Height="25" Width="25" Click="ExitButton_Click" >
+            <Button.Resources>
+
             </Button.Resources>
         </Button>
     </Grid>

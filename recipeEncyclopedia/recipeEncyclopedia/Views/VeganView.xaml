@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="VeganView" Height="450" Width="800">
     <Grid>
-        
+        <Button  Content="X" Margin="757,10,18,399" Background="red" Height="25" Width="25" Click="ExitButton_Click" >
+            <Button.Resources>
+
+            </Button.Resources>
+        </Button>
     </Grid>
 </Window>
