@@ -17,6 +17,9 @@ using System.Windows.Shapes;
 using System.Xml.Linq;
 using static MongoDB.Bson.Serialization.Serializers.SerializerHelper;
 
+
+//To Do: Measurement string, categories populating, backend conversion
+
 namespace recipeEncyclopedia.Views
 {
     /// <summary>
