@@ -45,7 +45,7 @@
                 </Grid.ColumnDefinitions>
 
                 <Label
-            Content="Please Enter Your Recipe" Background="Beige" BorderBrush="Transparent" FontSize="20"  Grid.Column="4"  Grid.Row ="1"  Grid.ColumnSpan="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+            Content="Please Enter Your Recipe" Background="Beige" BorderBrush="Transparent" FontSize="20"  Grid.Column="4"  Grid.Row ="1"  Grid.RowSpan="2" Grid.ColumnSpan="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
 
                 <ListBox x:Name="informationBox"  IsSynchronizedWithCurrentItem="True"  ItemsSource="{Binding recipeInfo}"  DisplayMemberPath="InformationToString" SelectionChanged="InformationBox_SelectionChanged" Grid.Column="0" Grid.RowSpan="9" Grid.Row="3" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
 
@@ -154,7 +154,21 @@
                 </ListBox.ItemTemplate>
                 </ListBox>
 
-                <Button x:Name="SubmitRecipe" Content="Submit Recipe" Click="SubmitRecipe_Click" Grid.Row="1" Grid.ColumnSpan="3" />
+                <Button x:Name="SubmitRecipe" Content="Submit Recipe" Click="SubmitRecipe_Click" Grid.Row="13" Grid.ColumnSpan="6" Grid.Column="3">
+                    <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                    </Button.Resources>
+                </Button>
+
+                <Button x:Name="Home" Content="Home" Click="Home_Click" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="1">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
 
             </Grid>
         </Border>
