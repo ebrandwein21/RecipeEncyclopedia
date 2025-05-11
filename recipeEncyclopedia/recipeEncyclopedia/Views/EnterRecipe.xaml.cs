@@ -186,16 +186,22 @@ namespace recipeEncyclopedia.Views
 
                 foreach (int index in selectedRecipeInfo.Categories)
                 {
-                    if(index >= 0 && index < selectedRecipeInfo.Categories.Count )
+                    if (index >= 0 && index < selectedRecipeInfo.Categories.Count)
                     {
                         CategorySelection.SelectedItems.Add(CategorySelection.Items[index]); //https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.listview.selecteditems?view=windowsdesktop-9.0
                     }
                 }
-
-               
-               
             }
+
+
             
+        }
+
+        private void Login_Click(object sender, RoutedEventArgs e)
+        {
+            LoginWindow login = new LoginWindow();
+            login.Show();
+
         }
 
     }
