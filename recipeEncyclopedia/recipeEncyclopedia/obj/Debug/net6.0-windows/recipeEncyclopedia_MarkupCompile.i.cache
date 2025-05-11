@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\ebb4vh\OneDrive - University of Missouri\Documents\GitHub\Recipe\RecipeEncyclopedia\recipeEncyclopedia\recipeEncyclopedia\obj\Debug\net6.0-windows\
+C:\Users\ebb4vh\OneDrive - University of Missouri\Documents\GitHub\LocalRecipe\RecipeEncyclopedia\recipeEncyclopedia\recipeEncyclopedia\obj\Debug\net6.0-windows\
 recipeEncyclopedia
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\ebb4vh\OneDrive - University of Missouri\Documents\GitHub\Recipe\RecipeEncyclopedia\recipeEncyclopedia\recipeEncyclopedia\App.xaml
+C:\Users\ebb4vh\OneDrive - University of Missouri\Documents\GitHub\LocalRecipe\RecipeEncyclopedia\recipeEncyclopedia\recipeEncyclopedia\App.xaml
 11-1673921952
 
 271068700823
 202-564144577
 MainWindow.xaml;Views\BakingRecipes.xaml;Views\BreakfastRecipes.xaml;Views\DinnerRecipes.xaml;Views\EnterRecipe.xaml;Views\IngredientWindow.xaml;Views\InternationalView.xaml;Views\LunchRecipes.xaml;Views\RecipeMenu.xaml;Views\ShoppingList.xaml;Views\VeganView.xaml;
 
-True
+False
 

@@ -78,12 +78,29 @@ namespace recipeEncyclopedia.Views
 
         }
 
+        
+
         public void RecipeBox_SelectionChanged(object sender, RoutedEventArgs e)
         {
 
         }
 
         private void EnterRecipeName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void RecipeBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void CategorySelection_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void InstructionBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }

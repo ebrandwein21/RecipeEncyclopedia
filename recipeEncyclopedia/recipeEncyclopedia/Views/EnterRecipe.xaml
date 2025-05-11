@@ -6,69 +6,158 @@
         xmlns:local="clr-namespace:recipeEncyclopedia.Views"
         mc:Ignorable="d"
         Title="EnterRecipe" Height="450" Width="800">
+    <Grid>
+        <Border 
+            Background="Beige" BorderBrush="DarkOliveGreen" BorderThickness="10" Grid.RowSpan="15" Grid.ColumnSpan="13">
+            <Grid x:Name="UserRecipeGrid" Margin="5">
+                <Grid.RowDefinitions>
 
-	<Grid>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
 
-		<Border 
-            Background="Beige" BorderBrush="DarkOliveGreen" BorderThickness="10" Grid.RowSpan="4" Grid.ColumnSpan="13" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-		</Border>
+                </Grid.RowDefinitions>
 
-		<Label
-            Content="Welcome To The Recipe Hub" Background="Beige" BorderBrush="Transparent" FontSize="32" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="182,36,0,0"/>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
 
 
 
-		<Label Content="Enter Ingredient" HorizontalAlignment="Left" Margin="519,111,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.447,0.566"/>
-		<TextBox Name="IngredientBox"  HorizontalAlignment="Left" Height="32" Margin="524,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="93" RenderTransformOrigin="0.5,0.5"/>
-		<Label Content="Recipe Name: " HorizontalAlignment="Left" Margin="156,94,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.588,1.21" Height="34" Width="99"/>
-		<Label Content="Enter Measurement" HorizontalAlignment="Left" Margin="519,163,0,0" VerticalAlignment="Top"/>
-		<ComboBox HorizontalAlignment="Left" Margin="516,185,0,0" VerticalAlignment="Top" Width="98" Name ="MorF" Height="32">
-			<ComboBoxItem IsSelected="True">Cups</ComboBoxItem>
-			<ComboBoxItem>Grams</ComboBoxItem>
-			<ComboBoxItem>Tablespoons</ComboBoxItem>
-		</ComboBox>
-		<TextBox x:Name="EnterRecipeName"  HorizontalAlignment="Left" Height="23" Margin="247,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="71" RenderTransformOrigin="0.566,0.605"/>
-		<Label Content="Enter Amount" HorizontalAlignment="Left" Margin="524,226,0,0" VerticalAlignment="Top"/>
-		<TextBox Name="AmountBox"  HorizontalAlignment="Left" Height="17" Margin="514,252,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
-		<Label Content="Enter Category" HorizontalAlignment="Left" Margin="154,202,0,0" VerticalAlignment="Top"/>
-		<Label Content="Enter Duration" HorizontalAlignment="Left" Margin="157,138,0,0" VerticalAlignment="Top"/>
-		<TextBox Name="DurationBox"  HorizontalAlignment="Left" Height="22" Margin="246,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="85" RenderTransformOrigin="0.5,0.5"></TextBox>
-		<Label Content="Enter Tags" HorizontalAlignment="Left" Margin="153,325,0,0" VerticalAlignment="Top"/>
-		<TextBox Name="KeywordBox"  HorizontalAlignment="Left" Height="20" Margin="226,328,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76"/>
-		<Label Content="Enter Instructions&#xD;&#xA;" HorizontalAlignment="Left" Margin="668,62,0,0" VerticalAlignment="Top"/>
-		<TextBox x:Name="InstructionBox"  HorizontalAlignment="Left" Height="74" Margin="650,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" RenderTransformOrigin="0.566,0.605"/>
+                <Label
+            Content="Please Enter Your Recipe" Background="Beige" BorderBrush="Transparent" FontSize="20"  Grid.Column="4"  Grid.Row ="1"  Grid.ColumnSpan="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
 
-		<Label Content="Enter Allergen" HorizontalAlignment="Left" Margin="156,169,0,0" VerticalAlignment="Top"/>
-		<ComboBox HorizontalAlignment="Left" Margin="246,173,0,0" VerticalAlignment="Top" Width="83" Name = "GradLevel" Height="24" RenderTransformOrigin="0.563,0.454">
-			<ComboBoxItem IsSelected="True" Content="Peanuts"/>
-			<ComboBoxItem Content="Dairy"/>
-			<ComboBoxItem Content="Gluten"/>
-			<ComboBoxItem Content="Pork"/>
-		</ComboBox>
-		<Button Name="SubmitRecipeButton" Content="Submit Recipe" HorizontalAlignment="Left" Margin="247,356,0,0" VerticalAlignment="Top" Width="523" Height="35" Click="SubmitRecipeButton_Click"/>
-		<ListBox x:Name="RecipeListBox" HorizontalAlignment="Left" Height="148" Margin="641,200,0,0" VerticalAlignment="Top" Width="147"  IsSynchronizedWithCurrentItem="True"  ItemsSource="{Binding info}" DisplayMemberPath="CourseInfo"  SelectionChanged="RecipeBox_SelectionChanged" RenderTransformOrigin="0.5,0.5">
-			<ListBox.RenderTransform>
-				<TransformGroup>
-					<ScaleTransform ScaleY="-1"/>
-					<SkewTransform/>
-					<RotateTransform/>
-					<TranslateTransform/>
-				</TransformGroup>
-			</ListBox.RenderTransform>
-		</ListBox>
-		<ListBox x:Name="RecipeListBox_Copy" HorizontalAlignment="Left" Height="273" Margin="21,94,0,0" VerticalAlignment="Top" Width="131"  IsSynchronizedWithCurrentItem="True"  ItemsSource="{Binding info}" DisplayMemberPath="CourseInfo"  SelectionChanged="RecipeBox_SelectionChanged"/>
-		<ListBox x:Name="RecipeListBox_Copy1" HorizontalAlignment="Left" Height="252" Margin="357,96,0,0" VerticalAlignment="Top" Width="135"  IsSynchronizedWithCurrentItem="True"  ItemsSource="{Binding info}" DisplayMemberPath="CourseInfo"  SelectionChanged="RecipeBox_SelectionChanged"/>
-		<Label Content="Enter Serving" HorizontalAlignment="Left" Margin="152,294,0,0" VerticalAlignment="Top"/>
-		<TextBox x:Name="ServingTextBox"  HorizontalAlignment="Left" Height="23" Margin="237,297,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="71" RenderTransformOrigin="0.566,0.605"/>
-		<ListBox HorizontalAlignment="Left" SelectionMode="Multiple"  Margin="246,0,0,0" VerticalAlignment="Center" Width="95" x:Name = "GradLevel_Copy" Height="131" RenderTransformOrigin="0.563,0.454">
-			<ListBoxItem Content="Breakfast" Height="26"/>
-			<ListBoxItem Content="Lunch"/>
-			<ListBoxItem Content="Dinner"/>
-			<ListBoxItem Content="Bakery"/>
-			<ListBoxItem Content="Vegan"/>
-			<ListBoxItem Content="International"/>
-		</ListBox>
-		<!--https://www.youtube.com/watch?v=A7Opv4IIybo and https://stackoverflow.com/questions/12994953/displaymemberpath-is-not-working-in-wpf-->
+                <ListBox x:Name="RecipeListBox"  IsSynchronizedWithCurrentItem="True"  ItemsSource="{Binding info}" DisplayMemberPath="CourseInfo"  SelectionChanged="RecipeBox_SelectionChanged" Grid.Column="0" Grid.RowSpan="9" Grid.Row="3" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
 
-	</Grid>
+                <Grid Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Recipe Name" Grid.Column="0" />
+                    <TextBox Name="EnterRecipeName" Grid.Column="1" Grid.ColumnSpan="2"/>
+                </Grid>
+
+                <Grid Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Duration" Grid.Column="0" />
+                    <TextBox Name="DurationBox" Grid.Column="1"/>
+                </Grid>
+
+                <Grid Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Serving" Grid.Column="0" />
+                    <TextBox Name="ServingTextBox" Grid.Column="1"/>
+                </Grid>
+
+                <Grid Grid.Row="9" Grid.Column="2" Grid.ColumnSpan="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Tags:" Grid.Column="0" />
+                    <TextBox Name="KeywordBox" Grid.Column="1"/>
+                </Grid>
+
+                <Grid Grid.Row="11" Grid.Column="2" Grid.ColumnSpan="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Categories:" Grid.Column="0" />
+                    <ListBox SelectionMode="Multiple"  x:Name = "CategorySelection" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Grid.Column="1">
+                        <ListBoxItem Content="Breakfast" Height="26"/>
+                        <ListBoxItem Content="Lunch"/>
+                        <ListBoxItem Content="Dinner"/>
+                        <ListBoxItem Content="Bakery"/>
+                        <ListBoxItem Content="Vegan"/>
+                        <ListBoxItem Content="International"/>
+                    </ListBox>
+                </Grid>
+
+                <ListBox x:Name="RecipeListBox_Copy"  IsSynchronizedWithCurrentItem="True"  ItemsSource="{Binding info}" DisplayMemberPath="CourseInfo"  SelectionChanged="RecipeBox_SelectionChanged" Grid.Column="5" Grid.RowSpan="9" Grid.Row="3" Grid.ColumnSpan="2"/>
+
+
+                <Grid Grid.Row="3" Grid.Column="7" Grid.ColumnSpan="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Ingredient:" Grid.Column="0" />
+                    <TextBox Name="IngredientBox" Grid.Column="1"/>
+                </Grid>
+
+                <Grid Grid.Row="6" Grid.Column="7" Grid.ColumnSpan="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Measurement:" Grid.Column="0"/>
+                    <ComboBox x:Name ="MeasurementChoice" Grid.Column="1" Margin="0,0,-23,0">
+                        <ComboBoxItem IsSelected="True" Content="Cups"/>
+                        <ComboBoxItem Content="Grams"/>
+                        <ComboBoxItem Content="Tablespoons"/>
+                    </ComboBox>
+                </Grid>
+
+                <Grid Grid.Row="9" Grid.Column="7" Grid.ColumnSpan="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Amount:" Grid.Column="0"/>
+                    <TextBox Name="AmountBox" Grid.Column="1"/>
+
+                </Grid>
+
+
+                <Grid Grid.Row="3" Grid.Column="9" Grid.ColumnSpan="3" Grid.RowSpan="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Content="Instructions:" Grid.Column="0"/>
+                <TextBox Name="InstructionBox" Grid.Column="1" />
+
+            </Grid>
+
+
+
+            <ListBox x:Name="RecipeListBox_Copy2"  IsSynchronizedWithCurrentItem="True"  ItemsSource="{Binding info}" DisplayMemberPath="CourseInfo"  SelectionChanged="RecipeBox_SelectionChanged" Grid.Column="10" Grid.RowSpan="7" Grid.Row="7" Grid.ColumnSpan="2" Margin="2,31,-2,31"/>
+
+                <Button Name="SubmitRecipeButton" Content="Submit Recipe" Click="SubmitRecipeButton_Click" Grid.Column="6" Grid.Row="13" Grid.ColumnSpan="6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                <Button Name="HomeButton" Content="Home"  Click="Home_Click" Grid.Column="11" Grid.Row="1" Grid.ColumnSpan="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+
+            </Grid>
+        </Border>
+    </Grid>
 </Window>
+
