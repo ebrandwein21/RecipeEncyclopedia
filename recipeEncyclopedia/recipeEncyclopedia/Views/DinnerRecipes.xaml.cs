@@ -26,7 +26,7 @@ namespace recipeEncyclopedia.Views
         private readonly RecipeService _recipeService = new RecipeService();
         private readonly UserRecipeService _userRecipeService = new UserRecipeService();
 
-        private List<Recipe> _recipes;
+        private List<Recipe> _recipes = new List<Recipe>();
 
         public DinnerRecipes()
         {
@@ -47,10 +47,13 @@ namespace recipeEncyclopedia.Views
 
         private void LoadDinnerRecipes()
         {
-            // Assuming Category ID 3 = Dinner
-            _recipes = _recipeService.GetByCategory(3);
 
-            DinnerRecipeList.ItemsSource = _recipes;
+            //load recipe hubs not working, getbycategory throwing null 
+
+            // Assuming Category ID 3 = Dinner
+            //_recipes = _recipeService.GetByCategory(3);
+
+           // DinnerRecipeList.ItemsSource = _recipes;
         }
 
         private void DinnerRecipeList_SelectionChanged(object sender, SelectionChangedEventArgs e)

@@ -47,9 +47,9 @@ namespace recipeEncyclopedia.Views
         private void LoadBreakfastRecipes()
         {
             // Assuming Category ID 1 = Breakfast
-            _recipes = _recipeService.GetByCategory(1);
+           // _recipes = _recipeService.GetByCategory(1);
 
-            BreakfastRecipeList.ItemsSource = _recipes;
+           // BreakfastRecipeList.ItemsSource = _recipes;
         }
 
         private void BreakfastRecipeList_SelectionChanged(object sender, SelectionChangedEventArgs e)
