@@ -80,6 +80,13 @@ namespace recipeEncyclopedia.Views
             this.Close();
         }
 
+        private void Login_Click(object sender, RoutedEventArgs e)
+        {
+            LoginWindow login = new LoginWindow();
+            login.Show();
+
+        }
+
 
     }
 }

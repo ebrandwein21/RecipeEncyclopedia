@@ -32,11 +32,12 @@ namespace recipeEncyclopedia.Views
             LoadLunchRecipes();
         }
 
-        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
-        }
+            LoginWindow login = new LoginWindow();
+            login.Show();
 
+        }
         private void Home_Click(object sender, RoutedEventArgs e)
         {
             MainWindow home = new MainWindow();
