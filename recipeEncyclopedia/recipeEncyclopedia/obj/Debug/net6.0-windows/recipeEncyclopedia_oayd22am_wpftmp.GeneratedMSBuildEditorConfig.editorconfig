@@ -1,0 +1,10 @@
+is_global = true
+build_property.TargetFramework = net6.0-windows
+build_property.TargetPlatformMinVersion = 7.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = recipeEncyclopedia_oayd22am_wpftmp
+build_property.ProjectDir = C:\Users\ebb4vh\OneDrive - University of Missouri\Documents\GitHub\LocalRecipe\RecipeEncyclopedia\recipeEncyclopedia\recipeEncyclopedia\

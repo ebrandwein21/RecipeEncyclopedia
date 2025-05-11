@@ -47,7 +47,7 @@
                 <Label
             Content="Please Enter Your Recipe" Background="Beige" BorderBrush="Transparent" FontSize="20"  Grid.Column="4"  Grid.Row ="1"  Grid.ColumnSpan="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
 
-                <ListBox x:Name="RecipeListBox"  IsSynchronizedWithCurrentItem="True"  ItemsSource="{Binding info}" DisplayMemberPath="CourseInfo"  SelectionChanged="RecipeBox_SelectionChanged" Grid.Column="0" Grid.RowSpan="9" Grid.Row="3" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                <ListBox x:Name="informationBox"  IsSynchronizedWithCurrentItem="True"  ItemsSource="{Binding recipeInfo}"  DisplayMemberPath="InformationToString" SelectionChanged="InformationBox_SelectionChanged" Grid.Column="0" Grid.RowSpan="9" Grid.Row="3" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
 
                 <Grid Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" >
                     <Grid.ColumnDefinitions>
@@ -101,7 +101,7 @@
                     </ListBox>
                 </Grid>
 
-                <ListBox x:Name="RecipeListBox_Copy"  IsSynchronizedWithCurrentItem="True"  ItemsSource="{Binding info}" DisplayMemberPath="CourseInfo"  SelectionChanged="RecipeBox_SelectionChanged" Grid.Column="5" Grid.RowSpan="9" Grid.Row="3" Grid.ColumnSpan="2"/>
+                <ListBox x:Name="IngredientListBox"  IsSynchronizedWithCurrentItem="True"  ItemsSource="{Binding recipeInput}" DisplayMemberPath="IngredienToString" SelectionChanged="IngredientBox_SelectionChanged" Grid.Column="5" Grid.RowSpan="9" Grid.Row="3" Grid.ColumnSpan="2"/>
 
 
                 <Grid Grid.Row="3" Grid.Column="7" Grid.ColumnSpan="2">
@@ -146,13 +146,15 @@
 
                 </Grid>
 
-                <ListBox x:Name="RecipeListBox_Copy2"  IsSynchronizedWithCurrentItem="True"  ItemsSource="{Binding info}" DisplayMemberPath="CourseInfo"  SelectionChanged="RecipeBox_SelectionChanged" Grid.Column="10" Grid.RowSpan="6" Grid.Row="7" Grid.ColumnSpan="2" Margin="2,31,-2,31"/>
+                <ListBox x:Name="InstructionListBox"  IsSynchronizedWithCurrentItem="True"  ItemsSource="{Binding recipeInfo}" SelectionChanged="Instruction_SelectionChanged" Grid.Column="10" Grid.RowSpan="6" Grid.Row="7" Grid.ColumnSpan="2" Margin="2,31,-2,31">
+                    <ListBox.ItemTemplate>
+                    <DataTemplate>
+                            <TextBlock Text="{Binding Instructions}" TextWrapping="Wrap"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+                </ListBox>
 
-                <Button Name="SubmitIngredientInfoButton" Content="Submit Ingredients" Click="SubmitIngredientInfo_Click" Grid.Row="13" Grid.ColumnSpan="3"   Grid.Column="5"/>
-                <Button Name="HomeButton" Content="Home"  Click="Home_Click" Grid.Column="11" Grid.Row="1" Grid.ColumnSpan="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-                <Button x:Name="SubmitInstructionButon" Content="Submit Recipe Instructions" Click="SubmitInstruction_Click" Grid.Row="13" Grid.ColumnSpan="3" />
-                <Button x:Name="SubmitRecipeInfoButton" Content="Submit Recipe Information" Click="SubmitRecipeInfo_Click" Grid.Row="13" Grid.ColumnSpan="3"  Grid.Column="9" />
-                <Button x:Name="SubmitRecipe" Content="Submit Recipe" Click="SubmitRecipeInfo_Click" Grid.Row="1" Grid.ColumnSpan="3" />
+                <Button x:Name="SubmitRecipe" Content="Submit Recipe" Click="SubmitRecipe_Click" Grid.Row="1" Grid.ColumnSpan="3" />
 
             </Grid>
         </Border>

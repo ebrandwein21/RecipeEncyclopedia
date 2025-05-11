@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +14,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Xml.Linq;
+using static MongoDB.Bson.Serialization.Serializers.SerializerHelper;
 
 namespace recipeEncyclopedia.Views
 {
@@ -25,6 +29,7 @@ namespace recipeEncyclopedia.Views
         public EnterRecipe()
         {
             InitializeComponent();
+            DataContext = this;
         }
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
@@ -39,18 +44,87 @@ namespace recipeEncyclopedia.Views
             this.Close();
         }
 
-        private void SubmitRecipeButton_Click(object sender, RoutedEventArgs e)
+       
+        private void SubmitRecipe_Click(object sender, RoutedEventArgs e)
         {
-
             MessageBox.Show("Button clicked!");
 
             string ingredient = IngredientBox.Text;
+            if(String.IsNullOrEmpty(ingredient))
+            {
+                MessageBox.Show("hey, lets put an ingredient in");
+                return;
+            }
+
             string name = EnterRecipeName.Text;
-            int serving = int.Parse(ServingTextBox.Text);
-            int duration = int.Parse(DurationBox.Text);
-            string keywords = KeywordBox.Text;
-            int amount = int.Parse(AmountBox.Text);
+            if (String.IsNullOrEmpty(name))
+            {
+                MessageBox.Show("hey, lets put a recipe name in");
+                return;
+            }
+
+            int serving;
+            if(String.IsNullOrEmpty(ServingTextBox.Text))
+            {
+                MessageBox.Show("hey! Lets enter a serving size");
+                return;
+            }
+
+            if (Int32.TryParse((string)ServingTextBox.Text, out serving) == false) //https://stackoverflow.com/questions/13335787/wpf-data-binding-exception-handling
+            {
+                MessageBox.Show("serving is a number of how many to feed");
+                return;
+            }
+            else
+            {
+                Int32.Parse(ServingTextBox.Text);
+            }
+
+            int duration;
+            if (String.IsNullOrEmpty(DurationBox.Text))
+            {
+                MessageBox.Show("hey! Lets enter a duration");
+                return;
+            }
+            if (Int32.TryParse((string)DurationBox.Text, out duration) == false) //https://stackoverflow.com/questions/13335787/wpf-data-binding-exception-handling
+            {
+                MessageBox.Show("duration is a number in minutes");
+                return;
+            }
+            else
+            {
+                Int32.Parse(DurationBox.Text);
+            }
+
+            string keyword = KeywordBox.Text;
+            if (String.IsNullOrEmpty(keyword))
+            {
+                MessageBox.Show("hey! Lets enter a keyword");
+                return;
+            }
+
             string instructions = InstructionBox.Text;
+            if (String.IsNullOrEmpty(instructions))
+            {
+                MessageBox.Show("hey! Lets enter some instructions");
+                return;
+            }
+            int amount;
+            if (String.IsNullOrEmpty(AmountBox.Text))
+            {
+                MessageBox.Show("hey! Lets enter an Amount to measure");
+                return;
+            }
+            if (Int32.TryParse((string)AmountBox.Text, out amount) == false) //https://stackoverflow.com/questions/13335787/wpf-data-binding-exception-handling
+            {
+                MessageBox.Show("Measurement is a number");
+                return;
+            }
+            else
+            {
+                Int32.Parse(AmountBox.Text);
+            }
+
 
             recipeEncyclopedia.Models.Recipe recipe = new recipeEncyclopedia.Models.Recipe();
 
@@ -58,14 +132,16 @@ namespace recipeEncyclopedia.Views
             recipe.Name = name;
             recipe.Serving = serving;
             recipe.TotalTime = duration;
-            recipe.Tag = keywords;
-            recipe.MeasurementAmount = amount;
+            recipe.Keywords = keyword;
             recipe.Instructions = instructions;
-            
+            recipe.MeasurementAmount = amount;
+
 
             recipeInput.Add(recipe);
 
-            RecipeListBox.ItemsSource = recipeInput;
+            informationBox.ItemsSource = recipeInput;
+            IngredientListBox.ItemsSource = recipeInput;
+            InstructionListBox.ItemsSource = recipeInput;
 
             IngredientBox.Clear();
             EnterRecipeName.Clear();
@@ -74,35 +150,50 @@ namespace recipeEncyclopedia.Views
             KeywordBox.Clear();
             AmountBox.Clear();
             InstructionBox.Clear();
-
-
         }
 
-        
-
-        public void RecipeBox_SelectionChanged(object sender, RoutedEventArgs e)
+        private void IngredientBox_SelectionChanged(object sender, RoutedEventArgs e)
         {
-
+            if (informationBox.SelectedItem is recipeEncyclopedia.Models.Recipe selectedRecipeIngredient)
+            {
+                IngredientBox.Text = selectedRecipeIngredient.Ingredients.ToString();
+                AmountBox.Text = selectedRecipeIngredient.MeasurementAmount.ToString();
+                MeasurementChoice.SelectedIndex = selectedRecipeIngredient.Measurement;
+            }
         }
 
-        private void EnterRecipeName_TextChanged(object sender, TextChangedEventArgs e)
+        private void Instruction_SelectionChanged(object sender, RoutedEventArgs e)
         {
-
+            if (IngredientListBox.SelectedItem is recipeEncyclopedia.Models.Recipe selectedRecipeInstruction)
+            {
+                InstructionBox.Text = selectedRecipeInstruction.Instructions;
+            }
         }
-
-        private void RecipeBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void InformationBox_SelectionChanged(object sender, RoutedEventArgs e)
         {
+            if (InstructionListBox.SelectedItem is recipeEncyclopedia.Models.Recipe selectedRecipeInfo)
+            {
+                EnterRecipeName.Text = selectedRecipeInfo.Name;
+                ServingTextBox.Text = selectedRecipeInfo.Serving.ToString();
+                DurationBox.Text = selectedRecipeInfo.TotalTime.ToString();
+                KeywordBox.Text = selectedRecipeInfo.Tags.ToString();
+                string infoString = selectedRecipeInfo.InformationToString;
 
+
+
+                foreach (int index in selectedRecipeInfo.Categories)
+                {
+                    if(index >= 0 && index < selectedRecipeInfo.Categories.Count )
+                    {
+                        CategorySelection.SelectedItems.Add(CategorySelection.Items[index]); //https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.listview.selecteditems?view=windowsdesktop-9.0
+                    }
+                }
+
+               
+               
+            }
+            
         }
 
-        private void CategorySelection_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-        private void InstructionBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
     }
 }

@@ -17,8 +17,7 @@ namespace recipeEncyclopedia.Models
         public string Name { get; set; }
 
         public List<string> Ingredients { get; set; }
-
-        public string Ingredient { get; set; }
+        public String Ingredient { get; set; }
         public int Allergen { get; set; }
         public int Measurement { get; set; }
         public int Serving { get; set; }
@@ -26,9 +25,34 @@ namespace recipeEncyclopedia.Models
         public int MeasurementAmount { get; set; }
         public string Instructions { get; set; }
         public List<string> Tags { get; set; }
+        public String Keywords { get; set; }
 
-        public string Tag { get; set; }
-        public string Category { get; set; }
+        public List<int> Categories { get; set; }
         public int TotalTime { get; set; }
+
+        public String IngredienToString
+        {
+            get
+            {
+                return $"Ingredient {Ingredient}, Measurement {Measurement}, Serving Size {Serving}";
+            }
+        }
+
+        public String InstructionToString
+        {
+            get
+            {
+                return $"{Instructions}";
+            }
+        }
+
+        public String InformationToString
+        {
+            get
+            {
+                return $"Recipe {Name} will take {TotalTime} Minutes Long, It will Serve {Serving}, it is tagged as {Keywords} and is a {Categories} meal ";
+            }
+        }
     }
+   
 }
