@@ -1,4 +1,5 @@
-﻿using System.Configuration;
+﻿using recipeEncyclopedia.Data;
+using System.Configuration;
 using System.Data;
 using System.Windows;
 
@@ -9,6 +10,11 @@ namespace recipeEncyclopedia
     /// </summary>
     public partial class App : Application
     {
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            //RecipeSeed.SeedRecipes();
+        }
     }
+
 
 }

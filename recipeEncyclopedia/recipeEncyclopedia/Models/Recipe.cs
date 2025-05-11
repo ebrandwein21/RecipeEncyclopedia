@@ -24,7 +24,6 @@ namespace recipeEncyclopedia.Models
 
         public int MeasurementAmount { get; set; }
         public string Instructions { get; set; }
-        public List<string> Tags { get; set; }
         public String Keywords { get; set; }
 
         public List<int> Categories { get; set; }

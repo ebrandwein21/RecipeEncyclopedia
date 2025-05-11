@@ -179,7 +179,7 @@ namespace recipeEncyclopedia.Views
                 EnterRecipeName.Text = selectedRecipeInfo.Name;
                 ServingTextBox.Text = selectedRecipeInfo.Serving.ToString();
                 DurationBox.Text = selectedRecipeInfo.TotalTime.ToString();
-                KeywordBox.Text = selectedRecipeInfo.Tags.ToString();
+                //KeywordBox.Text = selectedRecipeInfo.Tags.ToString();
                 string infoString = selectedRecipeInfo.InformationToString;
 
 
