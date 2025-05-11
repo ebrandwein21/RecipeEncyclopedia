@@ -87,7 +87,7 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <TextBlock Text="Recipe Details" FontSize="25" FontWeight="Bold" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"/>
-            <Border BorderBrush="DarkOliveGreen" BorderThickness="1" Padding="10" Background="Transparent" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3">
+            <Border BorderBrush="DarkOliveGreen" BorderThickness="1" Background="Transparent" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3">
                 <TextBlock x:Name="BakingDetailsText"
                TextWrapping="Wrap"
                FontSize="16"

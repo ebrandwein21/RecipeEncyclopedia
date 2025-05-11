@@ -34,10 +34,11 @@ namespace recipeEncyclopedia
             this.Close();
         }
 
-        private void IngredientsList_Click(object sender, RoutedEventArgs e)
+        private void FavoriteRecipe_Click(object sender, RoutedEventArgs e)
         {
-            IngredientWindow ingredient = new IngredientWindow();
-            ingredient.Show();
+            //if user is logged in
+            MyFavoriteRecipes favoriteRecipe = new MyFavoriteRecipes();
+            favoriteRecipe.Show();
             this.Close();
         }
 

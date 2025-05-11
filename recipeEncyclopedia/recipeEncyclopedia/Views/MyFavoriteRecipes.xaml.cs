@@ -17,16 +17,18 @@ namespace recipeEncyclopedia.Views
     /// <summary>
     /// Interaction logic for IngredientWindow.xaml
     /// </summary>
-    public partial class IngredientWindow : Window
+    public partial class MyFavoriteRecipes : Window
     {
-        public IngredientWindow()
+        public MyFavoriteRecipes()
         {
             InitializeComponent();
         }
 
-        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        private void Login_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            LoginWindow login = new LoginWindow();
+            login.Show();
+
         }
         private void Home_Click(object sender, RoutedEventArgs e)
         {

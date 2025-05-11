@@ -63,7 +63,12 @@
         </Button>
         
         <Button
-          Content="Ingredients List"  Grid.Row="2" Grid.Column="7"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="IngredientsList_Click">
+          Content="Favorite Recipes"  Grid.Row="2" Grid.Column="7"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="FavoriteRecipe_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
         </Button>
 
         <Button
