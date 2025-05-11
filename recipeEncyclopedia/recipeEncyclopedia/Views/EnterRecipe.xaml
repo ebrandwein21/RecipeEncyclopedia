@@ -44,8 +44,6 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-
-
                 <Label
             Content="Please Enter Your Recipe" Background="Beige" BorderBrush="Transparent" FontSize="20"  Grid.Column="4"  Grid.Row ="1"  Grid.ColumnSpan="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
 
@@ -138,23 +136,23 @@
 
                 </Grid>
 
-
                 <Grid Grid.Row="3" Grid.Column="9" Grid.ColumnSpan="3" Grid.RowSpan="4">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <Label Content="Instructions:" Grid.Column="0"/>
-                <TextBox Name="InstructionBox" Grid.Column="1" />
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Instructions:" Grid.Column="0"/>
+                    <TextBox Name="InstructionBox" Grid.Column="1" />
 
-            </Grid>
+                </Grid>
 
+                <ListBox x:Name="RecipeListBox_Copy2"  IsSynchronizedWithCurrentItem="True"  ItemsSource="{Binding info}" DisplayMemberPath="CourseInfo"  SelectionChanged="RecipeBox_SelectionChanged" Grid.Column="10" Grid.RowSpan="6" Grid.Row="7" Grid.ColumnSpan="2" Margin="2,31,-2,31"/>
 
-
-            <ListBox x:Name="RecipeListBox_Copy2"  IsSynchronizedWithCurrentItem="True"  ItemsSource="{Binding info}" DisplayMemberPath="CourseInfo"  SelectionChanged="RecipeBox_SelectionChanged" Grid.Column="10" Grid.RowSpan="7" Grid.Row="7" Grid.ColumnSpan="2" Margin="2,31,-2,31"/>
-
-                <Button Name="SubmitRecipeButton" Content="Submit Recipe" Click="SubmitRecipeButton_Click" Grid.Column="6" Grid.Row="13" Grid.ColumnSpan="6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                <Button Name="SubmitIngredientInfoButton" Content="Submit Ingredients" Click="SubmitIngredientInfo_Click" Grid.Row="13" Grid.ColumnSpan="3"   Grid.Column="5"/>
                 <Button Name="HomeButton" Content="Home"  Click="Home_Click" Grid.Column="11" Grid.Row="1" Grid.ColumnSpan="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                <Button x:Name="SubmitInstructionButon" Content="Submit Recipe Instructions" Click="SubmitInstruction_Click" Grid.Row="13" Grid.ColumnSpan="3" />
+                <Button x:Name="SubmitRecipeInfoButton" Content="Submit Recipe Information" Click="SubmitRecipeInfo_Click" Grid.Row="13" Grid.ColumnSpan="3"  Grid.Column="9" />
+                <Button x:Name="SubmitRecipe" Content="Submit Recipe" Click="SubmitRecipeInfo_Click" Grid.Row="1" Grid.ColumnSpan="3" />
 
             </Grid>
         </Border>
