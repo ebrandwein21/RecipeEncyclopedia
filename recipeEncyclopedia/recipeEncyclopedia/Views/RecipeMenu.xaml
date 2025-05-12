@@ -7,126 +7,140 @@
         mc:Ignorable="d"
         Title="RecipeMenu" Height="450" Width="800">
     <Grid>
-        <Border 
-            Background="Beige" BorderBrush="DarkOliveGreen" BorderThickness="10" Grid.RowSpan="15" Grid.ColumnSpan="13">
+        <Border Background="Beige" BorderBrush="DarkOliveGreen" BorderThickness="10" Grid.RowSpan="15" Grid.ColumnSpan="19">
             <Grid x:Name="UserRecipeGrid" Margin="5">
 
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
+                <!-- Row and Column Definitions -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
 
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
+                <Grid.ColumnDefinitions>
+                    <!-- 19 equal-width columns -->
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
 
+                <!-- Title -->
+                <Label Content="Welcome To The Recipe Hub"
+                       Background="Beige" BorderBrush="Transparent"
+                       FontSize="32" HorizontalAlignment="Center" VerticalAlignment="Center"
+                       Grid.ColumnSpan="11" Grid.Column="4" Grid.Row="0"/>
 
-        <Label
-            Content="Welcome To The Recipe Hub" Background="Beige" BorderBrush="Transparent" FontSize="32" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="11"  Grid.Column="4" Grid.Row="0">
-        </Label>
-        <Button
-          Content=" Ethnic Recipes"  Grid.Row="4" Grid.Column="8" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="InternationalRecipe_Click">
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="5"/>
-                </Style>
-            </Button.Resources>
-        </Button>
+                <!-- Home Button (Left) -->
+                <Button Content="Home 🏠︎"
+                        Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
+                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                        Click="Home_Click" Margin="5">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
 
-        <Button
-          Content="Breakfast Recipes"  Grid.Row="2" Grid.Column="2" Grid.ColumnSpan ="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="BreakfastRecipe_Click">
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="5"/>
-                </Style>
-            </Button.Resources>
-        </Button>
+                <!-- View All Recipes Button (Right) -->
+                <Button Content="View All Recipes"
+                        Grid.Row="1" Grid.Column="16" Grid.ColumnSpan="3"
+                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                        Click="ViewAllRecipes_Click" Margin="5">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
 
+                <!-- Recipe Category Buttons -->
+                <Button Content="Breakfast Recipes"
+                        Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="4"
+                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                        Click="BreakfastRecipe_Click">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
 
-        <Grid Grid.Row="1" Grid.Column="17" Grid.ColumnSpan="2">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-                </Grid>
+                <Button Content="Lunch Recipes"
+                        Grid.Row="2" Grid.Column="8" Grid.ColumnSpan="4"
+                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                        Click="LunchRecipes_Click">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
 
+                <Button Content="Dinner Recipes"
+                        Grid.Row="2" Grid.Column="14" Grid.ColumnSpan="4"
+                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                        Click="DinnerRecipes_Click">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
 
-        <Button
-          Content="Lunch Recipes"  Grid.Row="2" Grid.Column="8"  Grid.ColumnSpan="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="LunchRecipes_Click">
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="5"/>
-                </Style>
-            </Button.Resources>
-        </Button>
+                <Button Content="Vegan Recipes"
+                        Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="4"
+                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                        Click="Vegan_Click">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
 
-        <Button
-          Content="Dinner Recipes"  Grid.Row="2" Grid.Column="14" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="DinnerRecipes_Click">
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="5"/>
-                </Style>
-            </Button.Resources>
-        </Button>
+                <Button Content="Ethnic Recipes"
+                        Grid.Row="4" Grid.Column="8" Grid.ColumnSpan="4"
+                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                        Click="InternationalRecipe_Click">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
 
-                <Button
-          Content="Vegan Recipes"  Grid.Row="4" Grid.Column="2"  Grid.ColumnSpan="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="Vegan_Click">
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="5"/>
-                </Style>
-            </Button.Resources>
-        </Button>
-
-
-        <Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <Button
-          Content="Home 🏠︎"  Grid.Row="0" Grid.Column="1"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="Home_Click">
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="5"/>
-                </Style>
-            </Button.Resources>
-        </Button>
-        </Grid>
-
-        <Button Content="Baking Recipes"  Grid.Row="4" Grid.Column="14"  Grid.ColumnSpan="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="BakingRecipe_Click">
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="5"/>
-                </Style>
-            </Button.Resources>
-        </Button>
+                <Button Content="Baking Recipes"
+                        Grid.Row="4" Grid.Column="14" Grid.ColumnSpan="4"
+                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                        Click="BakingRecipe_Click">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
 
             </Grid>
-
         </Border>
-
     </Grid>
 </Window>

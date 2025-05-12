@@ -87,6 +87,13 @@ namespace recipeEncyclopedia.Views
 
         }
 
+        private void ViewAllRecipes_Click(object sender, RoutedEventArgs e)
+        {
+            AllRecipesView allView = new AllRecipesView();
+            allView.Show();
+            this.Close();
+        }
+
 
     }
 }

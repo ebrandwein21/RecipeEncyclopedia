@@ -28,7 +28,7 @@ namespace recipeEncyclopedia.Views
         public MyFavoriteRecipes()
         {
             InitializeComponent();
-            informationBox.ItemsSource = ViewModel.RecipeViewModel.favoriteRecipe;
+            LoadFavorites();
             DataContext = this;
         }
 
@@ -58,12 +58,23 @@ namespace recipeEncyclopedia.Views
             }
         }
 
-        
+
 
         private void EditFavorite_Click(object sender, RoutedEventArgs e)
         {
-            //edit selected
+            var selectedRecipe = informationBox.SelectedItem as Recipe;
+
+            if (selectedRecipe == null)
+            {
+                MessageBox.Show("Please select a recipe to edit.");
+                return;
+            }
+
+            var editWindow = new EditFavoriteRecipe(selectedRecipe);
+            editWindow.Show();
+            this.Close(); // Or use .Hide() if you want to return here later
         }
+
 
         private void AddToShoppingList_Click(object sender, RoutedEventArgs e)
         {
@@ -113,6 +124,33 @@ namespace recipeEncyclopedia.Views
 
             MessageBox.Show($"{selectedRecipe.Name} ingredients added to your shopping list.");
         }
+
+        private void LoadFavorites()
+        {
+            var user = AppSession.CurrentUser;
+            if (user == null)
+            {
+                MessageBox.Show("You must be logged in to view favorites.");
+                return;
+            }
+            
+            var recipeService = new RecipeService();
+            var userRecipeService = new UserRecipeService();
+
+            var favoriteLinks = userRecipeService.GetByUserId(user.Id);
+            var recipeIds = favoriteLinks.Select(f => f.RecipeId).ToList();
+
+            var recipes = recipeService.GetByIds(recipeIds);
+
+            ViewModel.RecipeViewModel.favoriteRecipe.Clear();
+            foreach (var recipe in recipes)
+            {
+                ViewModel.RecipeViewModel.favoriteRecipe.Add(recipe);
+            }
+
+            informationBox.ItemsSource = ViewModel.RecipeViewModel.favoriteRecipe;
+        }
+
 
     }
 }

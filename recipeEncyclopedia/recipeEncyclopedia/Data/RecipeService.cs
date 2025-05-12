@@ -35,5 +35,16 @@ namespace recipeEncyclopedia.Data
             _collection.InsertOne(newRecipe);
 
         }
+
+        public void Update(string id, Recipe updated)
+        {
+            _collection.ReplaceOne(r => r.Id == id, updated);
+        }
+
+        public List<Recipe> GetByIds(List<string> ids)
+        {
+            return _collection.Find(r => ids.Contains(r.Id)).ToList();
+        }
+
     }
 }

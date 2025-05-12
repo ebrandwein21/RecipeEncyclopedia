@@ -83,6 +83,28 @@ namespace recipeEncyclopedia.Views
             MessageBox.Show($"{ingredientToRemove.Name} removed from your shopping list.");
         }
 
+        private void ClearShoppingList_Click(object sender, RoutedEventArgs e)
+        {
+            var user = AppSession.CurrentUser;
+            if (user == null)
+            {
+                MessageBox.Show("You must be logged in to clear the shopping list.");
+                return;
+            }
+
+            var service = new ShoppingListService();
+            var userLists = service.GetByUser(user.Id);
+
+            foreach (var list in userLists)
+            {
+                service.Delete(list.Id);
+            }
+
+            ShoppingListBox.ItemsSource = null;
+            _currentIngredients.Clear();
+            MessageBox.Show("Your shopping list has been cleared.");
+        }
+
 
     }
 }

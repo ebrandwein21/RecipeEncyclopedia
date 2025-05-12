@@ -91,13 +91,13 @@
                             <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
 
-                        <Button Content="Login" Click="Login_Click" Grid.Column="0" Grid.ColumnSpan="3">
+                        <!--<Button Content="Login" Click="Login_Click" Grid.Column="0" Grid.ColumnSpan="3">
                             <Button.Resources>
                                 <Style TargetType="Border">
                                     <Setter Property="CornerRadius" Value="5"/>
                                 </Style>
                             </Button.Resources>
-                        </Button>
+                        </Button>-->
 
 
 

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:recipeEncyclopedia.Views"
         mc:Ignorable="d"
-        Title="EnterRecipe" Height="450" Width="800">
+        Title="EnterRecipe" Height="600" Width="800">
     <Grid Background="Beige" Margin="0,0,0,-6">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>

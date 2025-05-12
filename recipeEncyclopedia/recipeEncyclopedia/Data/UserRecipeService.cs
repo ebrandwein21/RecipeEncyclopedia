@@ -34,5 +34,19 @@ namespace recipeEncyclopedia.Data
 
         public void Delete(string id) =>
             _collection.DeleteOne(ur => ur.Id == id);
+
+        public void ReplaceFavorite(string userId, string oldRecipeId, string newRecipeId)
+        {
+            var context = new MongoContext();
+            var collection = context.UserRecipes;
+
+            var filter = Builders<UserRecipe>.Filter.Where(fr =>
+                fr.UserId == userId && fr.RecipeId == oldRecipeId);
+
+            var update = Builders<UserRecipe>.Update.Set("RecipeId", newRecipeId);
+            collection.UpdateOne(filter, update);
+        }
+
     }
+
 }
