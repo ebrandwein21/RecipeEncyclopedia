@@ -113,7 +113,7 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <Button
-          Content="Home"  Grid.Row="0" Grid.Column="1"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="Home_Click">
+          Content="Home 🏠︎"  Grid.Row="0" Grid.Column="1"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="Home_Click">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="5"/>

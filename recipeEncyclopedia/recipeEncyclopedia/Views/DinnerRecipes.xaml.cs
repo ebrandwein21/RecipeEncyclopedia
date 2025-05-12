@@ -25,8 +25,10 @@ namespace recipeEncyclopedia.Views
         private readonly MongoContext _context = new MongoContext();
         private readonly RecipeService _recipeService = new RecipeService();
         private readonly UserRecipeService _userRecipeService = new UserRecipeService();
-
         private List<Recipe> _recipes = new List<Recipe>();
+
+
+
 
         public DinnerRecipes()
         {
@@ -55,20 +57,52 @@ namespace recipeEncyclopedia.Views
             // Assuming Category ID 3 = Dinner
             //_recipes = _recipeService.GetByCategory(3);
 
-           // DinnerRecipeList.ItemsSource = _recipes;
-        }
+            // DinnerRecipeList.ItemsSource = _recipes;
 
+            //hardcoded recipes for now below
+            _recipes = new List<Recipe>
+        {
+            new Recipe
+            {
+                Name = "Spaghetti Bolognese",
+                Ingredients = new List<string> { "spaghetti", "ground beef", "tomato sauce", "onion", "garlic" },
+                Ingredient = "spaghetti",
+                Allergen = "none",
+                MeasurementAmount = 2,
+                Serving = 4,
+                MeasurementType = "cups",
+                Instructions = "Boil spaghetti. Cook beef. Mix with sauce. Combine and serve.",
+                Keywords = "italian, pasta",
+                Categories = new List<int> { 3 },
+                TotalTime = 45
+            },
+            new Recipe
+            {
+                Name = "CheeseBurger",
+                Ingredients = new List<string> { "cheese", "ground beef", "tomato", "onion", "pickle", "lettuce" },
+                Ingredient = "ground beef",
+                Allergen = "dairy",
+                MeasurementAmount = 1,
+                Serving = 2,
+                MeasurementType = "pound",
+                Instructions = "Smush Ground Beef into patties, Cut up vegetables, Cook On Grill, flipping patties halfway through.",
+                Keywords = "American, Fast",
+                Categories = new List<int> { 3 },
+                TotalTime = 15
+            },
+        };
+            DinnerRecipeList.ItemsSource = _recipes;
+
+    }
+   
         private void DinnerRecipeList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var selectedRecipe = DinnerRecipeList.SelectedItem as Recipe;
             if (selectedRecipe != null)
             {
-                string details = $"{selectedRecipe.Name}\n\n" +
-                        $"Total Time: {selectedRecipe.TotalTime} minutes\n" +
-                        $"Servings: {selectedRecipe.Serving}\n\n" +
-                        $"Ingredients:\n - {string.Join("\n - ", selectedRecipe.Ingredients)}\n\n" +
-                        $"Instructions:\n{selectedRecipe.Instructions}\n\n" +
-                        $"Keywords: {selectedRecipe.Keywords}\n\n";
+                string details = $"{selectedRecipe.Name} has the ingredients: {string.Join(',', selectedRecipe.Ingredients)}" +
+                    $" \n \n use {selectedRecipe.MeasurementAmount} {selectedRecipe.MeasurementType} of {selectedRecipe.Ingredient}. The recipe serves {selectedRecipe.Serving} and takes {selectedRecipe.TotalTime} Minutes. " +
+                    $"\n \n Here are the instructions: {selectedRecipe.Instructions}";
 
                 DinnerDetailsText.Text = details;
             }
@@ -78,6 +112,7 @@ namespace recipeEncyclopedia.Views
         {
             var selectedRecipe = DinnerRecipeList.SelectedItem as Recipe;
             var user = AppSession.CurrentUser;
+            MyFavoriteRecipes favorites = new MyFavoriteRecipes();
 
             if (selectedRecipe == null)
             {
@@ -110,7 +145,11 @@ namespace recipeEncyclopedia.Views
 
             _userRecipeService.Add(newFavorite);
             MessageBox.Show($"'{selectedRecipe.Name}' added to your favorites.");
+            favorites.Show();
+            this.Close();
+
         }
+    
 
     }
 }

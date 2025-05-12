@@ -56,28 +56,80 @@ namespace recipeEncyclopedia.Views
             //_recipes = _recipeService.GetByCategory(3);
 
             // DinnerRecipeList.ItemsSource = _recipes;
-        }
 
-        private void BakingRecipeList_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            var selectedRecipe = BakingRecipeList.SelectedItem as Recipe;
-            if (selectedRecipe != null)
+            //hardcoded recipes for now below
+            _recipes = new List<Recipe>
             {
-                string details = $"{selectedRecipe.Name}\n\n" +
-                        $"Total Time: {selectedRecipe.TotalTime} minutes\n" +
-                        $"Servings: {selectedRecipe.Serving}\n\n" +
-                        $"Ingredients:\n - {string.Join("\n - ", selectedRecipe.Ingredients)}\n\n" +
-                        $"Instructions:\n{selectedRecipe.Instructions}\n\n" +
-                        $"Keywords: {selectedRecipe.Keywords}\n\n";
+                new Recipe
+                {
+                    Name = "Chocolate Chip Cookies",
+                    Ingredients = new List<string> { "Flour", "Chocolate Chips", "Sugar", "Eggs" },
+                    Ingredient = "Flour",
+                    Allergen = "Dairy",
+                    MeasurementAmount = 3.0,
+                    Serving = 6,
+                    MeasurementType = "cups",
+                    Instructions = "Crack eggs into flour and whisk, add sugar, drop some chocolate chips in after stirring and bake at 425f for 15 minutes.",
+                    Keywords = "dessert, comfort",
+                    Categories = new List<int> { 3 },
+                    TotalTime = 25
+                },
+                new Recipe
+                {
+                    Name = "Cupcakes",
+                    Ingredients = new List<string> {  "Flour", "Chocolate", "Sugar", "Eggs", "Vanilla", "Frosting" },
+                    Ingredient = "Flour",
+                    Allergen = "dairy",
+                    MeasurementAmount = 2.0,
+                    Serving = 8,
+                    MeasurementType = "cups",
+                    Instructions = "Crack eggs into flour and whisk, add sugar, Chocolate and vanilla, bake at 425f for 25 minutes, add layer of frosting after baking.",
+                    Keywords = "dessert, comfort",
+                    Categories = new List<int> { 3 },
+                    TotalTime = 60
+                },
 
-                BakingDetailsText.Text = details;
-            }
+                new Recipe
+                {
+                    Name = "Banana Bread",
+                    Ingredients = new List<string> { "bananas", "Flour", "Sugar", "Chocolate Chips", "Eggs"},
+                    Ingredient = "Banana",
+                    Allergen = "dairy",
+                    MeasurementAmount = .5,
+                    Serving = 5,
+                    MeasurementType = "pounds",
+                    Instructions = "Crack eggs into flour and whisk, add bananas and sugar, add chocolate chips, bake at 425f for 25 minutes.",
+                    Keywords = "dessert, fruit",
+                    Categories = new List<int> { 3 },
+                    TotalTime = 35
+                }
+            };
+            BakingRecipeList.ItemsSource = _recipes;
         }
+
+
+            private void BakingRecipeList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+            {
+                var selectedRecipe = BakingRecipeList.SelectedItem as Recipe;
+                if (selectedRecipe != null)
+                {
+                    string details = $"{selectedRecipe.Name} has the ingredients: {string.Join(',', selectedRecipe.Ingredients)}" +
+                        $" \n \n use {selectedRecipe.MeasurementAmount} {selectedRecipe.MeasurementType} of {selectedRecipe.Ingredient}. The recipe serves {selectedRecipe.Serving} and takes {selectedRecipe.TotalTime} Minutes. " +
+                        $"\n \n Here are the instructions: {selectedRecipe.Instructions}";
+
+                    BakingDetailsText.Text = details;
+                }
+            }
+        
+
+
+
 
         private void AddToFavorites_Click(object sender, RoutedEventArgs e)
         {
             var selectedRecipe = BakingRecipeList.SelectedItem as Recipe;
             var user = AppSession.CurrentUser;
+            MyFavoriteRecipes favorites = new MyFavoriteRecipes();
 
             if (selectedRecipe == null)
             {
@@ -110,6 +162,8 @@ namespace recipeEncyclopedia.Views
 
             _userRecipeService.Add(newFavorite);
             MessageBox.Show($"'{selectedRecipe.Name}' added to your favorites.");
+            favorites.Show();
+            this.Close();
         }
 
     }

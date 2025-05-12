@@ -73,6 +73,7 @@ namespace recipeEncyclopedia.Views
         {
             var selectedRecipe = LunchRecipeList.SelectedItem as Recipe;
             var user = AppSession.CurrentUser;
+            MyFavoriteRecipes favorites = new MyFavoriteRecipes();
 
             if (selectedRecipe == null)
             {
@@ -105,6 +106,8 @@ namespace recipeEncyclopedia.Views
 
             _userRecipeService.Add(newFavorite);
             MessageBox.Show($"'{selectedRecipe.Name}' added to your favorites.");
+            favorites.Show();
+            favorites.Close();
         }
     }
 }

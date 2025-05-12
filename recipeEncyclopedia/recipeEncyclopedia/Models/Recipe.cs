@@ -18,11 +18,13 @@ namespace recipeEncyclopedia.Models
 
         public List<string> Ingredients { get; set; }
         public String Ingredient { get; set; }
-        public int Allergen { get; set; }
-        public int Measurement { get; set; }
+        public string Allergen { get; set; }
+
         public int Serving { get; set; }
 
-        public int MeasurementAmount { get; set; }
+        public double MeasurementAmount { get; set; }
+
+        public string MeasurementType { get; set; }
         public string Instructions { get; set; }
         public String Keywords { get; set; }
 
@@ -33,7 +35,7 @@ namespace recipeEncyclopedia.Models
         {
             get
             {
-                return $"Ingredient {Ingredient}, Measurement {Measurement}, Serving Size {Serving}";
+                return $"Ingredient {Ingredient}, Measurement {MeasurementAmount}, Serving Size {Serving}";
             }
         }
 
@@ -55,3 +57,5 @@ namespace recipeEncyclopedia.Models
     }
    
 }
+
+

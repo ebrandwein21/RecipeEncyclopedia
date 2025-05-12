@@ -36,5 +36,19 @@ namespace recipeEncyclopedia.Views
             home.Show();
             this.Close();
         }
+
+        private void Favorites_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+        }
+
+        private void DeleteFavorite_Click(object sender, RoutedEventArgs e)
+        {
+            //delete selected
+        }
+
+        private void EditFavorite_Click(object sender, RoutedEventArgs e)
+        {
+            //edit selected
+        }
     }
-}
+ }

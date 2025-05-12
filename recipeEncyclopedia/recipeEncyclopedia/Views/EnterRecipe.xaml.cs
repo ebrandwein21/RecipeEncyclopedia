@@ -112,20 +112,29 @@ namespace recipeEncyclopedia.Views
                 MessageBox.Show("hey! Lets enter some instructions");
                 return;
             }
+
             int amount;
             if (String.IsNullOrEmpty(AmountBox.Text))
             {
-                MessageBox.Show("hey! Lets enter an Amount to measure");
+                MessageBox.Show("hey! Lets enter a Measurement Amount");
                 return;
             }
             if (Int32.TryParse((string)AmountBox.Text, out amount) == false) //https://stackoverflow.com/questions/13335787/wpf-data-binding-exception-handling
             {
-                MessageBox.Show("Measurement is a number");
+                MessageBox.Show("measurement is a number");
                 return;
             }
             else
             {
-                Int32.Parse(AmountBox.Text);
+                Int32.Parse(DurationBox.Text);
+            }
+
+
+            string allergen = AllergenBox.Text;
+            if (String.IsNullOrEmpty(allergen))
+            {
+                MessageBox.Show("hey! Lets enter a measurement");
+                return;
             }
 
 
@@ -137,7 +146,7 @@ namespace recipeEncyclopedia.Views
             recipe.TotalTime = duration;
             recipe.Keywords = keyword;
             recipe.Instructions = instructions;
-            recipe.MeasurementAmount = amount;
+            recipe.Allergen = allergen;
 
 
             recipeInput.Add(recipe);
@@ -161,7 +170,7 @@ namespace recipeEncyclopedia.Views
             {
                 IngredientBox.Text = selectedRecipeIngredient.Ingredients.ToString();
                 AmountBox.Text = selectedRecipeIngredient.MeasurementAmount.ToString();
-                MeasurementChoice.SelectedIndex = selectedRecipeIngredient.Measurement;
+                AllergenBox.Text = selectedRecipeIngredient.Allergen.ToString();
             }
         }
 
@@ -192,9 +201,6 @@ namespace recipeEncyclopedia.Views
                     }
                 }
             }
-
-
-            
         }
 
         private void Login_Click(object sender, RoutedEventArgs e)
