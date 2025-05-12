@@ -1,0 +1,17 @@
+﻿<Window x:Class="recipeEncyclopedia.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Login/Register" Height="300" Width="300">
+    <Grid Margin="20">
+        
+            <TextBlock Text="Username"/>
+            <TextBox x:Name="UsernameBox" Margin="0,5"/>
+
+            <TextBlock/>
+            <PasswordBox x:Name="PasswordBox" Margin="79,24,51,185"/>
+       
+            <Button Content="Register" Width="174" Click="Register_Click" Height="38" Margin="43,185,43,21"/>
+        
+    </Grid>
+</Window>
+

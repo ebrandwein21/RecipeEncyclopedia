@@ -69,7 +69,7 @@ namespace recipeEncyclopedia.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/recipeEncyclopedia;component/views/myfavoriterecipes.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/recipeEncyclopedia;V1.0.0.0;component/views/myfavoriterecipes.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\MyFavoriteRecipes.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

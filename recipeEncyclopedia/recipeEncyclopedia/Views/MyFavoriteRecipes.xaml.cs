@@ -26,7 +26,7 @@ namespace recipeEncyclopedia.Views
         {
             InitializeComponent();
             informationBox.ItemsSource = ViewModel.RecipeViewModel.favoriteRecipe;
-
+            DataContext = this;
         }
 
         private void Login_Click(object sender, RoutedEventArgs e)
@@ -44,11 +44,22 @@ namespace recipeEncyclopedia.Views
 
         private void Favorites_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-        }
 
+        }
         private void DeleteFavorite_Click(object sender, RoutedEventArgs e)
         {
-            //delete selected
+
+            var selectedItem = informationBox.SelectedItem as Models.Recipe;
+
+            if (selectedItem != null)
+            {
+                ViewModel.RecipeViewModel.favoriteRecipe.Remove(selectedItem);
+            }
+            else
+            {
+                MessageBox.Show("cannot be deleted");
+            }
+
         }
 
         private void EditFavorite_Click(object sender, RoutedEventArgs e)
