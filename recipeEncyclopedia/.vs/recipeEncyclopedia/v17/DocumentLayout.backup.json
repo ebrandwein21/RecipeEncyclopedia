@@ -3,20 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|c:\\users\\ebb4vh\\onedrive - university of missouri\\documents\\github\\recipeencyclopedia\\recipeencyclopedia\\recipeencyclopedia\\views\\bakingrecipes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|solutionrelative:recipeencyclopedia\\views\\bakingrecipes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|c:\\users\\ebb4vh\\onedrive - university of missouri\\documents\\github\\recipeencyclopedia\\recipeencyclopedia\\recipeencyclopedia\\views\\recipemenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|solutionrelative:recipeencyclopedia\\views\\recipemenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|c:\\users\\ebb4vh\\onedrive - university of missouri\\documents\\github\\recipeencyclopedia\\recipeencyclopedia\\recipeencyclopedia\\views\\internationalview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|solutionrelative:recipeencyclopedia\\views\\internationalview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|c:\\users\\ebb4vh\\onedrive - university of missouri\\documents\\github\\recipeencyclopedia\\recipeencyclopedia\\recipeencyclopedia\\views\\allrecipesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|solutionrelative:recipeencyclopedia\\views\\allrecipesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|c:\\users\\ebb4vh\\onedrive - university of missouri\\documents\\github\\recipeencyclopedia\\recipeencyclopedia\\recipeencyclopedia\\views\\myfavoriterecipes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|solutionrelative:recipeencyclopedia\\views\\myfavoriterecipes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|c:\\users\\ebb4vh\\onedrive - university of missouri\\documents\\github\\recipeencyclopedia\\recipeencyclopedia\\recipeencyclopedia\\views\\shoppinglist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|solutionrelative:recipeencyclopedia\\views\\shoppinglist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|c:\\users\\ebb4vh\\onedrive - university of missouri\\documents\\github\\recipeencyclopedia\\recipeencyclopedia\\recipeencyclopedia\\views\\enterrecipe.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|solutionrelative:recipeencyclopedia\\views\\enterrecipe.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|c:\\users\\ebb4vh\\onedrive - university of missouri\\documents\\github\\recipeencyclopedia\\recipeencyclopedia\\recipeencyclopedia\\views\\internationalview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|solutionrelative:recipeencyclopedia\\views\\internationalview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|c:\\users\\ebb4vh\\onedrive - university of missouri\\documents\\github\\recipeencyclopedia\\recipeencyclopedia\\recipeencyclopedia\\views\\bakingrecipes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|solutionrelative:recipeencyclopedia\\views\\bakingrecipes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|c:\\users\\ebb4vh\\onedrive - university of missouri\\documents\\github\\recipeencyclopedia\\recipeencyclopedia\\recipeencyclopedia\\views\\breakfastrecipes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|solutionrelative:recipeencyclopedia\\views\\breakfastrecipes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|c:\\users\\ebb4vh\\onedrive - university of missouri\\documents\\github\\recipeencyclopedia\\recipeencyclopedia\\recipeencyclopedia\\views\\veganview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|solutionrelative:recipeencyclopedia\\views\\veganview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|c:\\users\\ebb4vh\\onedrive - university of missouri\\documents\\github\\recipeencyclopedia\\recipeencyclopedia\\recipeencyclopedia\\views\\lunchrecipes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|solutionrelative:recipeencyclopedia\\views\\lunchrecipes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|c:\\users\\ebb4vh\\onedrive - university of missouri\\documents\\github\\recipeencyclopedia\\recipeencyclopedia\\recipeencyclopedia\\views\\editfavoriterecipe.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|solutionrelative:recipeencyclopedia\\views\\editfavoriterecipe.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|c:\\users\\ebb4vh\\onedrive - university of missouri\\documents\\github\\recipeencyclopedia\\recipeencyclopedia\\recipeencyclopedia\\views\\dinnerrecipes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|solutionrelative:recipeencyclopedia\\views\\dinnerrecipes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|c:\\users\\ebb4vh\\onedrive - university of missouri\\documents\\github\\recipeencyclopedia\\recipeencyclopedia\\recipeencyclopedia\\views\\veganview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|solutionrelative:recipeencyclopedia\\views\\veganview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|c:\\users\\ebb4vh\\onedrive - university of missouri\\documents\\github\\recipeencyclopedia\\recipeencyclopedia\\recipeencyclopedia\\views\\internationalview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|solutionrelative:recipeencyclopedia\\views\\internationalview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|c:\\users\\ebb4vh\\onedrive - university of missouri\\documents\\github\\recipeencyclopedia\\recipeencyclopedia\\recipeencyclopedia\\views\\dinnerrecipes.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,38 +83,6 @@
       "RelativeMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|solutionrelative:recipeencyclopedia\\data\\recipeseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|c:\\users\\ebb4vh\\onedrive - university of missouri\\documents\\github\\recipeencyclopedia\\recipeencyclopedia\\recipeencyclopedia\\views\\veganview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|solutionrelative:recipeencyclopedia\\views\\veganview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|c:\\users\\ebb4vh\\onedrive - university of missouri\\documents\\github\\recipeencyclopedia\\recipeencyclopedia\\recipeencyclopedia\\views\\lunchrecipes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|solutionrelative:recipeencyclopedia\\views\\lunchrecipes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|c:\\users\\ebb4vh\\onedrive - university of missouri\\documents\\github\\recipeencyclopedia\\recipeencyclopedia\\recipeencyclopedia\\views\\dinnerrecipes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|solutionrelative:recipeencyclopedia\\views\\dinnerrecipes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|c:\\users\\ebb4vh\\onedrive - university of missouri\\documents\\github\\recipeencyclopedia\\recipeencyclopedia\\recipeencyclopedia\\views\\breakfastrecipes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|solutionrelative:recipeencyclopedia\\views\\breakfastrecipes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|c:\\users\\ebb4vh\\onedrive - university of missouri\\documents\\github\\recipeencyclopedia\\recipeencyclopedia\\recipeencyclopedia\\views\\myfavoriterecipes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|solutionrelative:recipeencyclopedia\\views\\myfavoriterecipes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|c:\\users\\ebb4vh\\onedrive - university of missouri\\documents\\github\\recipeencyclopedia\\recipeencyclopedia\\recipeencyclopedia\\views\\allrecipesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|solutionrelative:recipeencyclopedia\\views\\allrecipesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|c:\\users\\ebb4vh\\onedrive - university of missouri\\documents\\github\\recipeencyclopedia\\recipeencyclopedia\\recipeencyclopedia\\views\\recipemenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|solutionrelative:recipeencyclopedia\\views\\recipemenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|c:\\users\\ebb4vh\\onedrive - university of missouri\\documents\\github\\recipeencyclopedia\\recipeencyclopedia\\recipeencyclopedia\\views\\shoppinglist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|solutionrelative:recipeencyclopedia\\views\\shoppinglist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|c:\\users\\ebb4vh\\onedrive - university of missouri\\documents\\github\\recipeencyclopedia\\recipeencyclopedia\\recipeencyclopedia\\appsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|solutionrelative:recipeencyclopedia\\appsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -85,10 +93,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|c:\\users\\ebb4vh\\onedrive - university of missouri\\documents\\github\\recipeencyclopedia\\recipeencyclopedia\\recipeencyclopedia\\views\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|solutionrelative:recipeencyclopedia\\views\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|c:\\users\\ebb4vh\\onedrive - university of missouri\\documents\\github\\recipeencyclopedia\\recipeencyclopedia\\recipeencyclopedia\\views\\enterrecipe.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|solutionrelative:recipeencyclopedia\\views\\enterrecipe.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|c:\\users\\ebb4vh\\onedrive - university of missouri\\documents\\github\\recipeencyclopedia\\recipeencyclopedia\\recipeencyclopedia\\viewmodel\\ingredientviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -131,10 +135,6 @@
       "RelativeMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|solutionrelative:recipeencyclopedia\\data\\mongocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|c:\\users\\ebb4vh\\onedrive - university of missouri\\documents\\github\\recipeencyclopedia\\recipeencyclopedia\\recipeencyclopedia\\views\\editfavoriterecipe.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|solutionrelative:recipeencyclopedia\\views\\editfavoriterecipe.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|c:\\users\\ebb4vh\\onedrive - university of missouri\\documents\\github\\recipeencyclopedia\\recipeencyclopedia\\recipeencyclopedia\\viewmodel\\recipeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2A9C00BF-E746-403F-8C6C-6C908282E977}|recipeEncyclopedia\\recipeEncyclopedia.csproj|solutionrelative:recipeencyclopedia\\viewmodel\\recipeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -154,11 +154,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 13,
               "Title": "InternationalView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\InternationalView.xaml.cs",
               "RelativeDocumentMoniker": "recipeEncyclopedia\\Views\\InternationalView.xaml.cs",
@@ -171,33 +171,177 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "VeganView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\VeganView.xaml.cs",
               "RelativeDocumentMoniker": "recipeEncyclopedia\\Views\\VeganView.xaml.cs",
               "ToolTip": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\VeganView.xaml.cs",
               "RelativeToolTip": "recipeEncyclopedia\\Views\\VeganView.xaml.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAYwHwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAgwHwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-12T21:05:07.221Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "VeganView.xaml",
+              "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\VeganView.xaml",
+              "RelativeDocumentMoniker": "recipeEncyclopedia\\Views\\VeganView.xaml",
+              "ToolTip": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\VeganView.xaml",
+              "RelativeToolTip": "recipeEncyclopedia\\Views\\VeganView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-12T20:39:59.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DinnerRecipes.xaml",
+              "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\DinnerRecipes.xaml",
+              "RelativeDocumentMoniker": "recipeEncyclopedia\\Views\\DinnerRecipes.xaml",
+              "ToolTip": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\DinnerRecipes.xaml",
+              "RelativeToolTip": "recipeEncyclopedia\\Views\\DinnerRecipes.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-12T20:44:46.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BreakfastRecipes.xaml",
+              "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\BreakfastRecipes.xaml",
+              "RelativeDocumentMoniker": "recipeEncyclopedia\\Views\\BreakfastRecipes.xaml",
+              "ToolTip": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\BreakfastRecipes.xaml",
+              "RelativeToolTip": "recipeEncyclopedia\\Views\\BreakfastRecipes.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-12T20:44:45.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BakingRecipes.xaml",
+              "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\BakingRecipes.xaml",
+              "RelativeDocumentMoniker": "recipeEncyclopedia\\Views\\BakingRecipes.xaml",
+              "ToolTip": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\BakingRecipes.xaml",
+              "RelativeToolTip": "recipeEncyclopedia\\Views\\BakingRecipes.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-12T20:41:34.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "InternationalView.xaml",
+              "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\InternationalView.xaml",
+              "RelativeDocumentMoniker": "recipeEncyclopedia\\Views\\InternationalView.xaml",
+              "ToolTip": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\InternationalView.xaml",
+              "RelativeToolTip": "recipeEncyclopedia\\Views\\InternationalView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-12T20:41:31.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LunchRecipes.xaml",
+              "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\LunchRecipes.xaml",
+              "RelativeDocumentMoniker": "recipeEncyclopedia\\Views\\LunchRecipes.xaml",
+              "ToolTip": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\LunchRecipes.xaml",
+              "RelativeToolTip": "recipeEncyclopedia\\Views\\LunchRecipes.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-12T20:40:50.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EditFavoriteRecipe.xaml",
+              "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\EditFavoriteRecipe.xaml",
+              "RelativeDocumentMoniker": "recipeEncyclopedia\\Views\\EditFavoriteRecipe.xaml",
+              "ToolTip": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\EditFavoriteRecipe.xaml",
+              "RelativeToolTip": "recipeEncyclopedia\\Views\\EditFavoriteRecipe.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-12T20:18:52.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "EnterRecipe.xaml",
+              "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\EnterRecipe.xaml",
+              "RelativeDocumentMoniker": "recipeEncyclopedia\\Views\\EnterRecipe.xaml",
+              "ToolTip": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\EnterRecipe.xaml",
+              "RelativeToolTip": "recipeEncyclopedia\\Views\\EnterRecipe.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-12T20:44:48.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MyFavoriteRecipes.xaml",
+              "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\MyFavoriteRecipes.xaml",
+              "RelativeDocumentMoniker": "recipeEncyclopedia\\Views\\MyFavoriteRecipes.xaml",
+              "ToolTip": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\MyFavoriteRecipes.xaml",
+              "RelativeToolTip": "recipeEncyclopedia\\Views\\MyFavoriteRecipes.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-12T20:44:37.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RecipeMenu.xaml",
+              "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\RecipeMenu.xaml",
+              "RelativeDocumentMoniker": "recipeEncyclopedia\\Views\\RecipeMenu.xaml",
+              "ToolTip": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\RecipeMenu.xaml",
+              "RelativeToolTip": "recipeEncyclopedia\\Views\\RecipeMenu.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-12T20:40:49.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ShoppingList.xaml",
+              "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\ShoppingList.xaml",
+              "RelativeDocumentMoniker": "recipeEncyclopedia\\Views\\ShoppingList.xaml",
+              "ToolTip": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\ShoppingList.xaml",
+              "RelativeToolTip": "recipeEncyclopedia\\Views\\ShoppingList.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-12T20:40:47.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AllRecipesView.xaml",
+              "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\AllRecipesView.xaml",
+              "RelativeDocumentMoniker": "recipeEncyclopedia\\Views\\AllRecipesView.xaml",
+              "ToolTip": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\AllRecipesView.xaml",
+              "RelativeToolTip": "recipeEncyclopedia\\Views\\AllRecipesView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-12T20:44:27.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "DinnerRecipes.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\DinnerRecipes.xaml.cs",
               "RelativeDocumentMoniker": "recipeEncyclopedia\\Views\\DinnerRecipes.xaml.cs",
               "ToolTip": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\DinnerRecipes.xaml.cs",
               "RelativeToolTip": "recipeEncyclopedia\\Views\\DinnerRecipes.xaml.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAgwIEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAgwFAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-12T21:04:54.714Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 15,
               "Title": "BreakfastRecipes.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\BreakfastRecipes.xaml.cs",
               "RelativeDocumentMoniker": "recipeEncyclopedia\\Views\\BreakfastRecipes.xaml.cs",
@@ -210,166 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AllRecipesView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\AllRecipesView.xaml.cs",
-              "RelativeDocumentMoniker": "recipeEncyclopedia\\Views\\AllRecipesView.xaml.cs",
-              "ToolTip": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\AllRecipesView.xaml.cs",
-              "RelativeToolTip": "recipeEncyclopedia\\Views\\AllRecipesView.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T21:04:13.669Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LunchRecipes.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\LunchRecipes.xaml.cs",
-              "RelativeDocumentMoniker": "recipeEncyclopedia\\Views\\LunchRecipes.xaml.cs",
-              "ToolTip": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\LunchRecipes.xaml.cs",
-              "RelativeToolTip": "recipeEncyclopedia\\Views\\LunchRecipes.xaml.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAuwHkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T20:46:01.151Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "DinnerRecipes.xaml",
-              "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\DinnerRecipes.xaml",
-              "RelativeDocumentMoniker": "recipeEncyclopedia\\Views\\DinnerRecipes.xaml",
-              "ToolTip": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\DinnerRecipes.xaml",
-              "RelativeToolTip": "recipeEncyclopedia\\Views\\DinnerRecipes.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-12T20:44:46.961Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "BreakfastRecipes.xaml",
-              "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\BreakfastRecipes.xaml",
-              "RelativeDocumentMoniker": "recipeEncyclopedia\\Views\\BreakfastRecipes.xaml",
-              "ToolTip": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\BreakfastRecipes.xaml",
-              "RelativeToolTip": "recipeEncyclopedia\\Views\\BreakfastRecipes.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-12T20:44:45.83Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "MyFavoriteRecipes.xaml",
-              "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\MyFavoriteRecipes.xaml",
-              "RelativeDocumentMoniker": "recipeEncyclopedia\\Views\\MyFavoriteRecipes.xaml",
-              "ToolTip": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\MyFavoriteRecipes.xaml",
-              "RelativeToolTip": "recipeEncyclopedia\\Views\\MyFavoriteRecipes.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-12T20:44:37.019Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AllRecipesView.xaml",
-              "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\AllRecipesView.xaml",
-              "RelativeDocumentMoniker": "recipeEncyclopedia\\Views\\AllRecipesView.xaml",
-              "ToolTip": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\AllRecipesView.xaml",
-              "RelativeToolTip": "recipeEncyclopedia\\Views\\AllRecipesView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-12T20:44:27.018Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BakingRecipes.xaml",
-              "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\BakingRecipes.xaml",
-              "RelativeDocumentMoniker": "recipeEncyclopedia\\Views\\BakingRecipes.xaml",
-              "ToolTip": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\BakingRecipes.xaml",
-              "RelativeToolTip": "recipeEncyclopedia\\Views\\BakingRecipes.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-12T20:41:34.099Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "VeganView.xaml",
-              "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\VeganView.xaml",
-              "RelativeDocumentMoniker": "recipeEncyclopedia\\Views\\VeganView.xaml",
-              "ToolTip": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\VeganView.xaml",
-              "RelativeToolTip": "recipeEncyclopedia\\Views\\VeganView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-12T20:39:59.6Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ShoppingList.xaml",
-              "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\ShoppingList.xaml",
-              "RelativeDocumentMoniker": "recipeEncyclopedia\\Views\\ShoppingList.xaml",
-              "ToolTip": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\ShoppingList.xaml",
-              "RelativeToolTip": "recipeEncyclopedia\\Views\\ShoppingList.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-12T20:40:47.422Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "RecipeMenu.xaml",
-              "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\RecipeMenu.xaml",
-              "RelativeDocumentMoniker": "recipeEncyclopedia\\Views\\RecipeMenu.xaml",
-              "ToolTip": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\RecipeMenu.xaml",
-              "RelativeToolTip": "recipeEncyclopedia\\Views\\RecipeMenu.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-12T20:40:49.401Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "InternationalView.xaml",
-              "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\InternationalView.xaml",
-              "RelativeDocumentMoniker": "recipeEncyclopedia\\Views\\InternationalView.xaml",
-              "ToolTip": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\InternationalView.xaml",
-              "RelativeToolTip": "recipeEncyclopedia\\Views\\InternationalView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-12T20:41:31.6Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "AppSession.cs",
-              "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\AppSession.cs",
-              "RelativeDocumentMoniker": "recipeEncyclopedia\\AppSession.cs",
-              "ToolTip": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\AppSession.cs",
-              "RelativeToolTip": "recipeEncyclopedia\\AppSession.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T20:47:52.921Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "LunchRecipes.xaml",
-              "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\LunchRecipes.xaml",
-              "RelativeDocumentMoniker": "recipeEncyclopedia\\Views\\LunchRecipes.xaml",
-              "ToolTip": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\LunchRecipes.xaml",
-              "RelativeToolTip": "recipeEncyclopedia\\Views\\LunchRecipes.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-12T20:40:50.862Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "BakingRecipes.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\BakingRecipes.xaml.cs",
               "RelativeDocumentMoniker": "recipeEncyclopedia\\Views\\BakingRecipes.xaml.cs",
@@ -382,7 +367,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 17,
+              "Title": "LunchRecipes.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\LunchRecipes.xaml.cs",
+              "RelativeDocumentMoniker": "recipeEncyclopedia\\Views\\LunchRecipes.xaml.cs",
+              "ToolTip": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\LunchRecipes.xaml.cs",
+              "RelativeToolTip": "recipeEncyclopedia\\Views\\LunchRecipes.xaml.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAuwHkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T20:46:01.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AllRecipesView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\AllRecipesView.xaml.cs",
+              "RelativeDocumentMoniker": "recipeEncyclopedia\\Views\\AllRecipesView.xaml.cs",
+              "ToolTip": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\AllRecipesView.xaml.cs",
+              "RelativeToolTip": "recipeEncyclopedia\\Views\\AllRecipesView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T21:04:13.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AppSession.cs",
+              "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\AppSession.cs",
+              "RelativeDocumentMoniker": "recipeEncyclopedia\\AppSession.cs",
+              "ToolTip": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\AppSession.cs",
+              "RelativeToolTip": "recipeEncyclopedia\\AppSession.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T20:47:52.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\MainWindow.xaml",
               "RelativeDocumentMoniker": "recipeEncyclopedia\\MainWindow.xaml",
@@ -394,7 +418,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 19,
               "Title": "RecipeSeed.cs",
               "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Data\\RecipeSeed.cs",
               "RelativeDocumentMoniker": "recipeEncyclopedia\\Data\\RecipeSeed.cs",
@@ -407,7 +431,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "LoginWindow.xaml",
               "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\LoginWindow.xaml",
               "RelativeDocumentMoniker": "recipeEncyclopedia\\Views\\LoginWindow.xaml",
@@ -419,19 +443,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "EnterRecipe.xaml",
-              "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\EnterRecipe.xaml",
-              "RelativeDocumentMoniker": "recipeEncyclopedia\\Views\\EnterRecipe.xaml",
-              "ToolTip": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\EnterRecipe.xaml",
-              "RelativeToolTip": "recipeEncyclopedia\\Views\\EnterRecipe.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-12T20:44:48.311Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "UserRecipe.cs",
               "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Models\\UserRecipe.cs",
               "RelativeDocumentMoniker": "recipeEncyclopedia\\Models\\UserRecipe.cs",
@@ -444,7 +456,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Models\\User.cs",
               "RelativeDocumentMoniker": "recipeEncyclopedia\\Models\\User.cs",
@@ -457,7 +469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "UserRecipeService.cs",
               "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Data\\UserRecipeService.cs",
               "RelativeDocumentMoniker": "recipeEncyclopedia\\Data\\UserRecipeService.cs",
@@ -470,7 +482,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "ShoppingListService.cs",
               "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Data\\ShoppingListService.cs",
               "RelativeDocumentMoniker": "recipeEncyclopedia\\Data\\ShoppingListService.cs",
@@ -483,7 +495,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "RecipeService.cs",
               "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Data\\RecipeService.cs",
               "RelativeDocumentMoniker": "recipeEncyclopedia\\Data\\RecipeService.cs",
@@ -496,7 +508,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "IngredientViewModel.cs",
               "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\ViewModel\\IngredientViewModel.cs",
               "RelativeDocumentMoniker": "recipeEncyclopedia\\ViewModel\\IngredientViewModel.cs",
@@ -509,7 +521,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "Ingredient.cs",
               "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Models\\Ingredient.cs",
               "RelativeDocumentMoniker": "recipeEncyclopedia\\Models\\Ingredient.cs",
@@ -522,7 +534,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "ShoppingListModel.cs",
               "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Models\\ShoppingListModel.cs",
               "RelativeDocumentMoniker": "recipeEncyclopedia\\Models\\ShoppingListModel.cs",
@@ -535,7 +547,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "Recipe.cs",
               "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Models\\Recipe.cs",
               "RelativeDocumentMoniker": "recipeEncyclopedia\\Models\\Recipe.cs",
@@ -548,7 +560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "MongoContext.cs",
               "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Data\\MongoContext.cs",
               "RelativeDocumentMoniker": "recipeEncyclopedia\\Data\\MongoContext.cs",
@@ -557,18 +569,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-12T20:32:13.819Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "EditFavoriteRecipe.xaml",
-              "DocumentMoniker": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\EditFavoriteRecipe.xaml",
-              "RelativeDocumentMoniker": "recipeEncyclopedia\\Views\\EditFavoriteRecipe.xaml",
-              "ToolTip": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\Views\\EditFavoriteRecipe.xaml",
-              "RelativeToolTip": "recipeEncyclopedia\\Views\\EditFavoriteRecipe.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-12T20:18:52.239Z",
               "EditorCaption": ""
             },
             {

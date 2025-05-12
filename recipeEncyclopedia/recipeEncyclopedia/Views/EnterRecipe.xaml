@@ -6,89 +6,96 @@
         xmlns:local="clr-namespace:recipeEncyclopedia.Views"
         mc:Ignorable="d"
         Title="EnterRecipe" Height="600" Width="800">
-    <Grid Background="Beige" Margin="0,0,0,-6">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
 
-        <StackPanel Grid.Row="0" Margin="0,0,0,10">
-            <TextBlock Text="Enter a New Recipe" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center"/>
-        </StackPanel>
+    <Viewbox Stretch="Uniform">
 
-        <Grid Grid.Row="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="2*"/>
-                <ColumnDefinition Width="3*"/>
-            </Grid.ColumnDefinitions>
+        <Grid Width="825" Height="600" Background="Beige">
 
-            <!-- LEFT COLUMN -->
-            <StackPanel Grid.Column="0" Margin="10" VerticalAlignment="Top">
+            <Grid Background="Beige" Margin="0,0,0,-6">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
 
-                <TextBlock Text="Recipe Name:" />
-                <TextBox Name="EnterRecipeName"/>
+                <StackPanel Grid.Row="0" Margin="0,0,0,10">
+                    <TextBlock Text="Enter a New Recipe" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center"/>
+                </StackPanel>
 
-                <TextBlock Text="Total Time (minutes):" Margin="0,10,0,0"/>
-                <TextBox Name="DurationBox"/>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="3*"/>
+                    </Grid.ColumnDefinitions>
 
-                <TextBlock Text="Serving Size:" Margin="0,10,0,0"/>
-                <TextBox Name="ServingTextBox"/>
+                    <!-- LEFT COLUMN -->
+                    <StackPanel Grid.Column="0" Margin="10" VerticalAlignment="Top">
 
-                <TextBlock Text="Keywords:" Margin="0,10,0,0"/>
-                <TextBox Name="KeywordBox"/>
+                        <TextBlock Text="Recipe Name:" />
+                        <TextBox Name="EnterRecipeName"/>
 
-                <TextBlock Text="Categories:" Margin="0,10,0,0"/>
-                <ListBox Name="CategorySelection" SelectionMode="Multiple" Height="100">
-                    <ListBoxItem Content="Breakfast"/>
-                    <ListBoxItem Content="Lunch"/>
-                    <ListBoxItem Content="Dinner"/>
-                    <ListBoxItem Content="Bakery"/>
-                    <ListBoxItem Content="Vegan"/>
-                    <ListBoxItem Content="International"/>
-                </ListBox>
+                        <TextBlock Text="Total Time (minutes):" Margin="0,10,0,0"/>
+                        <TextBox Name="DurationBox"/>
 
-            </StackPanel>
+                        <TextBlock Text="Serving Size:" Margin="0,10,0,0"/>
+                        <TextBox Name="ServingTextBox"/>
 
-            <!-- RIGHT COLUMN -->
-            <StackPanel Grid.Column="1" Margin="10" VerticalAlignment="Top">
+                        <TextBlock Text="Keywords:" Margin="0,10,0,0"/>
+                        <TextBox Name="KeywordBox"/>
 
-                <!-- Ingredient Inputs -->
-                <TextBlock Text="Ingredient Name:"/>
-                <TextBox Name="IngredientBox"/>
+                        <TextBlock Text="Categories:" Margin="0,10,0,0"/>
+                        <ListBox Name="CategorySelection" SelectionMode="Multiple" Height="100">
+                            <ListBoxItem Content="Breakfast"/>
+                            <ListBoxItem Content="Lunch"/>
+                            <ListBoxItem Content="Dinner"/>
+                            <ListBoxItem Content="Bakery"/>
+                            <ListBoxItem Content="Vegan"/>
+                            <ListBoxItem Content="International"/>
+                        </ListBox>
 
-                <TextBlock Text="Amount:" Margin="0,10,0,0"/>
-                <TextBox Name="AmountBox"/>
+                    </StackPanel>
 
-                <TextBlock Text="Measurement Type:" Margin="0,10,0,0"/>
-                <TextBox Name="MeasurementTypeBox"/>
+                    <!-- RIGHT COLUMN -->
+                    <StackPanel Grid.Column="1" Margin="10" VerticalAlignment="Top">
 
-                <TextBlock Text="Allergen Info:" Margin="0,10,0,0"/>
-                <TextBox Name="AllergenBox"/>
+                        <!-- Ingredient Inputs -->
+                        <TextBlock Text="Ingredient Name:"/>
+                        <TextBox Name="IngredientBox"/>
 
-                <Button Content="Add Ingredient" Click="AddIngredient_Click" Margin="0,10,0,0" Width="120"/>
+                        <TextBlock Text="Amount:" Margin="0,10,0,0"/>
+                        <TextBox Name="AmountBox"/>
 
-                <!-- List of Added Ingredients -->
-                <ListBox Name="IngredientPreviewList" Height="100" Margin="0,10,0,0">
-                    <ListBox.ItemTemplate>
-                        <DataTemplate>
-                            <TextBlock Text="{Binding}" TextWrapping="Wrap"/>
-                        </DataTemplate>
-                    </ListBox.ItemTemplate>
-                </ListBox>
+                        <TextBlock Text="Measurement Type:" Margin="0,10,0,0"/>
+                        <TextBox Name="MeasurementTypeBox"/>
 
-                <TextBlock Text="Instructions:" Margin="0,10,0,0"/>
-                <TextBox Name="InstructionBox" AcceptsReturn="True" Height="100" TextWrapping="Wrap"/>
+                        <TextBlock Text="Allergen Info:" Margin="0,10,0,0"/>
+                        <TextBox Name="AllergenBox"/>
+
+                        <Button Content="Add Ingredient" Click="AddIngredient_Click" Margin="0,10,0,0" Width="120"/>
+
+                        <!-- List of Added Ingredients -->
+                        <ListBox Name="IngredientPreviewList" Height="100" Margin="0,10,0,0">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding}" TextWrapping="Wrap"/>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+
+                        <TextBlock Text="Instructions:" Margin="0,10,0,0"/>
+                        <TextBox Name="InstructionBox" AcceptsReturn="True" Height="100" TextWrapping="Wrap"/>
 
 
-            </StackPanel>
+                    </StackPanel>
+                </Grid>
+
+                <!-- BOTTOM BUTTONS -->
+                <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+                    <Button Name="SubmitRecipe" Content="Submit Recipe" Width="120" Margin="10" Click="SubmitRecipe_Click"/>
+                    <Button Name="Home" Content="Home 🏠︎" Width="100" Margin="10" Click="Home_Click"/>
+                </StackPanel>
+            </Grid>
         </Grid>
-
-        <!-- BOTTOM BUTTONS -->
-        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
-            <Button Name="SubmitRecipe" Content="Submit Recipe" Width="120" Margin="10" Click="SubmitRecipe_Click"/>
-            <Button Name="Home" Content="Home 🏠︎" Width="100" Margin="10" Click="Home_Click"/>
-        </StackPanel>
-    </Grid>
+    </Viewbox>
 </Window>
 

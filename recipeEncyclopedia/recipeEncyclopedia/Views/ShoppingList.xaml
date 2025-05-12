@@ -53,10 +53,10 @@
             Height="30"
             HorizontalAlignment="Center">
             <Button.Resources>
-            <Style TargetType="Border">
-                <Setter Property="CornerRadius" Value="5"/>
-            </Style>
-        </Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
         </Button>
 
         <Button Content="Clear Shopping List"
@@ -75,8 +75,10 @@
 
 
 
+
+
         <Button
-          Content="Home"  Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" Click="Home_Click" Height="30" Grid.RowSpan="1" >
+          Content="Home 🏠︎"  Grid.Row="1"  Margin="52,26,0,89" Grid.ColumnSpan="3"  HorizontalAlignment="Left"  Click="Home_Click" Height="30" Width="123" Grid.Column="10" >
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="5"/>
