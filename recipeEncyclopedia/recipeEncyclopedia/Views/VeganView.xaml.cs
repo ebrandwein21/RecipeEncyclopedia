@@ -51,30 +51,55 @@ namespace recipeEncyclopedia.Views
         private void LoadVeganRecipes()
         {
 
-            //load recipe hubs not working, getbycategory throwing null 
+            _recipes = new List<Recipe>
+            {
+                new Recipe
+                {
 
-            // Assuming Category ID 3 = Dinner
-            //_recipes = _recipeService.GetByCategory(3);
-
-            // DinnerRecipeList.ItemsSource = _recipes;
+                    Name = "Miso Soup",
+                    Ingredients = new List<string> { "Miso", "Tofu", "Green Onion", "Seaweed", "kelp", "shittake mushrooms"},
+                    Ingredient = "broth",
+                    MeasurementType = "cups",
+                    MeasurementAmount = 4,
+                    Serving = 2,
+                    Allergen = "none",
+                    Instructions = "make the dashi broth, add tofu, mushroom and kelp, mix miso into a paste, finish and serve with chopped green onion",
+                    Keywords = "vegan, asian, dinner",
+                    Categories = new List<int> { 1 },
+                    TotalTime = 75
+                },
+                new Recipe
+                {
+                Name = "Chickpea Salad",
+                Ingredients = new List<string> { "Chickpeas", "Tahini", "Mustard", "Celery", "Red Onion", "Lemon Juice" },
+                Ingredient = "ChickPeas",
+                Allergen = "dairy",
+                MeasurementAmount = 200,
+                Serving = 1,
+                MeasurementType = "grams",
+                Instructions = "Mash Chickpeas with diced celery and red onion, and rest of ingredients.",
+                Keywords = "vegan, lunch, healthy",
+                Categories = new List<int> { 3 },
+                TotalTime = 20
+                },
+            };
+            VeganRecipeList.ItemsSource = _recipes;
         }
 
         private void VeganRecipeList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var selectedRecipe = VeganRecipeList.SelectedItem as Recipe;
-            if (selectedRecipe != null)
-            {
-                string details = $"{selectedRecipe.Name}\n\n" +
-                        $"Total Time: {selectedRecipe.TotalTime} minutes\n" +
-                        $"Servings: {selectedRecipe.Serving}\n\n" +
-                        $"Ingredients:\n - {string.Join("\n - ", selectedRecipe.Ingredients)}\n\n" +
-                        $"Instructions:\n{selectedRecipe.Instructions}\n\n" +
-                        $"Keywords: {selectedRecipe.Keywords}\n\n";
+          
+                var selectedRecipe = VeganRecipeList.SelectedItem as Recipe;
+                if (selectedRecipe != null)
+                {
+                    string details = $"{selectedRecipe.Name} has the ingredients: {string.Join(',', selectedRecipe.Ingredients)}" +
+                        $" \n \n use {selectedRecipe.MeasurementAmount} {selectedRecipe.MeasurementType} of {selectedRecipe.Ingredient}. The recipe serves {selectedRecipe.Serving} and takes {selectedRecipe.TotalTime} Minutes. " +
+                        $"\n \n Here are the instructions: {selectedRecipe.Instructions}";
 
                     VeganDetailsText.Text = details;
+                }
             }
-        }
-
+        
         private void AddToFavorites_Click(object sender, RoutedEventArgs e)
         {
             var selectedRecipe = VeganRecipeList.SelectedItem as Recipe;

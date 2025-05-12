@@ -78,17 +78,31 @@ namespace recipeEncyclopedia.Views
             },
             new Recipe
             {
-                Name = "CheeseBurger",
-                Ingredients = new List<string> { "cheese", "ground beef", "tomato", "onion", "pickle", "lettuce" },
-                Ingredient = "ground beef",
+                Name = "Supreme Pizza",
+                Ingredients = new List<string> { "cheese", "pepperoni", "tomato", "dough", "onion", "pepper", "sausage" },
+                Ingredient = "dough",
                 Allergen = "dairy",
-                MeasurementAmount = 1,
-                Serving = 2,
+                MeasurementAmount = .5,
+                Serving = 4,
                 MeasurementType = "pound",
-                Instructions = "Smush Ground Beef into patties, Cut up vegetables, Cook On Grill, flipping patties halfway through.",
-                Keywords = "American, Fast",
+                Instructions = "Shape the dough into flying saucer shape, spread pizza sauce evenly, add layer of mozzerella, top with the veggies and meats",
+                Keywords = "Italian, Comfort, Dinner",
                 Categories = new List<int> { 3 },
-                TotalTime = 15
+                TotalTime = 30
+            },
+            new Recipe
+            {
+                Name = "Mac And Cheese",
+                Ingredients = new List<string> { "cheese", "Elbow Macaroni", "Milk", "Flour", "pasta"},
+                Ingredient = "cheese",
+                Allergen = "dairy",
+                MeasurementAmount = 2.0,
+                Serving = 4,
+                MeasurementType = "cups",
+                Instructions = "cook the pasta, make the roux, add milk and cheese and stir into pot",
+                Keywords = "Italian, Comfort, Dinner",
+                Categories = new List<int> { 3 },
+                TotalTime = 20
             },
         };
             DinnerRecipeList.ItemsSource = _recipes;

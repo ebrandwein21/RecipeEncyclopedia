@@ -114,7 +114,7 @@ namespace recipeEncyclopedia.Views
 
             BreakfastDetailsText.Text = details;
         }
-        }
+    }
 
         private void AddToFavorites_Click(object sender, RoutedEventArgs e)
         {

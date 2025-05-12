@@ -47,10 +47,47 @@ namespace recipeEncyclopedia.Views
 
         private void LoadLunchRecipes()
         {
-            // Assuming Category ID 2 = Lunch
-          //  _recipes = _recipeService.GetByCategory(2);
 
-           // LunchRecipeList.ItemsSource = _recipes;
+            //load recipe hubs not working, getbycategory throwing null 
+
+            // Assuming Category ID 3 = Dinner
+            //_recipes = _recipeService.GetByCategory(3);
+
+            // DinnerRecipeList.ItemsSource = _recipes;
+
+            //hardcoded recipes for now below
+            _recipes = new List<Recipe>
+        {
+            new Recipe
+            {
+                    Name = "Chicken Salad",
+                    Ingredients = new List<string> { "chicken breast", "lettuce", "tomato", "cucumber", "olive oil" },
+                    Ingredient = "chicken",
+                    Allergen = "none",
+                    MeasurementAmount = 200,
+                    Serving = 4,
+                    MeasurementType = "grams",
+                    Instructions = "Grill chicken. Chop veggies. Toss everything with olive oil.",
+                    Keywords = "chicken, salad, healthy",
+                    Categories = new List<int> { 2 },
+                    TotalTime = 25
+            },
+            new Recipe
+            {
+                    Name = "CheeseBurger",
+                    Ingredients = new List<string> { "cheese", "ground beef", "tomato", "onion", "pickle", "lettuce" },
+                    Ingredient = "ground beef",
+                    Allergen = "dairy",
+                    MeasurementAmount = 1,
+                    Serving = 2,
+                    MeasurementType = "pound",
+                    Instructions = "Smush Ground Beef into patties, Cut up vegetables, Cook On Grill, flipping patties halfway through.",
+                    Keywords = "American, Fast",
+                    Categories = new List<int> { 3 },
+                    TotalTime = 15
+            },
+        };
+            LunchRecipeList.ItemsSource = _recipes;
         }
 
         private void LunchRecipeList_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -58,12 +95,9 @@ namespace recipeEncyclopedia.Views
             var selectedRecipe = LunchRecipeList.SelectedItem as Recipe;
             if (selectedRecipe != null)
             {
-                string details = $"{selectedRecipe.Name}\n\n" +
-                        $"Total Time: {selectedRecipe.TotalTime} minutes\n" +
-                        $"Servings: {selectedRecipe.Serving}\n\n" +
-                        $"Ingredients:\n - {string.Join("\n - ", selectedRecipe.Ingredients)}\n\n" +
-                        $"Instructions:\n{selectedRecipe.Instructions}\n\n" +
-                        $"Keywords: {selectedRecipe.Keywords}\n\n";
+                string details = $"{selectedRecipe.Name} has the ingredients: {string.Join(',', selectedRecipe.Ingredients)}" +
+                    $" \n \n use {selectedRecipe.MeasurementAmount} {selectedRecipe.MeasurementType} of {selectedRecipe.Ingredient}. The recipe serves {selectedRecipe.Serving} and takes {selectedRecipe.TotalTime} Minutes. " +
+                    $"\n \n Here are the instructions: {selectedRecipe.Instructions}";
 
                 LunchDetailsText.Text = details;
             }

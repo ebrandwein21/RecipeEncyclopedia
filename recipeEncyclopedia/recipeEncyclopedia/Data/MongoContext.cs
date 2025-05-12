@@ -14,7 +14,7 @@ namespace recipeEncyclopedia.Data
 
         public MongoContext()
         {
-            var connectionString = "mongodb+srv://user:<password>@cookbook.0tkr7zr.mongodb.net/?retryWrites=true&w=majority&appName=CookBook";
+            var connectionString = "mongodb+srv://user:mizzou@cookbook.0tkr7zr.mongodb.net/?retryWrites=true&w=majority&appName=CookBook";
             var client = new MongoClient(connectionString);
             _database = client.GetDatabase("CookbookDB");
         }
