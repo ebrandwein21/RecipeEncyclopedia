@@ -57,14 +57,6 @@
                     </Style>
                 </Button.Resources>
             </Button>
-
-            <Button Content="Login" Click="LoginButton_Click" Foreground="Black" Grid.Column="6" Grid.ColumnSpan="2">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="5"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
         </Grid>
 
         <ListBox x:Name="LunchRecipeList"

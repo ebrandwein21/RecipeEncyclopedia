@@ -50,73 +50,10 @@ namespace recipeEncyclopedia.Views
         private void LoadInternationalRecipes()
         {
 
-            //load recipe hubs not working, getbycategory throwing null 
+            
+            _recipes = _recipeService.GetByCategory(6);
 
-            // Assuming Category ID 3 = Dinner
-            //_recipes = _recipeService.GetByCategory(3);
-
-            _recipes = new List<Recipe>
-            {
-                new Recipe
-                {
-
-                    Name = "Fried Rice",
-                    Ingredients = new List<string> { "Rice", "Soy Sauce", "Teriyaki", "Chicken", "Peas", "carrots"},
-                    Ingredient = "Rice",
-                    MeasurementType = "cups",
-                    MeasurementAmount = 1.5,
-                    Serving = 3,
-                    Allergen = "none",
-                    Instructions = "cook veggies, chicken and sauces in a wok at 400f, cook rice in pot or 2 cups of water.",
-                    Keywords = "asian, dinner",
-                    Categories = new List<int> { 1 },
-                    TotalTime = 25
-                },
-                new Recipe
-                {
-                Name = "Tacos",
-                Ingredients = new List<string> { "cheese", "Chicken", "tomato", "onion", "avocado", "lettuce", "jalapeno", "cilantro", "soft shells" },
-                Ingredient = "Chicken",
-                Allergen = "dairy",
-                MeasurementAmount = 200,
-                Serving = 2,
-                MeasurementType = "grams",
-                Instructions = "Put Chicken In Crock Pot, prep salsa by cutting up veggies, put chicken in soft shells.",
-                Keywords = "Hispanic, Long, dinner",
-                Categories = new List<int> { 3 },
-                TotalTime = 180
-                },
-
-                new Recipe
-                {
-                    Name = "falaffel Gyro Sandwich",
-                    Ingredients = new List<string> { "Gyro", "Tzaiki", "onion", "tortilla", "fallafel"},
-                    Ingredient = "Gyro",
-                    Allergen = "none",
-                    MeasurementAmount = .5,
-                    Serving = 1,
-                    MeasurementType = "pounds",
-                    Instructions = "cook gyro on grill or stovetop, put cooked fallafel in tortilla wrap with falafel, onion and tzaiki sauce.",
-                    Keywords = "medditeranian, dinner, quick",
-                    Categories = new List<int> { 3 },
-                    TotalTime = 10
-                },
-                new Recipe
-                {
-                    Name = "Chicken Curry ",
-                    Ingredients = new List<string> { "Chicken", "Coconut Milk", "Curry Powder", "Chickpeas"},
-                    Ingredient = "Chicken",
-                    Allergen = "Coconut",
-                    MeasurementAmount = 1.0,
-                    Serving = 3,
-                    MeasurementType = "pounds",
-                    Instructions = "cook chicken with curry powder and chickpeas, let simmer on stovetop, adding coconut milk.",
-                    Keywords = "south asian, dinner, spicy",
-                    Categories = new List<int> { 3 },
-                    TotalTime = 30
-                },
-               
-            };
+           
             InternationalRecipeList.ItemsSource = _recipes;
         }
     

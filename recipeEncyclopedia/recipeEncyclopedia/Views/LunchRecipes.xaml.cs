@@ -48,45 +48,8 @@ namespace recipeEncyclopedia.Views
         private void LoadLunchRecipes()
         {
 
-            //load recipe hubs not working, getbycategory throwing null 
+           _recipes = _recipeService.GetByCategory(2);
 
-            // Assuming Category ID 3 = Dinner
-            //_recipes = _recipeService.GetByCategory(3);
-
-            // DinnerRecipeList.ItemsSource = _recipes;
-
-            //hardcoded recipes for now below
-            _recipes = new List<Recipe>
-        {
-            new Recipe
-            {
-                    Name = "Chicken Salad",
-                    Ingredients = new List<string> { "chicken breast", "lettuce", "tomato", "cucumber", "olive oil" },
-                    Ingredient = "chicken",
-                    Allergen = "none",
-                    MeasurementAmount = 200,
-                    Serving = 4,
-                    MeasurementType = "grams",
-                    Instructions = "Grill chicken. Chop veggies. Toss everything with olive oil.",
-                    Keywords = "chicken, salad, healthy",
-                    Categories = new List<int> { 2 },
-                    TotalTime = 25
-            },
-            new Recipe
-            {
-                    Name = "CheeseBurger",
-                    Ingredients = new List<string> { "cheese", "ground beef", "tomato", "onion", "pickle", "lettuce" },
-                    Ingredient = "ground beef",
-                    Allergen = "dairy",
-                    MeasurementAmount = 1,
-                    Serving = 2,
-                    MeasurementType = "pound",
-                    Instructions = "Smush Ground Beef into patties, Cut up vegetables, Cook On Grill, flipping patties halfway through.",
-                    Keywords = "American, Fast",
-                    Categories = new List<int> { 3 },
-                    TotalTime = 15
-            },
-        };
             LunchRecipeList.ItemsSource = _recipes;
         }
 

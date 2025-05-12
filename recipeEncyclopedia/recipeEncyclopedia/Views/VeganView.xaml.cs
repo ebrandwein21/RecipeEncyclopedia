@@ -51,38 +51,7 @@ namespace recipeEncyclopedia.Views
         private void LoadVeganRecipes()
         {
 
-            _recipes = new List<Recipe>
-            {
-                new Recipe
-                {
-
-                    Name = "Miso Soup",
-                    Ingredients = new List<string> { "Miso", "Tofu", "Green Onion", "Seaweed", "kelp", "shittake mushrooms"},
-                    Ingredient = "broth",
-                    MeasurementType = "cups",
-                    MeasurementAmount = 4,
-                    Serving = 2,
-                    Allergen = "none",
-                    Instructions = "make the dashi broth, add tofu, mushroom and kelp, mix miso into a paste, finish and serve with chopped green onion",
-                    Keywords = "vegan, asian, dinner",
-                    Categories = new List<int> { 1 },
-                    TotalTime = 75
-                },
-                new Recipe
-                {
-                Name = "Chickpea Salad",
-                Ingredients = new List<string> { "Chickpeas", "Tahini", "Mustard", "Celery", "Red Onion", "Lemon Juice" },
-                Ingredient = "ChickPeas",
-                Allergen = "dairy",
-                MeasurementAmount = 200,
-                Serving = 1,
-                MeasurementType = "grams",
-                Instructions = "Mash Chickpeas with diced celery and red onion, and rest of ingredients.",
-                Keywords = "vegan, lunch, healthy",
-                Categories = new List<int> { 3 },
-                TotalTime = 20
-                },
-            };
+            _recipes = _recipeService.GetByCategory(4);
             VeganRecipeList.ItemsSource = _recipes;
         }
 

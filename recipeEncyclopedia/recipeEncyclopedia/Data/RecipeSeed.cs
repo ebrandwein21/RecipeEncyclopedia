@@ -20,7 +20,50 @@ namespace recipeEncyclopedia.Data
 
             var recipes = new List<Recipe>
             {
-               new Recipe
+                new Recipe
+                {
+                    Name = "Spaghetti Bolognese",
+                    Ingredients = new List<string> { "spaghetti", "ground beef", "tomato sauce", "onion", "garlic" },
+                    Ingredient = "spaghetti",
+                    Allergen = "none",
+                    MeasurementAmount = 2,
+                    Serving = 4,
+                    MeasurementType = "cups",
+                    Instructions = "Boil spaghetti. Cook beef. Mix with sauce. Combine and serve.",
+                    Keywords = "italian, pasta",
+                    Categories = new List<int> { 3 },
+                    TotalTime = 45
+                },
+                new Recipe
+                {
+                    Name = "Pancakes",
+                    Ingredients = new List<string> { "flour", "milk", "eggs", "sugar", "baking powder" },
+                    Ingredient = "flour",
+                    MeasurementType = "cups",
+                    MeasurementAmount = 1,
+                    Serving = 2,
+                    Allergen = "dairy",
+                    Instructions = "Mix all ingredients. Pour batter on griddle. Flip when bubbles form.",
+                    Keywords = "pancake, breakfast, sweet",
+                    Categories = new List<int> { 1 },
+                    TotalTime = 20
+                },
+                new Recipe
+                {
+                    Name = "Chicken Salad",
+                    Ingredients = new List<string> { "chicken breast", "lettuce", "tomato", "cucumber", "olive oil" },
+                    Ingredient = "chicken",
+                    Allergen = "none",
+                    MeasurementAmount = 200,
+                    Serving = 4,
+                    MeasurementType = "grams",
+                    Instructions = "Grill chicken. Chop veggies. Toss everything with olive oil.",
+                    Keywords = "chicken, salad, healthy",
+                    Categories = new List<int> { 2 },
+                    TotalTime = 25
+                },
+
+                new Recipe
                 {
                     Name = "Chocolate Chip Cookies",
                     Ingredients = new List<string> { "Flour", "Chocolate Chips", "Sugar", "Eggs" },
@@ -31,10 +74,10 @@ namespace recipeEncyclopedia.Data
                     MeasurementType = "cups",
                     Instructions = "Crack eggs into flour and whisk, add sugar, drop some chocolate chips in after stirring and bake at 425f for 15 minutes.",
                     Keywords = "dessert, comfort",
-                    Categories = new List<int> { 3 },
+                    Categories = new List<int> { 4 },
                     TotalTime = 25
                 },
-               new Recipe
+                new Recipe
                 {
                     Name = "Cupcakes",
                     Ingredients = new List<string> {  "Flour", "Chocolate", "Sugar", "Eggs", "Vanilla", "Frosting" },
@@ -45,10 +88,11 @@ namespace recipeEncyclopedia.Data
                     MeasurementType = "cups",
                     Instructions = "Crack eggs into flour and whisk, add sugar, Chocolate and vanilla, bake at 425f for 25 minutes, add layer of frosting after baking.",
                     Keywords = "dessert, comfort",
-                    Categories = new List<int> { 3 },
+                    Categories = new List<int> { 5 },
                     TotalTime = 60
                 },
-                 new Recipe
+
+                new Recipe
                 {
                     Name = "Banana Bread",
                     Ingredients = new List<string> { "bananas", "Flour", "Sugar", "Chocolate Chips", "Eggs"},
@@ -59,10 +103,11 @@ namespace recipeEncyclopedia.Data
                     MeasurementType = "pounds",
                     Instructions = "Crack eggs into flour and whisk, add bananas and sugar, add chocolate chips, bake at 425f for 25 minutes.",
                     Keywords = "dessert, fruit",
-                    Categories = new List<int> { 3 },
+                    Categories = new List<int> { 5 },
                     TotalTime = 35
                 },
-                 new Recipe
+
+                new Recipe
                 {
 
                     Name = "Pancakes",
@@ -77,7 +122,7 @@ namespace recipeEncyclopedia.Data
                     Categories = new List<int> { 1 },
                     TotalTime = 20
                 },
-                  new Recipe
+                new Recipe
                 {
                     Name = "French Toast",
                     Ingredients = new List<string> { "Bread", "Eggs", "Milk", "Cinnamon", "Vanilla"},
@@ -91,7 +136,8 @@ namespace recipeEncyclopedia.Data
                     Categories = new List<int> { 3 },
                     TotalTime = 30
                 },
-                   new Recipe
+
+                new Recipe
                 {
                     Name = "Omellette",
                     Ingredients = new List<string> { "eggs", "tomato", "onion", "jalapeno", "cheese", "ham"},
@@ -105,49 +151,23 @@ namespace recipeEncyclopedia.Data
                     Categories = new List<int> { 3 },
                     TotalTime = 10
                 },
-                   new Recipe
-                {
-                Name = "Spaghetti Bolognese",
-                Ingredients = new List<string> { "spaghetti", "ground beef", "tomato sauce", "onion", "garlic" },
-                Ingredient = "spaghetti",
-                Allergen = "none",
-                MeasurementAmount = 2,
-                Serving = 4,
-                MeasurementType = "cups",
-                Instructions = "Boil spaghetti. Cook beef. Mix with sauce. Combine and serve.",
-                Keywords = "italian, pasta",
-                Categories = new List<int> { 3 },
-                TotalTime = 45
-            },
-                   new Recipe
+
+            new Recipe
             {
-                Name = "Supreme Pizza",
-                Ingredients = new List<string> { "cheese", "pepperoni", "tomato", "dough", "onion", "pepper", "sausage" },
-                Ingredient = "dough",
+                Name = "CheeseBurger",
+                Ingredients = new List<string> { "cheese", "ground beef", "tomato", "onion", "pickle", "lettuce" },
+                Ingredient = "ground beef",
                 Allergen = "dairy",
-                MeasurementAmount = .5,
-                Serving = 4,
+                MeasurementAmount = 1,
+                Serving = 2,
                 MeasurementType = "pound",
-                Instructions = "Shape the dough into flying saucer shape, spread pizza sauce evenly, add layer of mozzerella, top with the veggies and meats",
-                Keywords = "Italian, Comfort, Dinner",
+                Instructions = "Smush Ground Beef into patties, Cut up vegetables, Cook On Grill, flipping patties halfway through.",
+                Keywords = "American, Fast",
                 Categories = new List<int> { 3 },
-                TotalTime = 30
+                TotalTime = 15
             },
-                   new Recipe
-            {
-                Name = "Mac And Cheese",
-                Ingredients = new List<string> { "cheese", "Elbow Macaroni", "Milk", "Flour", "pasta"},
-                Ingredient = "cheese",
-                Allergen = "dairy",
-                MeasurementAmount = 2.0,
-                Serving = 4,
-                MeasurementType = "cups",
-                Instructions = "cook the pasta, make the roux, add milk and cheese and stir into pot",
-                Keywords = "Italian, Comfort, Dinner",
-                Categories = new List<int> { 3 },
-                TotalTime = 20
-            },
-                    new Recipe
+
+                new Recipe
                 {
 
                     Name = "Fried Rice",
@@ -162,7 +182,7 @@ namespace recipeEncyclopedia.Data
                     Categories = new List<int> { 1 },
                     TotalTime = 25
                 },
-                    new Recipe
+                new Recipe
                 {
                 Name = "Tacos",
                 Ingredients = new List<string> { "cheese", "Chicken", "tomato", "onion", "avocado", "lettuce", "jalapeno", "cilantro", "soft shells" },
@@ -176,7 +196,8 @@ namespace recipeEncyclopedia.Data
                 Categories = new List<int> { 3 },
                 TotalTime = 180
                 },
-                      new Recipe
+
+                new Recipe
                 {
                     Name = "falaffel Gyro Sandwich",
                     Ingredients = new List<string> { "Gyro", "Tzaiki", "onion", "tortilla", "fallafel"},
@@ -190,7 +211,7 @@ namespace recipeEncyclopedia.Data
                     Categories = new List<int> { 3 },
                     TotalTime = 10
                 },
-                       new Recipe
+                new Recipe
                 {
                     Name = "Chicken Curry ",
                     Ingredients = new List<string> { "Chicken", "Coconut Milk", "Curry Powder", "Chickpeas"},
@@ -204,35 +225,21 @@ namespace recipeEncyclopedia.Data
                     Categories = new List<int> { 3 },
                     TotalTime = 30
                 },
-          
-                  new Recipe
+                 new Recipe
             {
-                    Name = "Chicken Salad",
-                    Ingredients = new List<string> { "chicken breast", "lettuce", "tomato", "cucumber", "olive oil" },
-                    Ingredient = "chicken",
-                    Allergen = "none",
-                    MeasurementAmount = 200,
-                    Serving = 4,
-                    MeasurementType = "grams",
-                    Instructions = "Grill chicken. Chop veggies. Toss everything with olive oil.",
-                    Keywords = "chicken, salad, healthy",
-                    Categories = new List<int> { 2 },
-                    TotalTime = 25
+                Name = "Mac And Cheese",
+                Ingredients = new List<string> { "cheese", "Elbow Macaroni", "Milk", "Flour", "pasta"},
+                Ingredient = "cheese",
+                Allergen = "dairy",
+                MeasurementAmount = 2.0,
+                Serving = 4,
+                MeasurementType = "cups",
+                Instructions = "cook the pasta, make the roux, add milk and cheese and stir into pot",
+                Keywords = "Italian, Comfort, Dinner",
+                Categories = new List<int> { 3 },
+                TotalTime = 20
             },
-                  new Recipe
-            {
-                    Name = "CheeseBurger",
-                    Ingredients = new List<string> { "cheese", "ground beef", "tomato", "onion", "pickle", "lettuce" },
-                    Ingredient = "ground beef",
-                    Allergen = "dairy",
-                    MeasurementAmount = 1,
-                    Serving = 2,
-                    MeasurementType = "pound",
-                    Instructions = "Smush Ground Beef into patties, Cut up vegetables, Cook On Grill, flipping patties halfway through.",
-                    Keywords = "American, Fast",
-                    Categories = new List<int> { 3 },
-                    TotalTime = 15
-            },
+
                   new Recipe
                 {
 
@@ -262,11 +269,29 @@ namespace recipeEncyclopedia.Data
                 Categories = new List<int> { 3 },
                 TotalTime = 20
                 },
-                // Add more recipes here...
+                     new Recipe
+            {
+                Name = "Supreme Pizza",
+                Ingredients = new List<string> { "cheese", "pepperoni", "tomato", "dough", "onion", "pepper", "sausage" },
+                Ingredient = "dough",
+                Allergen = "dairy",
+                MeasurementAmount = .5,
+                Serving = 4,
+                MeasurementType = "pound",
+                Instructions = "Shape the dough into flying saucer shape, spread pizza sauce evenly, add layer of mozzerella, top with the veggies and meats",
+                Keywords = "Italian, Comfort, Dinner",
+                Categories = new List<int> { 3 },
+                TotalTime = 30
+            },
+
             };
+
+
 
             collection.InsertMany(recipes);
             Console.WriteLine("Seeded recipes to database.");
+
+            
         }
     }
 }

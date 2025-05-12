@@ -52,61 +52,12 @@ namespace recipeEncyclopedia.Views
         private void LoadDinnerRecipes()
         {
 
-            //load recipe hubs not working, getbycategory throwing null 
+   
+            _recipes = _recipeService.GetByCategory(3);
 
-            // Assuming Category ID 3 = Dinner
-            //_recipes = _recipeService.GetByCategory(3);
+             DinnerRecipeList.ItemsSource = _recipes;
 
-            // DinnerRecipeList.ItemsSource = _recipes;
-
-            //hardcoded recipes for now below
-            _recipes = new List<Recipe>
-        {
-            new Recipe
-            {
-                Name = "Spaghetti Bolognese",
-                Ingredients = new List<string> { "spaghetti", "ground beef", "tomato sauce", "onion", "garlic" },
-                Ingredient = "spaghetti",
-                Allergen = "none",
-                MeasurementAmount = 2,
-                Serving = 4,
-                MeasurementType = "cups",
-                Instructions = "Boil spaghetti. Cook beef. Mix with sauce. Combine and serve.",
-                Keywords = "italian, pasta",
-                Categories = new List<int> { 3 },
-                TotalTime = 45
-            },
-            new Recipe
-            {
-                Name = "Supreme Pizza",
-                Ingredients = new List<string> { "cheese", "pepperoni", "tomato", "dough", "onion", "pepper", "sausage" },
-                Ingredient = "dough",
-                Allergen = "dairy",
-                MeasurementAmount = .5,
-                Serving = 4,
-                MeasurementType = "pound",
-                Instructions = "Shape the dough into flying saucer shape, spread pizza sauce evenly, add layer of mozzerella, top with the veggies and meats",
-                Keywords = "Italian, Comfort, Dinner",
-                Categories = new List<int> { 3 },
-                TotalTime = 30
-            },
-            new Recipe
-            {
-                Name = "Mac And Cheese",
-                Ingredients = new List<string> { "cheese", "Elbow Macaroni", "Milk", "Flour", "pasta"},
-                Ingredient = "cheese",
-                Allergen = "dairy",
-                MeasurementAmount = 2.0,
-                Serving = 4,
-                MeasurementType = "cups",
-                Instructions = "cook the pasta, make the roux, add milk and cheese and stir into pot",
-                Keywords = "Italian, Comfort, Dinner",
-                Categories = new List<int> { 3 },
-                TotalTime = 20
-            },
-        };
-            DinnerRecipeList.ItemsSource = _recipes;
-
+           
     }
    
         private void DinnerRecipeList_SelectionChanged(object sender, SelectionChangedEventArgs e)

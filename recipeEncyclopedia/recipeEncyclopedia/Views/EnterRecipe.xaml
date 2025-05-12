@@ -166,14 +166,6 @@
                     </Button.Resources>
                 </Button>
 
-                <Button x:Name="Login" Content="Login" Click="Login_Click" Grid.ColumnSpan="2" Grid.Column="10" Grid.Row="1">
-                    <Button.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="5"/>
-                        </Style>
-                    </Button.Resources>
-                </Button>
-
             </Grid>
 
         </Border>

@@ -49,62 +49,11 @@ namespace recipeEncyclopedia.Views
 
         private void LoadBakingRecipes()
         {
+            _recipes = _recipeService.GetByCategory(5);
 
-            //load recipe hubs not working, getbycategory throwing null 
-
-            // Assuming Category ID 3 = Dinner
-            //_recipes = _recipeService.GetByCategory(3);
-
-            // DinnerRecipeList.ItemsSource = _recipes;
-
-            //hardcoded recipes for now below
-            _recipes = new List<Recipe>
-            {
-                new Recipe
-                {
-                    Name = "Chocolate Chip Cookies",
-                    Ingredients = new List<string> { "Flour", "Chocolate Chips", "Sugar", "Eggs" },
-                    Ingredient = "Flour",
-                    Allergen = "Dairy",
-                    MeasurementAmount = 3.0,
-                    Serving = 6,
-                    MeasurementType = "cups",
-                    Instructions = "Crack eggs into flour and whisk, add sugar, drop some chocolate chips in after stirring and bake at 425f for 15 minutes.",
-                    Keywords = "dessert, comfort",
-                    Categories = new List<int> { 3 },
-                    TotalTime = 25
-                },
-                new Recipe
-                {
-                    Name = "Cupcakes",
-                    Ingredients = new List<string> {  "Flour", "Chocolate", "Sugar", "Eggs", "Vanilla", "Frosting" },
-                    Ingredient = "Flour",
-                    Allergen = "dairy",
-                    MeasurementAmount = 2.0,
-                    Serving = 8,
-                    MeasurementType = "cups",
-                    Instructions = "Crack eggs into flour and whisk, add sugar, Chocolate and vanilla, bake at 425f for 25 minutes, add layer of frosting after baking.",
-                    Keywords = "dessert, comfort",
-                    Categories = new List<int> { 3 },
-                    TotalTime = 60
-                },
-
-                new Recipe
-                {
-                    Name = "Banana Bread",
-                    Ingredients = new List<string> { "bananas", "Flour", "Sugar", "Chocolate Chips", "Eggs"},
-                    Ingredient = "Banana",
-                    Allergen = "dairy",
-                    MeasurementAmount = .5,
-                    Serving = 5,
-                    MeasurementType = "pounds",
-                    Instructions = "Crack eggs into flour and whisk, add bananas and sugar, add chocolate chips, bake at 425f for 25 minutes.",
-                    Keywords = "dessert, fruit",
-                    Categories = new List<int> { 3 },
-                    TotalTime = 35
-                }
-            };
             BakingRecipeList.ItemsSource = _recipes;
+
+           
         }
 
 
@@ -142,9 +91,6 @@ namespace recipeEncyclopedia.Views
                 MessageBox.Show("You must be logged in to add favorites.");
                 return;
             }
-
-            // Optional: prevent duplicates
-          
 
             var newFavorite = new UserRecipe
             {
