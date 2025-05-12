@@ -74,11 +74,11 @@ namespace recipeEncyclopedia.Views
                         $"\n\nThis recipe serves {selectedRecipe.Serving} and takes {selectedRecipe.TotalTime} minutes." +
                         $"\n\nInstructions:\n{selectedRecipe.Instructions}";
 
-                    DinnerDetailsText.Text = details;
+                    DinnerRecipeDetailsText.Text = details;
                 }
                 else
                 {
-                    DinnerDetailsText.Text = $"{selectedRecipe.Name} has no ingredients listed.\n\nInstructions:\n{selectedRecipe.Instructions}";
+                    DinnerRecipeDetailsText.Text = $"{selectedRecipe.Name} has no ingredients listed.\n\nInstructions:\n{selectedRecipe.Instructions}";
                 }
 
             }
@@ -116,7 +116,19 @@ namespace recipeEncyclopedia.Views
             this.Close();
 
         }
-    
+
+        private void AllRecipes_Click(object sender, RoutedEventArgs e)
+        {
+            AllRecipesView allRecipes = new AllRecipesView();
+            allRecipes.Show();
+        }
+
+        private void FavoriteRecipe_Click(object sender, RoutedEventArgs e)
+        {
+            MyFavoriteRecipes favoriteRecipes = new MyFavoriteRecipes();
+            favoriteRecipes.Show();
+        }
+
 
     }
 }

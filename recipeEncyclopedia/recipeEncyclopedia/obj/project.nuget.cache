@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zz4nqRU3Oh79vlqWsZk9mSct40jXJb6tGSsnZQsUqBI49RYZQSiJ37/H+/kMKwx3XDpoRrTOXMGgN4j/uwWwSA==",
+  "dgSpecHash": "VIlYQ50Kxw4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\LocalRecipe\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia.csproj",
+  "projectFilePath": "C:\\Users\\ebb4vh\\OneDrive - University of Missouri\\Documents\\GitHub\\RecipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia\\recipeEncyclopedia.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ebb4vh\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\ebb4vh\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.0.0\\microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",

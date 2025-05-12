@@ -108,5 +108,17 @@ namespace recipeEncyclopedia.Views
             favorites.Show();
             this.Close();
         }
+
+        private void AllRecipes_Click(object sender, RoutedEventArgs e)
+        {
+            AllRecipesView allRecipes = new AllRecipesView();
+            allRecipes.Show();
+        }
+
+        private void FavoriteRecipe_Click(object sender, RoutedEventArgs e)
+        {
+            MyFavoriteRecipes favoriteRecipes = new MyFavoriteRecipes();
+            favoriteRecipes.Show();
+        }
     }
 }
