@@ -10,7 +10,6 @@ namespace recipeEncyclopedia
     /// </summary>
     public partial class App : Application
     {
-        
     }
 
 
