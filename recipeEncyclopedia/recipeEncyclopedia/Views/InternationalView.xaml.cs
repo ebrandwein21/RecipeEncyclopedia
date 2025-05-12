@@ -51,7 +51,7 @@ namespace recipeEncyclopedia.Views
         {
 
             
-            _recipes = _recipeService.GetByCategory(6);
+            _recipes = _recipeService.GetByCategory(4);
 
            
             InternationalRecipeList.ItemsSource = _recipes;
