@@ -65,11 +65,22 @@ namespace recipeEncyclopedia.Views
             var selectedRecipe = DinnerRecipeList.SelectedItem as Recipe;
             if (selectedRecipe != null)
             {
-                string details = $"{selectedRecipe.Name} has the ingredients: {string.Join(',', selectedRecipe.Ingredients)}" +
-                    $" \n \n use {selectedRecipe.MeasurementAmount} {selectedRecipe.MeasurementType} of {selectedRecipe.Ingredient}. The recipe serves {selectedRecipe.Serving} and takes {selectedRecipe.TotalTime} Minutes. " +
-                    $"\n \n Here are the instructions: {selectedRecipe.Instructions}";
+                if (selectedRecipe.Ingredients != null && selectedRecipe.Ingredients.Any())
+                {
+                    string ingredientList = string.Join(",\n", selectedRecipe.Ingredients.Select(i =>
+                        $"{i.Amount} {i.MeasurementType} {i.Name} (Allergen: {i.Allergen})"));
 
-                DinnerDetailsText.Text = details;
+                    string details = $"{selectedRecipe.Name} has the ingredients:\n\n{ingredientList}" +
+                        $"\n\nThis recipe serves {selectedRecipe.Serving} and takes {selectedRecipe.TotalTime} minutes." +
+                        $"\n\nInstructions:\n{selectedRecipe.Instructions}";
+
+                    DinnerDetailsText.Text = details;
+                }
+                else
+                {
+                    DinnerDetailsText.Text = $"{selectedRecipe.Name} has no ingredients listed.\n\nInstructions:\n{selectedRecipe.Instructions}";
+                }
+
             }
         }
 

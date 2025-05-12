@@ -13,12 +13,13 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using recipeEncyclopedia.Models.recipeEncyclopedia.Models;
 
 
 namespace recipeEncyclopedia.Views
 {
     /// <summary>
-    /// Interaction logic for DinnerRecipes.xaml
+    /// Interaction logic for BakingRecipes.xaml
     /// </summary>
     public partial class BakingRecipes : Window
     {
@@ -57,18 +58,28 @@ namespace recipeEncyclopedia.Views
         }
 
 
-            private void BakingRecipeList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void BakingRecipeList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var selectedRecipe = BakingRecipeList.SelectedItem as Recipe;
+            if (selectedRecipe != null)
             {
-                var selectedRecipe = BakingRecipeList.SelectedItem as Recipe;
-                if (selectedRecipe != null)
+                if (selectedRecipe.Ingredients != null && selectedRecipe.Ingredients.Any())
                 {
-                    string details = $"{selectedRecipe.Name} has the ingredients: {string.Join(',', selectedRecipe.Ingredients)}" +
-                        $" \n \n use {selectedRecipe.MeasurementAmount} {selectedRecipe.MeasurementType} of {selectedRecipe.Ingredient}. The recipe serves {selectedRecipe.Serving} and takes {selectedRecipe.TotalTime} Minutes. " +
-                        $"\n \n Here are the instructions: {selectedRecipe.Instructions}";
+                    string ingredientList = string.Join(",\n", selectedRecipe.Ingredients.Select(i =>
+                        $"{i.Amount} {i.MeasurementType} {i.Name} (Allergen: {i.Allergen})"));
+
+                    string details = $"{selectedRecipe.Name} has the ingredients:\n\n{ingredientList}" +
+                        $"\n\nThis recipe serves {selectedRecipe.Serving} and takes {selectedRecipe.TotalTime} minutes." +
+                        $"\n\nInstructions:\n{selectedRecipe.Instructions}";
 
                     BakingDetailsText.Text = details;
                 }
+                else
+                {
+                    BakingDetailsText.Text = $"{selectedRecipe.Name} has no ingredients listed.\n\nInstructions:\n{selectedRecipe.Instructions}";
+                }
             }
+        }
         
 
 
@@ -105,6 +116,9 @@ namespace recipeEncyclopedia.Views
             favorites.Show();
             this.Close();
         }
+
+        
+
 
     }
 }

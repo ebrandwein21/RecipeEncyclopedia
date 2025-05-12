@@ -1,4 +1,7 @@
-﻿using System;
+﻿using recipeEncyclopedia.Data;
+using recipeEncyclopedia.Models.recipeEncyclopedia.Models;
+using recipeEncyclopedia.Models;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -61,5 +64,55 @@ namespace recipeEncyclopedia.Views
         {
             //edit selected
         }
+
+        private void AddToShoppingList_Click(object sender, RoutedEventArgs e)
+        {
+            var selectedRecipe = informationBox.SelectedItem as recipeEncyclopedia.Models.Recipe;
+            var user = AppSession.CurrentUser;
+
+            if (selectedRecipe == null)
+            {
+                MessageBox.Show("Please select a recipe first.");
+                return;
+            }
+
+            if (user == null)
+            {
+                MessageBox.Show("You must be logged in to use the shopping list.");
+                return;
+            }
+
+            var shoppingService = new ShoppingListService();
+            var userLists = shoppingService.GetByUser(user.Id);
+            var currentList = userLists.FirstOrDefault();
+
+            if (currentList == null)
+            {
+                currentList = new ShoppingListModel
+                {
+                    UserId = user.Id,
+                    Items = new List<Ingredient>()
+                };
+            }
+
+            foreach (var ingredient in selectedRecipe.Ingredients)
+            {
+                bool alreadyInList = currentList.Items.Any(i =>
+                    i.Name == ingredient.Name &&
+                    i.MeasurementType == ingredient.MeasurementType &&
+                    Math.Abs(i.Amount - ingredient.Amount) < 0.001);
+
+                if (!alreadyInList)
+                    currentList.Items.Add(ingredient);
+            }
+
+            if (string.IsNullOrEmpty(currentList.Id))
+                shoppingService.Add(currentList);
+            else
+                shoppingService.Update(currentList.Id, currentList);
+
+            MessageBox.Show($"{selectedRecipe.Name} ingredients added to your shopping list.");
+        }
+
     }
- }
+}

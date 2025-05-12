@@ -9,9 +9,14 @@ using System.Threading.Tasks;
 
     namespace recipeEncyclopedia.Models
     {
-        class Ingredient
+        public class Ingredient
         {
+            public string Name { get; set; }
+            public double Amount { get; set; }
+            public string MeasurementType { get; set; }
+            public string Allergen { get; set; }
         }
     }
+
 }
 

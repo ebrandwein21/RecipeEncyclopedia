@@ -4,11 +4,15 @@ using System.Windows;
 using System.Windows.Controls;
 using recipeEncyclopedia.Data;
 using recipeEncyclopedia.Models;
+using recipeEncyclopedia.Models.recipeEncyclopedia.Models;
 
 namespace recipeEncyclopedia.Views
 {
     public partial class EnterRecipe : Window
     {
+        private List<Ingredient> currentIngredients = new List<Ingredient>();
+
+
         public EnterRecipe()
         {
             InitializeComponent();
@@ -23,10 +27,6 @@ namespace recipeEncyclopedia.Views
                 string.IsNullOrWhiteSpace(DurationBox.Text) ||
                 string.IsNullOrWhiteSpace(ServingTextBox.Text) ||
                 string.IsNullOrWhiteSpace(KeywordBox.Text) ||
-                string.IsNullOrWhiteSpace(IngredientBox.Text) ||
-                string.IsNullOrWhiteSpace(AmountBox.Text) ||
-                string.IsNullOrWhiteSpace(MeasurementTypeBox.Text) ||
-                string.IsNullOrWhiteSpace(AllergenBox.Text) ||
                 string.IsNullOrWhiteSpace(InstructionBox.Text))
             {
                 MessageBox.Show("Please fill in all fields.");
@@ -45,15 +45,11 @@ namespace recipeEncyclopedia.Views
                 return;
             }
 
-            if (!double.TryParse(AmountBox.Text, out double amount))
+            if (currentIngredients.Count == 0)
             {
-                MessageBox.Show("Amount must be a valid number.");
+                MessageBox.Show("Please add at least one ingredient.");
                 return;
             }
-
-            // Build ingredients list as string
-            string ingredientText = $"Ingredient: {IngredientBox.Text}, Amount: {amount} {MeasurementTypeBox.Text}, Allergen: {AllergenBox.Text}";
-            var ingredientsList = new List<string> { ingredientText };
 
             // Gather selected categories
             var selectedCategories = new List<int>();
@@ -73,11 +69,8 @@ namespace recipeEncyclopedia.Views
                 TotalTime = duration,
                 Serving = serving,
                 Keywords = KeywordBox.Text,
-                Ingredients = ingredientsList,
-                Allergen = AllergenBox.Text,
-                MeasurementAmount = amount,
-                MeasurementType = MeasurementTypeBox.Text,
                 Instructions = InstructionBox.Text,
+                Ingredients = new List<Ingredient>(currentIngredients),
                 Categories = selectedCategories
             };
 
@@ -92,11 +85,13 @@ namespace recipeEncyclopedia.Views
             DurationBox.Clear();
             ServingTextBox.Clear();
             KeywordBox.Clear();
+            InstructionBox.Clear();
             IngredientBox.Clear();
             AmountBox.Clear();
             MeasurementTypeBox.Clear();
             AllergenBox.Clear();
-            InstructionBox.Clear();
+            currentIngredients.Clear();
+            IngredientPreviewList.ItemsSource = null;
 
             foreach (ListBoxItem item in CategorySelection.Items)
             {
@@ -112,6 +107,47 @@ namespace recipeEncyclopedia.Views
             home.Show();
             this.Close();
         }
+
+        private void AddIngredient_Click(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(IngredientBox.Text) ||
+                string.IsNullOrWhiteSpace(AmountBox.Text) ||
+                string.IsNullOrWhiteSpace(MeasurementTypeBox.Text) ||
+                string.IsNullOrWhiteSpace(AllergenBox.Text))
+            {
+                MessageBox.Show("Please fill in all ingredient fields.");
+                return;
+            }
+
+            if (!double.TryParse(AmountBox.Text, out double amount))
+            {
+                MessageBox.Show("Amount must be a number.");
+                return;
+            }
+
+            var ingredient = new Ingredient
+            {
+                Name = IngredientBox.Text,
+                Amount = amount,
+                MeasurementType = MeasurementTypeBox.Text,
+                Allergen = AllergenBox.Text
+            };
+
+            currentIngredients.Add(ingredient);
+
+            // Update preview
+            IngredientPreviewList.ItemsSource = null;
+            IngredientPreviewList.ItemsSource = currentIngredients
+                .Select(i => $"{i.Name} - {i.Amount} {i.MeasurementType} (Allergen: {i.Allergen})")
+                .ToList();
+
+            // Clear inputs
+            IngredientBox.Clear();
+            AmountBox.Clear();
+            MeasurementTypeBox.Clear();
+            AllergenBox.Clear();
+        }
+
 
     }
 }

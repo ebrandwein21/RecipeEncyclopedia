@@ -15,7 +15,7 @@ namespace recipeEncyclopedia.Models
         [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; }
         public string UserId { get; set; }
-        public List<string> Items { get; set; }
+        public List<recipeEncyclopedia.Models.Ingredient> Items { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.Now;
 
     }
