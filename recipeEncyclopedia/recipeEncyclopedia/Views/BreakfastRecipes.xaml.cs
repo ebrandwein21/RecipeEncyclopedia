@@ -135,21 +135,15 @@ namespace recipeEncyclopedia.Views
             }
 
             // Optional: prevent duplicates
-            var existing = _userRecipeService
-                .GetByUserId(user.Id)
-                .FirstOrDefault(ur => ur.RecipeId == selectedRecipe.Id);
-
-            if (existing != null)
-            {
-                MessageBox.Show("Recipe is already in your favorites.");
-                return;
-            }
+           
 
             var newFavorite = new UserRecipe
             {
                 UserId = user.Id,
                 RecipeId = selectedRecipe.Id
             };
+
+            ViewModel.RecipeViewModel.favoriteRecipe.Add(selectedRecipe);
 
             _userRecipeService.Add(newFavorite);
             MessageBox.Show($"'{selectedRecipe.Name}' added to your favorites.");

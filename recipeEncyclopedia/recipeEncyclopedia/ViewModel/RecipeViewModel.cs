@@ -1,7 +1,9 @@
 ﻿using MongoDB.Driver;
+using recipeEncyclopedia.Models;
 using recipeEncyclopedia.Models.recipeEncyclopedia.Models;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Text;
@@ -13,7 +15,9 @@ namespace recipeEncyclopedia.ViewModel
     class RecipeViewModel
     {
 
-        Models.Recipe recipe = new Models.Recipe();
+      
+            public static ObservableCollection<Recipe> favoriteRecipe { get; set; } = new ObservableCollection<Recipe>();
+        
     }
 }
         

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,9 +20,13 @@ namespace recipeEncyclopedia.Views
     /// </summary>
     public partial class MyFavoriteRecipes : Window
     {
+
+        public ObservableCollection<recipeEncyclopedia.Models.Recipe> favoriteRecipe { get; set; } = new ObservableCollection<recipeEncyclopedia.Models.Recipe>();
         public MyFavoriteRecipes()
         {
             InitializeComponent();
+            informationBox.ItemsSource = ViewModel.RecipeViewModel.favoriteRecipe;
+
         }
 
         private void Login_Click(object sender, RoutedEventArgs e)
