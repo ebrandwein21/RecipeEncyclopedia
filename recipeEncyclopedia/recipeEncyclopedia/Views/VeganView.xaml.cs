@@ -54,9 +54,9 @@ namespace recipeEncyclopedia.Views
             //load recipe hubs not working, getbycategory throwing null 
 
             // Assuming Category ID 3 = Dinner
-            //_recipes = _recipeService.GetByCategory(3);
+            _recipes = _recipeService.GetByCategory(4);
 
-            // DinnerRecipeList.ItemsSource = _recipes;
+            VeganRecipeList.ItemsSource = _recipes;
         }
 
         private void VeganRecipeList_SelectionChanged(object sender, SelectionChangedEventArgs e)

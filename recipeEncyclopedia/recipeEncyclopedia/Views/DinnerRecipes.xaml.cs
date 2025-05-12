@@ -55,13 +55,14 @@ namespace recipeEncyclopedia.Views
             //load recipe hubs not working, getbycategory throwing null 
 
             // Assuming Category ID 3 = Dinner
-            //_recipes = _recipeService.GetByCategory(3);
+            _recipes = _recipeService.GetByCategory(3);
 
-            // DinnerRecipeList.ItemsSource = _recipes;
+            DinnerRecipeList.ItemsSource = _recipes;
 
+            /*{
             //hardcoded recipes for now below
             _recipes = new List<Recipe>
-        {
+        
             new Recipe
             {
                 Name = "Spaghetti Bolognese",
@@ -90,10 +91,10 @@ namespace recipeEncyclopedia.Views
                 Categories = new List<int> { 3 },
                 TotalTime = 15
             },
-        };
-            DinnerRecipeList.ItemsSource = _recipes;
+        };*/
+            //DinnerRecipeList.ItemsSource = _recipes;
 
-    }
+            }
    
         private void DinnerRecipeList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {

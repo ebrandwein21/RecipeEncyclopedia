@@ -18,7 +18,7 @@ using System.Windows.Shapes;
 namespace recipeEncyclopedia.Views
 {
     /// <summary>
-    /// Interaction logic for DinnerRecipes.xaml
+    /// Interaction logic for BakingRecipes.xaml
     /// </summary>
     public partial class BakingRecipes : Window
     {
@@ -52,13 +52,13 @@ namespace recipeEncyclopedia.Views
 
             //load recipe hubs not working, getbycategory throwing null 
 
-            // Assuming Category ID 3 = Dinner
-            //_recipes = _recipeService.GetByCategory(3);
+            // Assuming Category ID 3 = Baking
+            _recipes = _recipeService.GetByCategory(5);
 
-            // DinnerRecipeList.ItemsSource = _recipes;
+            BakingRecipeList.ItemsSource = _recipes;
 
             //hardcoded recipes for now below
-            _recipes = new List<Recipe>
+            /*_recipes = new List<Recipe>
             {
                 new Recipe
                 {
@@ -104,7 +104,7 @@ namespace recipeEncyclopedia.Views
                     TotalTime = 35
                 }
             };
-            BakingRecipeList.ItemsSource = _recipes;
+            BakingRecipeList.ItemsSource = _recipes;*/
         }
 
 

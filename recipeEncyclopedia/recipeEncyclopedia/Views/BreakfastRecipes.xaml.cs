@@ -49,10 +49,11 @@ namespace recipeEncyclopedia.Views
         private void LoadBreakfastRecipes()
         {
             // Assuming Category ID 1 = Breakfast
-            // _recipes = _recipeService.GetByCategory(1);
+             _recipes = _recipeService.GetByCategory(1);
 
+            BreakfastRecipeList.ItemsSource = _recipes;
             //hardcoded recipes for now below
-            _recipes = new List<Recipe>
+            /*_recipes = new List<Recipe>
             {
                 new Recipe
                 {
@@ -99,7 +100,7 @@ namespace recipeEncyclopedia.Views
                     TotalTime = 10
                 }
             };
-            BreakfastRecipeList.ItemsSource = _recipes;
+            BreakfastRecipeList.ItemsSource = _recipes;*/
         }
     
 

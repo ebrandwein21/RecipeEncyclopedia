@@ -53,9 +53,9 @@ namespace recipeEncyclopedia.Views
             //load recipe hubs not working, getbycategory throwing null 
 
             // Assuming Category ID 3 = Dinner
-            //_recipes = _recipeService.GetByCategory(3);
+            _recipes = _recipeService.GetByCategory(6);
 
-            _recipes = new List<Recipe>
+            /*_recipes = new List<Recipe>
             {
                 new Recipe
                 {
@@ -115,7 +115,7 @@ namespace recipeEncyclopedia.Views
                     Categories = new List<int> { 3 },
                     TotalTime = 30
                 }
-            };
+            };*/
             InternationalRecipeList.ItemsSource = _recipes;
         }
     

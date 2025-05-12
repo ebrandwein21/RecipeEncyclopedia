@@ -42,7 +42,7 @@ namespace recipeEncyclopedia.Views
             //informationBox.ItemsSource = _favoriteRecipes;
             if (_favoriteRecipes.Count == 0)
             {
-                MessageBox.Show("No recipes found in favorites.");
+                //MessageBox.Show("No recipes found in favorites.");
             }
             else
             {

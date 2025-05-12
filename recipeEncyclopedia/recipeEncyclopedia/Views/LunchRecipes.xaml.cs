@@ -48,9 +48,9 @@ namespace recipeEncyclopedia.Views
         private void LoadLunchRecipes()
         {
             // Assuming Category ID 2 = Lunch
-          //  _recipes = _recipeService.GetByCategory(2);
+           _recipes = _recipeService.GetByCategory(2);
 
-           // LunchRecipeList.ItemsSource = _recipes;
+            LunchRecipeList.ItemsSource = _recipes;
         }
 
         private void LunchRecipeList_SelectionChanged(object sender, SelectionChangedEventArgs e)
