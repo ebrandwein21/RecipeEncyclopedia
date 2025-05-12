@@ -51,7 +51,7 @@ namespace recipeEncyclopedia.Views
         private void LoadVeganRecipes()
         {
 
-            _recipes = _recipeService.GetByCategory(4);
+            _recipes = _recipeService.GetByCategory(6);
             VeganRecipeList.ItemsSource = _recipes;
         }
 
