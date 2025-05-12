@@ -6,169 +6,76 @@
         xmlns:local="clr-namespace:recipeEncyclopedia.Views"
         mc:Ignorable="d"
         Title="EnterRecipe" Height="450" Width="800">
-    <Grid>
-        <Border 
-            Background="Beige" BorderBrush="DarkOliveGreen" BorderThickness="10" Grid.RowSpan="15" Grid.ColumnSpan="13">
-            <Grid x:Name="UserRecipeGrid" Margin="5">
-                <Grid.RowDefinitions>
+    <Grid Background="Beige" Margin="0,0,0,-6">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
 
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
+        <StackPanel Grid.Row="0" Margin="0,0,0,10">
+            <TextBlock Text="Enter a New Recipe" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center"/>
+        </StackPanel>
 
-                </Grid.RowDefinitions>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
 
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
+            <!-- LEFT COLUMN -->
+            <StackPanel Grid.Column="0" Margin="10" VerticalAlignment="Top">
 
-                <Label
-            Content="Please Enter Your Recipe" Background="Beige" BorderBrush="Transparent" FontSize="20"  Grid.Column="4"  Grid.Row ="1"  Grid.RowSpan="2" Grid.ColumnSpan="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+                <TextBlock Text="Recipe Name:" />
+                <TextBox Name="EnterRecipeName"/>
 
-                <ListBox x:Name="informationBox"  IsSynchronizedWithCurrentItem="True"  ItemsSource="{Binding recipeInfo}"  DisplayMemberPath="InformationToString" SelectionChanged="InformationBox_SelectionChanged" Grid.Column="0" Grid.RowSpan="9" Grid.Row="3" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                <TextBlock Text="Total Time (minutes):" Margin="0,10,0,0"/>
+                <TextBox Name="DurationBox"/>
 
-                <Grid Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" >
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Label Content="Recipe Name" Grid.Column="0" />
-                    <TextBox Name="EnterRecipeName" Grid.Column="1" Grid.ColumnSpan="2"/>
-                </Grid>
+                <TextBlock Text="Serving Size:" Margin="0,10,0,0"/>
+                <TextBox Name="ServingTextBox"/>
 
-                <Grid Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Label Content="Duration" Grid.Column="0" />
-                    <TextBox Name="DurationBox" Grid.Column="1"/>
-                </Grid>
+                <TextBlock Text="Keywords:" Margin="0,10,0,0"/>
+                <TextBox Name="KeywordBox"/>
 
-                <Grid Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="2">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Label Content="Serving" Grid.Column="0" />
-                    <TextBox Name="ServingTextBox" Grid.Column="1"/>
-                </Grid>
-
-                <Grid Grid.Row="9" Grid.Column="2" Grid.ColumnSpan="2">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Label Content="Tags:" Grid.Column="0" />
-                    <TextBox Name="KeywordBox" Grid.Column="1"/>
-                </Grid>
-
-                <Grid Grid.Row="11" Grid.Column="2" Grid.ColumnSpan="2">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Label Content="Categories:" Grid.Column="0" />
-                    <ListBox SelectionMode="Multiple"  x:Name = "CategorySelection" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Grid.Column="1">
-                        <ListBoxItem Content="Breakfast" Height="26"/>
-                        <ListBoxItem Content="Lunch"/>
-                        <ListBoxItem Content="Dinner"/>
-                        <ListBoxItem Content="Bakery"/>
-                        <ListBoxItem Content="Vegan"/>
-                        <ListBoxItem Content="International"/>
-                    </ListBox>
-                </Grid>
-
-                <ListBox x:Name="IngredientListBox"  IsSynchronizedWithCurrentItem="True"  ItemsSource="{Binding recipeInput}" DisplayMemberPath="IngredienToString" SelectionChanged="IngredientBox_SelectionChanged" Grid.Column="5" Grid.RowSpan="9" Grid.Row="3" Grid.ColumnSpan="2"/>
-
-
-                <Grid Grid.Row="3" Grid.Column="7" Grid.ColumnSpan="2">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Label Content="Ingredient:" Grid.Column="0" />
-                    <TextBox Name="IngredientBox" Grid.Column="1"/>
-                </Grid>
-
-                <Grid Grid.Row="6" Grid.Column="7" Grid.ColumnSpan="2">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Label Content="Allergen:" Grid.Column="0"/>
-                    <TextBox Name="AllergenBox" Grid.Column="1" />
-                </Grid>
-
-                <Grid Grid.Row="9" Grid.Column="7" Grid.ColumnSpan="2">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Label Content="Amount:" Grid.Column="0"/>
-                    <TextBox Name="AmountBox" Grid.Column="1"/>
-
-                </Grid>
-
-                <Grid Grid.Row="3" Grid.Column="9" Grid.ColumnSpan="3" Grid.RowSpan="4">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Label Content="Instructions:" Grid.Column="0"/>
-                    <TextBox Name="InstructionBox" Grid.Column="1" />
-
-                </Grid>
-
-                <ListBox x:Name="InstructionListBox"  IsSynchronizedWithCurrentItem="True"  ItemsSource="{Binding recipeInfo}" SelectionChanged="Instruction_SelectionChanged" Grid.Column="10" Grid.RowSpan="6" Grid.Row="7" Grid.ColumnSpan="2" Margin="2,31,-2,31">
-                    <ListBox.ItemTemplate>
-                    <DataTemplate>
-                            <TextBlock Text="{Binding Instructions}" TextWrapping="Wrap"/>
-                    </DataTemplate>
-                </ListBox.ItemTemplate>
+                <TextBlock Text="Categories:" Margin="0,10,0,0"/>
+                <ListBox Name="CategorySelection" SelectionMode="Multiple" Height="100">
+                    <ListBoxItem Content="Breakfast"/>
+                    <ListBoxItem Content="Lunch"/>
+                    <ListBoxItem Content="Dinner"/>
+                    <ListBoxItem Content="Bakery"/>
+                    <ListBoxItem Content="Vegan"/>
+                    <ListBoxItem Content="International"/>
                 </ListBox>
 
-                <Button x:Name="SubmitRecipe" Content="Submit Recipe" Click="SubmitRecipe_Click" Grid.Row="13" Grid.ColumnSpan="6" Grid.Column="3">
-                    <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="5"/>
-                    </Style>
-                    </Button.Resources>
-                </Button>
+            </StackPanel>
 
-                <Button x:Name="Home" Content="Home 🏠︎" Click="Home_Click" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="1">
-                    <Button.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="5"/>
-                        </Style>
-                    </Button.Resources>
-                </Button>
+            <!-- RIGHT COLUMN -->
+            <StackPanel Grid.Column="1" Margin="10" VerticalAlignment="Top">
 
-            </Grid>
+                <TextBlock Text="Ingredient Name:"/>
+                <TextBox Name="IngredientBox"/>
 
-        </Border>
+                <TextBlock Text="Amount:" Margin="0,10,0,0"/>
+                <TextBox Name="AmountBox"/>
+
+                <TextBlock Text="Measurement Type (e.g., cups, grams):" Margin="0,10,0,0"/>
+                <TextBox Name="MeasurementTypeBox"/>
+
+                <TextBlock Text="Allergen Info:" Margin="0,10,0,0"/>
+                <TextBox Name="AllergenBox"/>
+
+                <TextBlock Text="Instructions:" Margin="0,10,0,0"/>
+                <TextBox Name="InstructionBox" AcceptsReturn="True" Height="100" TextWrapping="Wrap"/>
+
+            </StackPanel>
+        </Grid>
+
+        <!-- BOTTOM BUTTONS -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+            <Button Name="SubmitRecipe" Content="Submit Recipe" Width="120" Margin="10" Click="SubmitRecipe_Click"/>
+            <Button Name="Home" Content="Home 🏠︎" Width="100" Margin="10" Click="Home_Click"/>
+        </StackPanel>
     </Grid>
 </Window>
 

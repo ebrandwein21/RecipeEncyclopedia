@@ -29,5 +29,11 @@ namespace recipeEncyclopedia.Data
         {
             return _collection.Find(r => r.Id == id).FirstOrDefault();
         }
+
+        internal void Add(Recipe newRecipe)
+        {
+            _collection.InsertOne(newRecipe);
+
+        }
     }
 }
