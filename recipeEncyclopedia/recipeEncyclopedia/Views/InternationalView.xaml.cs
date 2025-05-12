@@ -151,7 +151,7 @@ namespace recipeEncyclopedia.Views
                 return;
             }
 
-            // Optional: prevent duplicates
+            // prevent duplicates
             var existing = _userRecipeService
                 .GetByUserId(user.Id)
                 .FirstOrDefault(ur => ur.RecipeId == selectedRecipe.Id);

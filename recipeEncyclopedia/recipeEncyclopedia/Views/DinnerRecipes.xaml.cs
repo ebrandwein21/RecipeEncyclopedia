@@ -145,8 +145,8 @@ namespace recipeEncyclopedia.Views
 
             _userRecipeService.Add(newFavorite);
             MessageBox.Show($"'{selectedRecipe.Name}' added to your favorites.");
-            favorites.Show();
-            this.Close();
+            //favorites.Show();
+            //this.Close();
 
         }
     
