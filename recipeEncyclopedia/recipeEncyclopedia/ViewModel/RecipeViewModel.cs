@@ -14,8 +14,6 @@ namespace recipeEncyclopedia.ViewModel
 {
     class RecipeViewModel
     {
-
-      
             public static ObservableCollection<Recipe> favoriteRecipe { get; set; } = new ObservableCollection<Recipe>();
         
     }

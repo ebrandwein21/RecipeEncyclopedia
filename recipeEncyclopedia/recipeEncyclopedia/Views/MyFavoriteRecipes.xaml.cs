@@ -49,18 +49,13 @@ namespace recipeEncyclopedia.Views
         private void DeleteFavorite_Click(object sender, RoutedEventArgs e)
         {
 
-            var selectedItem = informationBox.SelectedItem as Models.Recipe;
-
-            if (selectedItem != null)
+            if (informationBox.SelectedItem is recipeEncyclopedia.Models.Recipe selectedRecipeIngredient)
             {
-                ViewModel.RecipeViewModel.favoriteRecipe.Remove(selectedItem);
+               ViewModel.RecipeViewModel.favoriteRecipe.Remove(selectedRecipeIngredient);
             }
-            else
-            {
-                MessageBox.Show("cannot be deleted");
-            }
-
         }
+
+        
 
         private void EditFavorite_Click(object sender, RoutedEventArgs e)
         {

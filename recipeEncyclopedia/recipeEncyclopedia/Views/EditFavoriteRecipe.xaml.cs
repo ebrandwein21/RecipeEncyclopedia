@@ -21,7 +21,7 @@ namespace recipeEncyclopedia.Views
     {
         public EditFavoriteRecipe()
         {
-            InitializeComponent();
+            
         }
     }
 }
