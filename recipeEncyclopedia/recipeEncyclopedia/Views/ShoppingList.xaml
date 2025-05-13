@@ -68,7 +68,7 @@
             Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
             Click="RemoveSelectedItem_Click">
                 <Button.Resources>
-                <Style TargetType="Border">
+                    <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="5"/>
                     </Style>
                 </Button.Resources>
@@ -93,12 +93,19 @@
                     </Style>
                 </Button.Resources>
             </Button>
-        </Grid> 
-        
-        
-        <Button Content="Home 🏠︎"  Grid.Row="1"  Margin="52,26,0,89" Grid.ColumnSpan="3"  HorizontalAlignment="Left"  Click="Home_Click" Height="30" Width="123" Grid.Column="10" >
+        </Grid>
+
+
+        <Button Content="Home 🏠︎"  Grid.Row="1"   Grid.ColumnSpan="2"  HorizontalAlignment="Left"  Click="Home_Click" Height="30"  Grid.Column="11" Margin="57,10,0,105" >
             <Button.Resources>
                 <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="logout"  Grid.Row="1"  Margin="10,10,0,105"  HorizontalAlignment="Left"  Click="logout_Click" Height="30" Grid.ColumnSpan="2" Width="52"  >
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="5"/>
                 </Style>
             </Button.Resources>

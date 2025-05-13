@@ -84,7 +84,6 @@ namespace recipeEncyclopedia.Views
 
             var editWindow = new EditFavoriteRecipe(selectedRecipe);
             editWindow.Show();
-            this.Close(); // Or use .Hide() if you want to return here later
         }
 
 
@@ -207,6 +206,14 @@ namespace recipeEncyclopedia.Views
             {
                 MessageBox.Show("select an entry before exporting to pdf");
             }
+        }
+
+        private void logout_Click(object sender, RoutedEventArgs e)
+        {
+            AppSession.CurrentUser = null;
+            LoginWindow login = new LoginWindow();
+            login.Show();
+            this.Close();
         }
     }
 }

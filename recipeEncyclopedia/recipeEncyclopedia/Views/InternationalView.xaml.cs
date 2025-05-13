@@ -125,5 +125,27 @@ namespace recipeEncyclopedia.Views
             favoriteRecipes.Show();
         }
 
+        private void Categories_Click(object sender, RoutedEventArgs e)
+        {
+            RecipeMenu menu = new RecipeMenu();
+            menu.Show();
+            this.Close();
+        }
+
+        private void Logout_Click(object sender, RoutedEventArgs e)
+        {
+
+            AppSession.CurrentUser = null;
+            LoginWindow login = new LoginWindow();
+            login.Show();
+            this.Close();
+        }
+
+        private void EnterRecipe_Click(object sender, RoutedEventArgs e)
+        {
+            EnterRecipe enter = new EnterRecipe();
+            enter.Show();
+        }
+
     }
 }

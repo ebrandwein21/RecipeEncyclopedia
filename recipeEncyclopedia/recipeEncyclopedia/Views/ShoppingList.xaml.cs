@@ -79,7 +79,6 @@ namespace recipeEncyclopedia.Views
                 var ingredientToRemove = _currentIngredients.FirstOrDefault(i =>
                 $"{i.Amount} {i.MeasurementType} {i.Name} (Allergen: {i.Allergen})" == ingredient);
 
-
                 _service.RemoveIngredientFromList(user.Id, ingredientToRemove);
                 LoadShoppingList();
                 MessageBox.Show($"{ingredientToRemove.Name} removed from your shopping list.");
@@ -155,6 +154,14 @@ namespace recipeEncyclopedia.Views
                 Process.Start("Explorer.exe", recipeFileName); //https://stackoverflow.com/questions/1746079/how-can-i-open-windows-explorer-to-a-certain-directory-from-within-a-wpf-app
             }
     
+        }
+
+        private void logout_Click(object sender, RoutedEventArgs e)
+        {
+            AppSession.CurrentUser = null;
+            LoginWindow login = new LoginWindow();
+            login.Show();
+            this.Close();
         }
     }
 }

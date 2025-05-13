@@ -141,6 +141,19 @@
                     </Button>
 
                 </Grid>
+                <Button
+                    Content="logout"
+                    Grid.Row="0" Grid.Column="1"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Click="logout_Click"
+                    Margin="20,5,0,0" Grid.ColumnSpan="2">
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
 
             </Grid>
         </Border>
