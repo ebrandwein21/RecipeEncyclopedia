@@ -6,6 +6,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Controls;
 using recipeEncyclopedia.Models.recipeEncyclopedia.Models;
+using PdfSharp.Drawing;
+using PdfSharp.Pdf;
+using System.Diagnostics;
 
 namespace recipeEncyclopedia.Views
 {
@@ -103,6 +106,53 @@ namespace recipeEncyclopedia.Views
             ShoppingListBox.ItemsSource = null;
             _currentIngredients.Clear();
             MessageBox.Show("Your shopping list has been cleared.");
+        }
+
+        private void ExportToPDF_Click(object sender, RoutedEventArgs e)
+        {
+            var user = AppSession.CurrentUser;
+
+            IEnumerable<string> ShoppingList = ShoppingListBox.SelectedItems.Cast<string>().ToList();
+
+
+            if (ShoppingList != null)
+            {
+                PdfSharp.Pdf.PdfDocument recipePDF = new PdfSharp.Pdf.PdfDocument();
+
+                PdfPage recipePage = recipePDF.AddPage();
+
+                XGraphics graph = XGraphics.FromPdfPage(recipePage);
+
+
+                recipePDF.Info.Title = $"{ShoppingList} recipe PDF";
+
+                string recipeFileName = $"{user.Username}_selectedItems.pdf";
+
+                int y = 25;
+
+                foreach (var ingredient in ShoppingList)
+                {
+
+
+                    var ingredientToPrint = _currentIngredients.FirstOrDefault(i =>
+                       $"{i.Amount} {i.MeasurementType} {i.Name} (Allergen: {i.Allergen})" == ingredient);
+
+                    XFont font2 = new XFont("Verdana", 20);
+                    string shoppingListOutput = $"{ingredientToPrint.Amount} {ingredientToPrint.MeasurementType} {ingredientToPrint.Name} (Allergen: {ingredientToPrint.Allergen})";
+
+                    graph.DrawString(shoppingListOutput, font2, XBrushes.Black, new XRect(0, y, recipePage.Width.Point, recipePage.Height.Point), XStringFormats.Center);
+
+                    y += 20;
+                }
+              
+                recipePDF.Save(recipeFileName);
+
+                Process.Start("Explorer.exe", recipeFileName); //https://stackoverflow.com/questions/1746079/how-can-i-open-windows-explorer-to-a-certain-directory-from-within-a-wpf-app
+            }
+            else
+            {
+                MessageBox.Show("select an entry before exporting to pdf");
+            }
         }
     }
 }

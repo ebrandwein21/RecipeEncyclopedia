@@ -45,8 +45,8 @@
                 <!-- Title -->
                 <Label
                     Content="My Favorite Recipes" Background="Beige" BorderBrush="Transparent"
-                    FontSize="32" HorizontalAlignment="Center" VerticalAlignment="Center"
-                    Grid.ColumnSpan="15" Grid.Column="2" Grid.Row="0"/>
+                    FontSize="32" HorizontalAlignment="Left" VerticalAlignment="Center"
+                    Grid.ColumnSpan="7" Grid.Column="4" Margin="38,0,0,0"/>
 
                 <Button
                     Content="Home 🏠︎"
@@ -139,8 +139,8 @@
                             </Style>
                         </Button.Resources>
                     </Button>
-              
-            </Grid>
+
+                </Grid>
 
             </Grid>
         </Border>
