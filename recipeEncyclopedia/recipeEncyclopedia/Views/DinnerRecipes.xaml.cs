@@ -27,9 +27,6 @@ namespace recipeEncyclopedia.Views
         private readonly UserRecipeService _userRecipeService = new UserRecipeService();
         private List<Recipe> _recipes = new List<Recipe>();
 
-
-
-
         public DinnerRecipes()
         {
             InitializeComponent();
@@ -51,14 +48,10 @@ namespace recipeEncyclopedia.Views
 
         private void LoadDinnerRecipes()
         {
-
-   
             _recipes = _recipeService.GetByCategory(3);
 
              DinnerRecipeList.ItemsSource = _recipes;
-
-           
-    }
+        }
    
         private void DinnerRecipeList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -80,7 +73,6 @@ namespace recipeEncyclopedia.Views
                 {
                     DinnerRecipeDetailsText.Text = $"{selectedRecipe.Name} has no ingredients listed.\n\nInstructions:\n{selectedRecipe.Instructions}";
                 }
-
             }
         }
 
@@ -114,7 +106,6 @@ namespace recipeEncyclopedia.Views
             MessageBox.Show($"'{selectedRecipe.Name}' added to your favorites.");
             favorites.Show();
             this.Close();
-
         }
 
         private void AllRecipes_Click(object sender, RoutedEventArgs e)
@@ -128,7 +119,5 @@ namespace recipeEncyclopedia.Views
             MyFavoriteRecipes favoriteRecipes = new MyFavoriteRecipes();
             favoriteRecipes.Show();
         }
-
-
     }
 }

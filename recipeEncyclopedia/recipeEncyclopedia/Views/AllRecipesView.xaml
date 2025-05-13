@@ -79,6 +79,10 @@
                             Height="30"
                             Margin="10,0"
                             Click="AddToFavorites_Click"/>
+                    <Button Content="Export To PDF"
+                        Width="140"
+                        Height="30"
+                        Click="ExportToPdf_Click"/>
                 </StackPanel>
             </Grid>
         </Border>

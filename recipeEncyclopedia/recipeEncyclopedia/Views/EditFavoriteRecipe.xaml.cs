@@ -86,7 +86,6 @@ namespace recipeEncyclopedia.Views
             ClearIngredientFields();
         }
 
-
         private void UpdateRecipe_Click(object sender, RoutedEventArgs e)
         {
             if (!int.TryParse(EditDurationBox.Text, out int duration) ||
@@ -175,8 +174,5 @@ namespace recipeEncyclopedia.Views
                 ClearIngredientFields();
             }
         }
-
-
     }
-
 }

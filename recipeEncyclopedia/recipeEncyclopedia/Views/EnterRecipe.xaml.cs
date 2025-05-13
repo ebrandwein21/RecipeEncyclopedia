@@ -21,7 +21,6 @@ namespace recipeEncyclopedia.Views
         private void SubmitRecipe_Click(object sender, RoutedEventArgs e)
         {
 
-
             // Validate inputs
             if (string.IsNullOrWhiteSpace(EnterRecipeName.Text) ||
                 string.IsNullOrWhiteSpace(DurationBox.Text) ||
@@ -61,7 +60,6 @@ namespace recipeEncyclopedia.Views
                     selectedCategories.Add(index+1);
             }
 
-
             // Construct recipe object
             var newRecipe = new Recipe
             {
@@ -98,8 +96,6 @@ namespace recipeEncyclopedia.Views
                 item.IsSelected = false;
             }
         }
-
-        
 
         private void Home_Click(object sender, RoutedEventArgs e)
         {

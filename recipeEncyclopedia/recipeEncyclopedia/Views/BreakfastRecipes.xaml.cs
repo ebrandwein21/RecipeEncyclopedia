@@ -51,11 +51,9 @@ namespace recipeEncyclopedia.Views
             
             _recipes = _recipeService.GetByCategory(1);
 
-           
             BreakfastRecipeList.ItemsSource = _recipes;
         }
     
-
         private void BreakfastRecipeList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
         var selectedRecipe = BreakfastRecipeList.SelectedItem as Recipe;
@@ -76,7 +74,6 @@ namespace recipeEncyclopedia.Views
                 {
                     BreakfastDetailsText.Text = $"{selectedRecipe.Name} has no ingredients listed.\n\nInstructions:\n{selectedRecipe.Instructions}";
                 }
-
             }
         }
 
@@ -97,10 +94,7 @@ namespace recipeEncyclopedia.Views
                 MessageBox.Show("You must be logged in to add favorites.");
                 return;
             }
-
-            // Optional: prevent duplicates
-           
-
+          
             var newFavorite = new UserRecipe
             {
                 UserId = user.Id,
@@ -127,6 +121,4 @@ namespace recipeEncyclopedia.Views
             favoriteRecipes.Show();
         }
     }
-
-
 }

@@ -74,8 +74,6 @@
                 </Button>
             </Grid>
 
-
-
             <!-- ListBox for Dinner Recipes -->
             <ListBox x:Name="DinnerRecipeList"
                  Grid.Row="1" Grid.Column="0" Grid.RowSpan="4" Grid.ColumnSpan="2"

@@ -48,22 +48,6 @@
                     FontSize="32" HorizontalAlignment="Center" VerticalAlignment="Center"
                     Grid.ColumnSpan="15" Grid.Column="2" Grid.Row="0"/>
 
-                <!-- Login Button -->
-                <!--<Button
-                    Content="Login"
-                    Grid.Row="0" Grid.Column="17"
-                    HorizontalAlignment="Right"
-                    VerticalAlignment="Top"
-                    Click="Login_Click"
-                    Margin="5">
-                    <Button.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="5"/>
-                        </Style>
-                    </Button.Resources>
-                </Button>-->
-
-                <!-- Home Button -->
                 <Button
                     Content="Home 🏠︎"
                     Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
@@ -84,7 +68,7 @@
                          SelectionChanged="Favorites_SelectionChanged"
                          Grid.Column="3" Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="11"
                          HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                         FontSize="14"> 
+                         FontSize="14">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel Margin="5">
@@ -97,10 +81,10 @@
 
 
                 <!-- StackPanel with Buttons -->
-                <StackPanel Grid.Row="1" Grid.Column="15" Grid.ColumnSpan="4"
+                <StackPanel Grid.Row="1" Grid.Column="16" Grid.ColumnSpan="3"
                             Orientation="Vertical"
                             VerticalAlignment="Top"
-                            Margin="10">
+                            Margin="1,0,10,0" Height="190" Grid.RowSpan="2">
                     <Button Content="Edit From Favorites"
                             Click="EditFavorite_Click"
                             Height="40"
@@ -113,6 +97,11 @@
 
                     <Button Content="Delete From Favorites"
                             Click="DeleteFavorite_Click"
+                            Height="40" />
+
+
+                    <Button Content="Export To PDF&#xD;&#xA;"
+                            Click="ExportToPDF_Click"
                             Height="40" />
                 </StackPanel>
 

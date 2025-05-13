@@ -139,7 +139,6 @@
                         </Style>
                     </Button.Resources>
                 </Button>
-
             </Grid>
         </Border>
     </Grid>

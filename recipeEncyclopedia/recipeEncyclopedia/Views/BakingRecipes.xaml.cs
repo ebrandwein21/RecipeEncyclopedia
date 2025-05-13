@@ -53,10 +53,7 @@ namespace recipeEncyclopedia.Views
             _recipes = _recipeService.GetByCategory(5);
 
             BakingRecipeList.ItemsSource = _recipes;
-
-           
         }
-
 
         private void BakingRecipeList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -93,8 +90,6 @@ namespace recipeEncyclopedia.Views
             favoriteRecipes.Show();
         }
 
-
-
         private void AddToFavorites_Click(object sender, RoutedEventArgs e)
         {
             var selectedRecipe = BakingRecipeList.SelectedItem as Recipe;
@@ -126,9 +121,5 @@ namespace recipeEncyclopedia.Views
             favorites.Show();
             this.Close();
         }
-
-        
-
-
     }
 }

@@ -49,8 +49,6 @@ namespace recipeEncyclopedia.Views
 
         private void LoadInternationalRecipes()
         {
-
-            
             _recipes = _recipeService.GetByCategory(4);
 
            
@@ -78,10 +76,8 @@ namespace recipeEncyclopedia.Views
                 {
                     InternationalDetailsText.Text = $"{selectedRecipe.Name} has no ingredients listed.\n\nInstructions:\n{selectedRecipe.Instructions}";
                 }
-
             }
-        }
-        
+        } 
 
         private void AddToFavorites_Click(object sender, RoutedEventArgs e)
         {

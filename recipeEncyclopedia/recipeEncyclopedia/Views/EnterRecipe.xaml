@@ -80,7 +80,6 @@
                 <TextBlock Text="Instructions:" Margin="0,10,0,0"/>
                 <TextBox Name="InstructionBox" AcceptsReturn="True" Height="100" TextWrapping="Wrap"/>
 
-
             </StackPanel>
         </Grid>
 

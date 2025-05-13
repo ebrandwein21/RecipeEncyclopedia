@@ -72,8 +72,6 @@
                         </Button.Resources>
                     </Button>
 
-
-
                     <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="2">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"/>
@@ -90,16 +88,6 @@
                             <RowDefinition Height="*"/>
                             <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
-
-                        <!--<Button Content="Login" Click="Login_Click" Grid.Column="0" Grid.ColumnSpan="3">
-                            <Button.Resources>
-                                <Style TargetType="Border">
-                                    <Setter Property="CornerRadius" Value="5"/>
-                                </Style>
-                            </Button.Resources>
-                        </Button>-->
-
-
 
                     </Grid>
                 </Grid>

@@ -47,7 +47,6 @@ namespace recipeEncyclopedia.Views
 
         private void LoadLunchRecipes()
         {
-
            _recipes = _recipeService.GetByCategory(2);
 
             LunchRecipeList.ItemsSource = _recipes;

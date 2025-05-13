@@ -15,14 +15,25 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.IO.Packaging;
+using PdfSharp.Pdf;
+using PdfSharp.Drawing;
+using System.Diagnostics;
+
+
+
+
 
 namespace recipeEncyclopedia.Views
 {
     /// <summary>
     /// Interaction logic for IngredientWindow.xaml
     /// </summary>
+    /// 
+
     public partial class MyFavoriteRecipes : Window
     {
+
 
         public ObservableCollection<recipeEncyclopedia.Models.Recipe> favoriteRecipe { get; set; } = new ObservableCollection<recipeEncyclopedia.Models.Recipe>();
         public MyFavoriteRecipes()
@@ -30,6 +41,7 @@ namespace recipeEncyclopedia.Views
             InitializeComponent();
             LoadFavorites();
             DataContext = this;
+
         }
 
         private void Login_Click(object sender, RoutedEventArgs e)
@@ -151,6 +163,50 @@ namespace recipeEncyclopedia.Views
             informationBox.ItemsSource = ViewModel.RecipeViewModel.favoriteRecipe;
         }
 
+        private void ExportToPDF_Click(object sender, RoutedEventArgs e)
+        {
+            //https://stackoverflow.com/questions/12391244/pdfsharp-getting-started
+            var user = AppSession.CurrentUser;
 
+            var selectedRecipe = informationBox.SelectedItem as Recipe;
+
+            if (selectedRecipe != null)
+            {
+                PdfSharp.Pdf.PdfDocument recipePDF = new PdfSharp.Pdf.PdfDocument();
+
+                PdfPage recipePage = recipePDF.AddPage();
+
+                 XGraphics graph = XGraphics.FromPdfPage(recipePage);
+
+            
+                recipePDF.Info.Title = $"{selectedRecipe.Name} recipe PDF";
+
+                string recipeFileName = $"{user.Username}_{selectedRecipe.Name}.pdf";
+
+                XFont font = new XFont("Verdana", 20);
+                graph.DrawString(selectedRecipe.Name, font, XBrushes.Black, new XRect(0, 0, recipePage.Width.Point, recipePage.Height.Point), XStringFormats.Center);
+
+                int y = 100;
+                foreach (var ingredient in selectedRecipe.Ingredients)
+                {
+
+                    string recipeText = $"{ingredient.Name} takes {ingredient.Amount} {ingredient.MeasurementType}, be careful this ingredient may contain {ingredient.Allergen}";
+
+                    XFont font2 = new XFont("Verdana", 10);
+                    graph.DrawString(recipeText, font2, XBrushes.Black, new XRect(0, y, recipePage.Width.Point, recipePage.Height.Point), XStringFormats.Center);
+
+                    y += 20;
+                }
+                XFont font3 = new XFont("Verdana", 10);
+                graph.DrawString(selectedRecipe.Instructions, font3, XBrushes.Black, new XRect(0, 250, recipePage.Width.Point, recipePage.Height.Point), XStringFormats.Center);
+                recipePDF.Save(recipeFileName);
+
+                Process.Start("Explorer.exe", recipeFileName); //https://stackoverflow.com/questions/1746079/how-can-i-open-windows-explorer-to-a-certain-directory-from-within-a-wpf-app
+            }
+            else
+            {
+                MessageBox.Show("select an entry before exporting to pdf");
+            }
+        }
     }
 }

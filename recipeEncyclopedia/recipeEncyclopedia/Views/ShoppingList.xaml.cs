@@ -104,7 +104,5 @@ namespace recipeEncyclopedia.Views
             _currentIngredients.Clear();
             MessageBox.Show("Your shopping list has been cleared.");
         }
-
-
     }
 }

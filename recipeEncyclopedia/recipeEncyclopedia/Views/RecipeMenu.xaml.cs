@@ -93,7 +93,5 @@ namespace recipeEncyclopedia.Views
             allView.Show();
             this.Close();
         }
-
-
     }
 }
