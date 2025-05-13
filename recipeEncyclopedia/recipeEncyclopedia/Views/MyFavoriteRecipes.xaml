@@ -66,7 +66,7 @@
                 <ListBox x:Name="informationBox"
                          ItemsSource="{Binding favoriteRecipe}"
                          SelectionChanged="Favorites_SelectionChanged"
-                         Grid.Column="3" Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="11"
+                         Grid.Column="3" Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="9"
                          HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
                          FontSize="14">
                     <ListBox.ItemTemplate>
@@ -81,29 +81,66 @@
 
 
                 <!-- StackPanel with Buttons -->
-                <StackPanel Grid.Row="1" Grid.Column="16" Grid.ColumnSpan="3"
-                            Orientation="Vertical"
-                            VerticalAlignment="Top"
-                            Margin="1,0,10,0" Height="190" Grid.RowSpan="2">
+                <Grid Grid.Row="1" Grid.Column="12" Grid.ColumnSpan="3" Grid.RowSpan="4" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+
                     <Button Content="Edit From Favorites"
                             Click="EditFavorite_Click"
-                            Height="40"
-                            Margin="0,0,0,10" />
+                           Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+
+
 
                     <Button Content="Add to Shopping List"
                             Click="AddToShoppingList_Click"
-                            Height="40"
-                            Margin="0,0,0,10" />
+                              Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
 
                     <Button Content="Delete From Favorites"
                             Click="DeleteFavorite_Click"
-                            Height="40" />
-
-
-                    <Button Content="Export To PDF&#xD;&#xA;"
+                            Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                    <Button Content="Export To PDF"
                             Click="ExportToPDF_Click"
-                            Height="40" />
-                </StackPanel>
+                              Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="3">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+              
+            </Grid>
 
             </Grid>
         </Border>
