@@ -20,10 +20,6 @@ using PdfSharp.Pdf;
 using PdfSharp.Drawing;
 using System.Diagnostics;
 
-
-
-
-
 namespace recipeEncyclopedia.Views
 {
     /// <summary>

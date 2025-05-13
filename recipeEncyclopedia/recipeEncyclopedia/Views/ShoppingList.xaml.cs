@@ -118,7 +118,6 @@ namespace recipeEncyclopedia.Views
             {
 
                 MessageBox.Show("select an entry before exporting to pdf");
-
             }
             else
             { 
@@ -153,7 +152,6 @@ namespace recipeEncyclopedia.Views
 
                 Process.Start("Explorer.exe", recipeFileName); //https://stackoverflow.com/questions/1746079/how-can-i-open-windows-explorer-to-a-certain-directory-from-within-a-wpf-app
             }
-    
         }
 
         private void logout_Click(object sender, RoutedEventArgs e)

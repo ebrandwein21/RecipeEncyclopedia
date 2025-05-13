@@ -76,7 +76,6 @@ namespace recipeEncyclopedia.Views
                 {
                     VeganDetailsText.Text = $"{selectedRecipe.Name} has no ingredients listed.\n\nInstructions:\n{selectedRecipe.Instructions}";
                 }
-
             }
         }
         
@@ -145,6 +144,5 @@ namespace recipeEncyclopedia.Views
             EnterRecipe enter = new EnterRecipe();
             enter.Show();
         }
-
     }
 }

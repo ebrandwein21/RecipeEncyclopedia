@@ -143,7 +143,5 @@ namespace recipeEncyclopedia.Views
             MeasurementTypeBox.Clear();
             AllergenBox.Clear();
         }
-
-
     }
 }

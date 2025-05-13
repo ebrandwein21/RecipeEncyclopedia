@@ -72,7 +72,6 @@ namespace recipeEncyclopedia.Views
                 {
                     LunchDetailsText.Text = $"{selectedRecipe.Name} has no ingredients listed.\n\nInstructions:\n{selectedRecipe.Instructions}";
                 }
-
             }
         }
 
