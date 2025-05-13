@@ -66,10 +66,9 @@
 
             <Button Content="     Remove&#xA; Selected Item" FontSize="10"
             Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
-            Click="RemoveSelectedItem_Click"
-            HorizontalAlignment="Center">
+            Click="RemoveSelectedItem_Click">
                 <Button.Resources>
-                    <Style TargetType="Border">
+                <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="5"/>
                     </Style>
                 </Button.Resources>
@@ -77,19 +76,17 @@
 
             <Button Content="       Clear&#xD;&#xA; Shopping List" FontSize="10"
             Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2"
-            Click="ClearShoppingList_Click"
-            HorizontalAlignment="Center">
+            Click="ClearShoppingList_Click">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="5"/>
                     </Style>
                 </Button.Resources>
             </Button>
-            
+
             <Button Content="Export To PDF"
      Grid.Row="1" Grid.Column="6" Grid.ColumnSpan="2"
-     Click="ExportToPDF_Click"
-     HorizontalAlignment="Left">
+     Click="ExportToPDF_Click">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="5"/>

@@ -59,6 +59,9 @@ namespace recipeEncyclopedia.Views
             var selectedText = ShoppingListBox.SelectedItem as string;
             var user = AppSession.CurrentUser;
 
+            IEnumerable<string> ShoppingList = ShoppingListBox.SelectedItems.Cast<string>().ToList();  //https://stackoverflow.com/questions/3140453/how-to-add-the-selected-item-from-a-listbox-to-list-string-in-c-sharp
+
+
             if (string.IsNullOrEmpty(selectedText))
             {
                 MessageBox.Show("Please select an item to remove.");
@@ -70,20 +73,17 @@ namespace recipeEncyclopedia.Views
                 MessageBox.Show("You must be logged in.");
                 return;
             }
-
-            // Find the matching Ingredient based on the display string
-            var ingredientToRemove = _currentIngredients.FirstOrDefault(i =>
-                $"{i.Amount} {i.MeasurementType} {i.Name} (Allergen: {i.Allergen})" == selectedText);
-
-            if (ingredientToRemove == null)
+            foreach (var ingredient in ShoppingList)
             {
-                MessageBox.Show("Item not found in list.");
-                return;
-            }
+                // Find the matching Ingredient based on the display string
+                var ingredientToRemove = _currentIngredients.FirstOrDefault(i =>
+                $"{i.Amount} {i.MeasurementType} {i.Name} (Allergen: {i.Allergen})" == ingredient);
 
-            _service.RemoveIngredientFromList(user.Id, ingredientToRemove);
-            LoadShoppingList();
-            MessageBox.Show($"{ingredientToRemove.Name} removed from your shopping list.");
+
+                _service.RemoveIngredientFromList(user.Id, ingredientToRemove);
+                LoadShoppingList();
+                MessageBox.Show($"{ingredientToRemove.Name} removed from your shopping list.");
+            }
         }
 
         private void ClearShoppingList_Click(object sender, RoutedEventArgs e)
@@ -111,18 +111,23 @@ namespace recipeEncyclopedia.Views
         private void ExportToPDF_Click(object sender, RoutedEventArgs e)
         {
             var user = AppSession.CurrentUser;
+            var selectedText = ShoppingListBox.SelectedItem as string;
+            IEnumerable<string> ShoppingList = ShoppingListBox.SelectedItems.Cast<string>().ToList();  //https://stackoverflow.com/questions/3140453/how-to-add-the-selected-item-from-a-listbox-to-list-string-in-c-sharp
 
-            IEnumerable<string> ShoppingList = ShoppingListBox.SelectedItems.Cast<string>().ToList();
 
-
-            if (ShoppingList != null)
+            if (string.IsNullOrEmpty(selectedText))
             {
+
+                MessageBox.Show("select an entry before exporting to pdf");
+
+            }
+            else
+            { 
                 PdfSharp.Pdf.PdfDocument recipePDF = new PdfSharp.Pdf.PdfDocument();
 
                 PdfPage recipePage = recipePDF.AddPage();
 
                 XGraphics graph = XGraphics.FromPdfPage(recipePage);
-
 
                 recipePDF.Info.Title = $"{ShoppingList} recipe PDF";
 
@@ -133,11 +138,11 @@ namespace recipeEncyclopedia.Views
                 foreach (var ingredient in ShoppingList)
                 {
 
-
                     var ingredientToPrint = _currentIngredients.FirstOrDefault(i =>
                        $"{i.Amount} {i.MeasurementType} {i.Name} (Allergen: {i.Allergen})" == ingredient);
 
                     XFont font2 = new XFont("Verdana", 20);
+                   
                     string shoppingListOutput = $"{ingredientToPrint.Amount} {ingredientToPrint.MeasurementType} {ingredientToPrint.Name} (Allergen: {ingredientToPrint.Allergen})";
 
                     graph.DrawString(shoppingListOutput, font2, XBrushes.Black, new XRect(0, y, recipePage.Width.Point, recipePage.Height.Point), XStringFormats.Center);
@@ -149,10 +154,7 @@ namespace recipeEncyclopedia.Views
 
                 Process.Start("Explorer.exe", recipeFileName); //https://stackoverflow.com/questions/1746079/how-can-i-open-windows-explorer-to-a-certain-directory-from-within-a-wpf-app
             }
-            else
-            {
-                MessageBox.Show("select an entry before exporting to pdf");
-            }
+    
         }
     }
 }
